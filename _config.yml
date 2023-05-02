@@ -17,6 +17,6 @@ comments :
   gitalk :
     clientID : 
     clientSecret : 
-    repo :ssonsonya.github.io
+    repo : ssonsonya.github.io
     owner : ssonsonya
     admin : ssonsonya
