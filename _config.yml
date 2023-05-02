@@ -1,4 +1,4 @@
-name: 
+name: Sonya's DevLog
 author: Sonya Kim
 url: https://ssonsonya.github.io
 baseurl: 
@@ -17,6 +17,6 @@ comments :
   gitalk :
     clientID : 
     clientSecret : 
-    repo :
-    owner : 
-    admin : 
+    repo :ssonsonya.github.io
+    owner : ssonsonya
+    admin : ssonsonya
