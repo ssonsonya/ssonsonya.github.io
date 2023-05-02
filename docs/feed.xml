@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 02 May 2023 18:47:57 +0900</pubDate>
+    <lastBuildDate>Tue, 02 May 2023 18:47:57 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>A Example Post</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#sub-title&quot; id=&quot;markdown-toc-sub-title&quot;&gt;sub title&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-thumbnail&quot; id=&quot;markdown-toc-about-thumbnail&quot;&gt;about thumbnail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-icon&quot; id=&quot;markdown-toc-about-icon&quot;&gt;about icon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sub-title&quot;&gt;sub title&lt;/h2&gt;
+
+&lt;p&gt;page…&lt;/p&gt;
+
+&lt;h2 id=&quot;about-thumbnail&quot;&gt;about thumbnail&lt;/h2&gt;
+
+&lt;p&gt;add the thumbnail url&lt;/p&gt;
+
+&lt;h2 id=&quot;about-icon&quot;&gt;about icon&lt;/h2&gt;
+
+&lt;p&gt;such as book, code, web, chat, note, game, link, design, image&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Jan 2019 01:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019-01-01-example-post</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-01-01-example-post</guid>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+  </channel>
+</rss>
