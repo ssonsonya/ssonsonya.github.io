@@ -15,8 +15,8 @@ highlighter: rouge
 markdown: kramdown
 comments :
   gitalk :
-    clientID : 
-    clientSecret : 
+    clientID : d7b73a64cd5bc7920119
+    clientSecret : f1d2d06baa9d6cf7bfc07f2a4a4c81ef497ab628
     repo : ssonsonya.github.io
     owner : ssonsonya
     admin : ssonsonya
