@@ -1,11 +1,11 @@
 name: 
-author: 
-url: 
+author: Sonya Kim
+url: https://ssonsonya.github.io
 baseurl: 
-resume_site: 
-description: 
-github_username: 
-github: 
+resume_site: https://ssonsonya.github.io
+description: 게임 프로그래머 쏘냐의 개발일지
+github_username: ssonsonya
+github: https://github.com/ssonsonya
 plugins: [jekyll-paginate]
 permalink: /:year-:month-:day-:title
 paginate: 12
@@ -17,6 +17,6 @@ comments :
   gitalk :
     clientID : 
     clientSecret : 
-    repo : 
+    repo :
     owner : 
     admin : 
