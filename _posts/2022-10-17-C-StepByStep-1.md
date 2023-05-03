@@ -34,7 +34,7 @@ icon: book
 
 ![11](/_assets/C_sbs_1/11.png)
 
-## Data Type 자료형
+## DataType 자료형
 
 ![12](/_assets/C_sbs_1/12.png)
 ![13](/_assets/C_sbs_1/13.png)
