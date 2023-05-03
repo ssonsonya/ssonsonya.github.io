@@ -11,20 +11,20 @@ icon: book
 * content
 {:toc}
 
-## Memory Structure 메모리 구조
+## 메모리 구조
 
 ![47](https://user-images.githubusercontent.com/116151781/235898089-d3b95b18-613a-4589-8288-b4a43783fcbd.JPG)
 ![48](https://user-images.githubusercontent.com/116151781/235898110-fe62f26a-f243-484a-b57c-4c6ad8f436ba.JPG)
 ![49](https://user-images.githubusercontent.com/116151781/235898119-740b41ca-baa0-4dd6-932e-b47b02e8525c.JPG)
 
 
-## Recursive Function 재귀함수
+## 재귀함수
 
 ![50](https://user-images.githubusercontent.com/116151781/235898146-2944bfab-eea6-43f4-92c6-30b28e4adf4b.JPG)
 ![51](https://user-images.githubusercontent.com/116151781/235900034-d45c2c0e-619f-4caa-9a51-32b55e6198b8.JPG)
 
 
-## User Defined DataType 사용자 정의 자료형
+## 사용자 정의 자료형
 
 ![52](https://user-images.githubusercontent.com/116151781/235900093-a0561d13-7e76-49b1-a82d-d13b1826bb2f.JPG)
 ![53](https://user-images.githubusercontent.com/116151781/235900575-0b72ff8c-bd12-4ee4-acb1-323767a1a311.JPG)
@@ -50,13 +50,13 @@ icon: book
 ![65](https://user-images.githubusercontent.com/116151781/235901133-3a8a1d37-355f-4e10-8898-d0d922a667e6.JPG)
 
 
-## Pointer to Pointer 이중 포인터
+## 이중 포인터
 
 ![66](https://user-images.githubusercontent.com/116151781/235901165-035b8261-c9e9-43f4-8900-114fe2ebc747.JPG)
 ![67](https://user-images.githubusercontent.com/116151781/235901275-c6129dd8-579e-4dd6-b6b7-4821a98c29bb.JPG)
 
 
-## Functional Pointer 함수포인터
+## 함수포인터
 
 ![68](https://user-images.githubusercontent.com/116151781/235901377-c137a9c3-86f6-4772-9f58-3f114a5d3fe1.JPG)
 ![69](https://user-images.githubusercontent.com/116151781/235901416-3dbd04b4-2fa3-4247-b21d-26b8bc9b0543.JPG)
@@ -64,7 +64,7 @@ icon: book
 ![71](https://user-images.githubusercontent.com/116151781/235901466-150d7507-138b-4980-b84f-6c8b4f593a2e.JPG)
 
 
-## Dynamic Memory Allocation 동적 할당
+## 동적 할당
 
 ![72](https://user-images.githubusercontent.com/116151781/235901759-521e6854-1df6-4830-a478-c887b5aa4135.JPG)
 ![73](https://user-images.githubusercontent.com/116151781/235901774-736739bf-7b9c-408d-948d-2c4439ee5e6f.JPG)
@@ -74,7 +74,7 @@ icon: book
 ![77](https://user-images.githubusercontent.com/116151781/235902025-f6336f9e-89ca-4d25-af66-1c256e7ca591.JPG)
 
 
-## File io 파일 입출력
+## 파일 입출력
 
 ![78](https://user-images.githubusercontent.com/116151781/235902337-12a60f90-b5c1-4232-b4d4-634feb8f2873.JPG)
 ![79](https://user-images.githubusercontent.com/116151781/235902365-40374422-eb7c-4a9c-977b-5888cf38bbc1.JPG)
