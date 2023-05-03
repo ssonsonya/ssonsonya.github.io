@@ -3,7 +3,7 @@ layout: post
 title: C++ 기초 이론 복습 - 1
 date:   2022-12-02
 category: tutorial
-thumbnail: /style/image/thumbnail_CPP_sbs.png
+thumbnail: /style/image/thumbnail_CPP_sbs.PNG
 icon: book
 ---
 
