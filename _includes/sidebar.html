@@ -1,4 +1,14 @@
-<div>
+<sidebar id="sidebar" class="sidebar bg-white"></sidebar>
+
+<div class="meta-item meta-posts">
+  <h3 class="meta-title">Category</h3>
+  {% for post in site.posts %}
+      <li>
+          <a href="{{ post.url }}">{{ post.category }}</a>
+      </li>
+  {% endfor %}
+</div>
+
   <div class="sidebar-nav-item">Category</div>
   <nav class="content-ul">
     {% for category in post.category %}
@@ -11,4 +21,3 @@
     </a>
     {% endfor %}
   </nav>
-</div>

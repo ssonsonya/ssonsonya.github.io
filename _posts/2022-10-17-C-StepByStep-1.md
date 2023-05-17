@@ -2,7 +2,7 @@
 layout: post
 title: C 기초 이론 복습 - 1
 date:   2022-10-17
-category: C
+category: tutorial
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
 ---
