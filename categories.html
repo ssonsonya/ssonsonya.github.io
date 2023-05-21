@@ -3,13 +3,16 @@ layout: default
 ---
 
 <div class="main-content archive-page clearfix">
-   <div class="categorys-item">
-       <div class="post-lists">
+    <div class="category-item">
+        <div class="post-lists">
            <div class="post-lists-body">
             {% for post in site.posts %}
-            {% capture category %}{{ post.category }}{% endcapture %}
+            {% capture this_category %}{{ post.category }}{% endcapture %}
+            {% capture next_category %}{{ post.next.category }}{% endcapture %}
 
-              <div class="categorys-title">{{ this_category }} </div>
+            {% if this_category != next_category %}
+            <div class="category-title">{{ this_category }} </div>
+            {% endif %}
 
               <div class="post-list-item">
                   <div class="post-list-item-container">

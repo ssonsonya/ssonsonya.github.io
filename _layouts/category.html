@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: full
 ---
 
 <div class="main-content index-page clearfix">
+  <div class="category-item">
     <div class="post-lists">
         <div class="post-lists-body">
             {% for post in paginator.posts %}
@@ -23,8 +24,7 @@ layout: default
                         </div>
                         <div class="item-meta clearfix">
                             <div class="item-meta-ico {% if post.icon %}bg-ico-{{ post.icon }}{% endif %}" style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;"></div>
-                            <div class="item-meta-cat">
-                                <a href="{{ category.url | prepend: site.baseurl }}">{{ post.category }}</a>
+                            <div class="item-meta-cat"><a href="{{ category.url | prepend: site.baseurl }}">{{ post.category }}</a>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,6 @@ layout: default
             {% endfor %}
         </div>
     </div>
-
 
     {% if paginator.total_pages > 1 %}
     <div class="lists-navigator clearfix">

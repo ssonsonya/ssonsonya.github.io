@@ -7,7 +7,7 @@ description: 게임 프로그래머 쏘냐의 개발일지
 github_username: ssonsonya
 github: https://github.com/ssonsonya
 plugins: [jekyll-paginate]
-permalink: /:year-:month-:day-:title
+permalink: /:category:year-:month-:day-:title
 paginate: 12
 paginate_path: "/page/:num/"
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
