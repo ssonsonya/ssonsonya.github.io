@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="main-content archive-page clearfix">
-    <div class="categorys-item">
+    <div class="category-item">
         <div class="post-lists">
             <div class="post-lists-body">
                 {% for post in site.posts %}
@@ -13,7 +13,7 @@ layout: default
                 {% capture next_month %}{{ post.next.date | date: "%B" }}{% endcapture %}
 
                 {% if this_month != next_month or this_year != next_year %}
-                <div class="categorys-title">{{ this_month }} {{ this_year }}</div>
+                <div class="category-title">{{ this_month }} {{ this_year }}</div>
                 {% endif %}
 
                 <div class="post-list-item">
@@ -27,9 +27,8 @@ layout: default
                     </div>
                 </div>
 
-                {% endfor %}
-            </div>
+            {% endfor %}
         </div>
-
     </div>
+</div>
 </div>
