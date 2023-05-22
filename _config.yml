@@ -10,6 +10,13 @@ plugins: [jekyll-paginate]
 permalink: /:year-:month-:day-:title
 paginate: 12
 paginate_path: "/page/:num/"
+category:
+  type: liquid
+  path: /categories/
+tag:
+  type: liquid
+  path: /tags/
+
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
 markdown: kramdown

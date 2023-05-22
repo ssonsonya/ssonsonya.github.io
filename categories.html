@@ -6,13 +6,11 @@ layout: default
     <div class="category-item">
         <div class="post-lists">
            <div class="post-lists-body">
+            <div class="category-title">TUTORIAL </div>
             {% for post in site.posts %}
             {% capture this_category %}{{ post.category }}{% endcapture %}
-            {% capture next_category %}{{ post.next.category }}{% endcapture %}
 
-            {% if this_category != next_category %}
-            <div class="category-title">{{ this_category }} </div>
-            {% endif %}
+            {% if this_category == 'tutorial' %}
 
               <div class="post-list-item">
                   <div class="post-list-item-container">
@@ -24,7 +22,26 @@ layout: default
                       </div>
                   </div>
               </div>
+            {% endif %}
+            {% endfor %}
 
+            <div class="category-title">DIARY </div>
+            {% for post in site.posts %}
+            {% capture this_category %}{{ post.category }}{% endcapture %}
+
+            {% if this_category == 'diary' %}
+
+              <div class="post-list-item">
+                  <div class="post-list-item-container">
+                      <div class="item-label">
+                          <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                          <div class="item-meta clearfix">
+                              <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }} </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
