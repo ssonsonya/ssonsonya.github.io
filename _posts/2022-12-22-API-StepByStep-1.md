@@ -33,4 +33,7 @@ icon: book
 ## 정리해보자
 
 ![API (14)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/57cb7ede-ae9d-4604-97e1-e937580a615b)
-![API (15)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/25c213f2-ce26-49b0-9bf4-76a53ad17a20)
+![API (15)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/25c213f2-ce26-49b0-9bf4-76a53ad17a20)  
+  
+***
+학원에서 배운 내용을 복습하며 정리했습니다.
