@@ -78,4 +78,7 @@ icon: book
 
 ![78](https://user-images.githubusercontent.com/116151781/235902337-12a60f90-b5c1-4232-b4d4-634feb8f2873.JPG)
 ![79](https://user-images.githubusercontent.com/116151781/235902365-40374422-eb7c-4a9c-977b-5888cf38bbc1.JPG)
-![80](https://user-images.githubusercontent.com/116151781/235902400-0385da66-a193-4bb1-b744-d60726643193.JPG)
+![80](https://user-images.githubusercontent.com/116151781/235902400-0385da66-a193-4bb1-b744-d60726643193.JPG)  
+  
+***
+학원에서 배운 내용을 복습하며 정리했습니다.

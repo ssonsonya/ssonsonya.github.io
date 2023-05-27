@@ -36,5 +36,7 @@ icon: book
 
 
 ![8](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/e6447cf9-a8c7-4405-ab02-cde5a53ec74f)  
-
-
+  
+***
+[인생언리얼교과서](https://product.kyobobook.co.kr/detail/S000061425411) 교재를 참고하며 학원에서 배운 내용을 바탕으로 공부했습니다.  
+  

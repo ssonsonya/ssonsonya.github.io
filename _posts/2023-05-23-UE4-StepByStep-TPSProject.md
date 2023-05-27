@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UE C++ 맛보기 - TPSProject
-date:   2023-05-25
+date:   2023-05-23
 category: tutorial
 thumbnail: /style/image/thumbnail.png
 icon: book
@@ -18,3 +18,7 @@ icon: book
 
 ## 몽타쥬
 
+  
+***
+[인생언리얼교과서](https://product.kyobobook.co.kr/detail/S000061425411) 교재를 참고하며 학원에서 배운 내용을 바탕으로 공부했습니다.  
+  

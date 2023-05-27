@@ -61,5 +61,8 @@ icon: book
 ![CPP (64)](https://user-images.githubusercontent.com/116151781/235932116-d26e6aa5-2335-4563-aed2-068641bf7b32.JPG)
 ![CPP (65)](https://user-images.githubusercontent.com/116151781/235932150-ae52c541-7181-4bd2-b938-bb79c60591d7.JPG)
 ![CPP (66)](https://user-images.githubusercontent.com/116151781/235932184-2bb5029a-0193-4ca0-ae76-bcc8d311a0b9.JPG)
-![CPP (67)](https://user-images.githubusercontent.com/116151781/235932391-792eafbe-bdd2-42f6-a80f-59268db09519.JPG)
+![CPP (67)](https://user-images.githubusercontent.com/116151781/235932391-792eafbe-bdd2-42f6-a80f-59268db09519.JPG)  
+  
+***
+학원에서 배운 내용을 복습하며 정리했습니다.
 

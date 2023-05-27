@@ -43,4 +43,8 @@ icon: book
 ![8](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d648af51-fdf6-4f27-8f3c-3cc1af3c6801)  
 
 
-![Result](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/0d65566a-c7c1-4835-ba59-9f565e1e3876)
+![Result](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/0d65566a-c7c1-4835-ba59-9f565e1e3876)  
+  
+***
+[인생언리얼교과서](https://product.kyobobook.co.kr/detail/S000061425411) 교재를 참고하며 학원에서 배운 내용을 바탕으로 공부했습니다.  
+  

@@ -60,4 +60,7 @@ icon: book
 ## Function 함수
 
 ![45](https://user-images.githubusercontent.com/116151781/235903461-f8f19436-f766-4833-adef-ef94b5b2e477.JPG)
-![46](https://user-images.githubusercontent.com/116151781/235903487-73b871a7-cac9-4fd8-a66f-4ced1f916c40.JPG)
+![46](https://user-images.githubusercontent.com/116151781/235903487-73b871a7-cac9-4fd8-a66f-4ced1f916c40.JPG)  
+  
+***
+학원에서 배운 내용을 복습하며 정리했습니다.
