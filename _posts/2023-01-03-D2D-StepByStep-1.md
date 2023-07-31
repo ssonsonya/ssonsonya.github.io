@@ -28,6 +28,11 @@ icon: book
 ![D2D (14)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/2bde7e9a-a360-451c-8d3b-85c23f361eba)
 ![D2D (15)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/a1787927-61bb-4ad7-b925-272312eb0348)
 
+## 배경구현 RTV, Viewport
+![D2D (16)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/5abddd83-7310-4249-85c2-fca8e44a411d)
+![D2D (17)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/052f3040-6917-43b8-9fd5-c86886537cd2)
+![D2D (18)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/1a12550f-ce2b-4283-b37f-9bda56efce1e)
+![D2D (19)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/3b640d39-4ff1-48f4-b332-bde66f3fc903)
 
 ***
 학원에서 배운 내용을 복습하며 정리했습니다.
