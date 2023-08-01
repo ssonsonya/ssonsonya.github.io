@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DirectX 2D 기초 이론 복습 - 1
-date:   2023-01-02
+date:   2023-01-03
 category: tutorial
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DirectX 2D 기초 이론 복습 - 2
-date:   2023-01-09
+date:   2023-01-13
 category: tutorial
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book
@@ -52,8 +52,9 @@ icon: book
 ![D2D (51)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/1516d870-7a28-4ce8-94c7-0ad7f4ced90d)
 ![D2D (52)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/95653e71-b759-437a-bfde-6a2673809aac)
 ![D2D (53)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d1f521c0-1d83-4e97-a868-296331efc03b)
-![D2D (54)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d099219b-099b-44d3-abd9-cbd0aca251d7)
 
+## 요약정리
+![D2D (54)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d099219b-099b-44d3-abd9-cbd0aca251d7)
 
 ***
 학원에서 배운 내용을 복습하며 정리했습니다.
