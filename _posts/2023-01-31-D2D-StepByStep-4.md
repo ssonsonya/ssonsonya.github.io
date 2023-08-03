@@ -42,13 +42,31 @@ icon: book
 ![D2D (105)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/e4d789b2-62ff-411b-b9be-7412cc9f4f75)
 ![D2D (106)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/0c3cff9c-88c9-4a9a-8ecc-02228620d705)
 
-## 색이 순차적으로 변화는 Rect
+## 색이 순차적으로 변하는 Rect
 ![D2D (107)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/0f2cb7cd-e3c0-4ae6-af67-753bf01767b6)
 ![D2D (108)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/46ef968e-3b83-44ce-8abf-e2f6fdb7af1e)
 ![D2D (109)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/3f65ce6d-7406-4085-8b9f-bf8b6f0f22cc)
 ![D2D (110)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/890ffc45-d8e5-4937-907e-3308ad55ea61)
 ![D2D (111)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/0607ee8d-53c9-41b0-a543-e93aef7b53cf)
 ![D2D (112)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/7d1e3197-cd68-422e-951c-4f927a275ff3)
+
+
+## Line & Circle
+![D2D (113)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/e4b8a836-4238-44cb-ad97-8bf1e3d9f948)
+![D2D (114)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/1d502042-32d9-49e1-9297-83a8f9ad4c18)
+![D2D (115)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/f9720c01-8315-4056-bfdd-b3fca3e0f0bd)
+
+## Scene
+![D2D (116)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/74de9688-6e28-4c7b-a707-a2e34c8827ce)
+![D2D (117)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/8daa302b-92f0-4492-a483-6034bec35426)
+![D2D (118)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/ffc8c32e-0f50-414b-9a89-d2d9e7103600)
+
+## Clock
+![D2D (119)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/eab75729-abbc-49de-927c-f483c4e4796d)
+![D2D (120)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/739c55bb-dab9-4033-a209-24261194c2db)
+![D2D (121)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/4425fc39-76c1-4657-b0ff-784f4fed2f91)
+![D2D (122)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/cbb2a830-8b9d-4309-936e-5b1fd4720370)
+
 
 ***
 학원에서 배운 내용을 복습하며 정리했습니다.
