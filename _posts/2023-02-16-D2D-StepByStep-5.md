@@ -73,7 +73,5 @@ icon: book
 ![D2D (172)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/9c0d01e7-54b8-45eb-845b-180e99cb3b02)
 ![D2D (173)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d6255472-5ec6-4bc0-bb1e-c08984e5d013)
 
-
-
 ***
 학원에서 배운 내용을 복습하며 정리했습니다.
