@@ -34,6 +34,21 @@ layout: default
         </div>
     </div>
 
+    <div class="main-container">
+        <div class="post-container">
+            <div class="navigation" id="navigation">
+                <h1>Contents</h1>
+                <ul class="nav sidenav"></ul>
+            </div>
+            <article class="post-content">
+                {{ content }}
+            </article>
+            <div class="post-content">
+             {% include comment.html %}
+            </div>
+        </div>
+    </div>
+
     {% if paginator.total_pages > 1 %}
     <div class="lists-navigator clearfix">
         <ol class="page-navigator">
@@ -52,5 +67,4 @@ layout: default
         </ol>
     </div>
     {% endif %}
-
 </div>

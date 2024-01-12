@@ -1,15 +1,18 @@
-<sidebar id="sidebar" class="sidebar bg-white">
+<sidebar id="sidebar" class="sidebar">
 
 <div class="meta-item meta-posts">
-  <h3 class="meta-title">Category</h3>
+  <h3 class="meta-title">Agenda</h3>
+  <h2 class="meta-sublist">Portfolio</h2>
   {% for post in site.posts %}
+    {% if post.category == Portfolio %}
       <li>
           <a href="{{ post.url }}">{{ post.category }}</a>
       </li>
+      {%endif%}
   {% endfor %}
 </div>
 
-  <div class="sidebar-nav-item">Category</div>
+<div class="sidebar-nav-item"></div>
   <nav class="content-ul">
     {% for category in post.category %}
     <a href="{{ root_url }}/{{ post.category }}#{{ category | first }}"
