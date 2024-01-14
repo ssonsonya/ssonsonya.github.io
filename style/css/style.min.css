@@ -785,6 +785,7 @@ textarea:-ms-input-placeholder {
     width: 20%;
     height: auto;
     padding: 180px 10px 40px;
+    margin: 0 auto;
     text-align: left;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
@@ -816,7 +817,7 @@ textarea:-ms-input-placeholder {
 .main-content {
     position: relative;
     max-width: 940px;
-    margin: 0 270px;
+    margin: 0 auto;
     -webkit-animation: fade-in .5s;
     animation: fade-in;
     animation-duration: .5s
