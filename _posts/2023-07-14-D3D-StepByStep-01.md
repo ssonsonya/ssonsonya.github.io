@@ -3,7 +3,7 @@ layout: post
 title: DirectX 3D 시작!
 date:   2023-07-14
 category: tutorial
-thumbnail: /style/image/tutorial_thumbnails/thumbnail_D3D_sbs.png
+thumbnail: /style/image/thumbnail_D3D_sbs.png
 icon: book
 ---
 
