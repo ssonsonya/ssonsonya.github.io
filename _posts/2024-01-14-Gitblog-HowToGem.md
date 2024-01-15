@@ -76,8 +76,8 @@ jekyll-paginate (Jekyll::Errors::MissingDependencyException)
 
 ---
 
-# Solution
-## Gemfile 설정
+## ✨Solution
+### Gemfile 설정
 
 현재 내 깃블로그에 적용되는 Gem들을 Gemfile을 통해 확인할 수 있다.  
 <img align="left" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d3e81928-a7ea-4c5b-9597-122a0facbb96">
@@ -220,7 +220,7 @@ gem "jekyll-paginate", "~> 1.1"
 bundle install
 ```
 
-## 로컬버전으로 Set
+### 로컬버전으로 Set
 기존 Gemfile에 적용된 jekyll등의 버전으로 설정 필요한 gem들을 install하는 방식도 있다
 (나는 어떤 이유에서인지 성공하지 못했지만 좀 더 살펴보면 활용하기 좋을 것 같다)
 
@@ -244,7 +244,7 @@ bundle install
 
 ---
 
-# 생각 정리
+## 생각 정리
 1. 깃블로그를 처음 생성할 때만 Ruby를 다뤘기 때문에 기억이 안나는 부분을 다시 공부해야 했다.  
     그래도 이전에 정리한 내용을 다시 보며 금방 기억해낼 수 있었다(역시 블로그 쓰길 잘했다)  
 2. 폴더에 줄곧 함께하고 있었던 Gemfile과 Gemfile.lock의 정체를 이 기회에 알 수 있었다.  
@@ -253,7 +253,7 @@ bundle install
 
 ---
 
-# Reference
+## Reference
 [Ruby Download](https://www.ruby-lang.org/en/downloads/)  
 [Jekyll. JekyllDocs. Deployment](https://jekyllrb.com/docs/upgrading/3-to-4/)  
 [MichaelCurrin(Jul.2021). JekyllTalk. Successfully installed jekyll-4.2.0, however still it searches for Jekyll-3.8.5](https://talk.jekyllrb.com/t/successfully-installed-jekyll-4-2-0-however-still-it-searches-for-jekyll-3-8-5/6226)
