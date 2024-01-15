@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitBlog-자주 검색하는 마크다운 문법
+title: GitBlog-자주 검색하는 마크다운
 date:   2023-08-09
 category: gitBlog
 thumbnail: /style/image/thumbnails/GitBlog_Markdown.png
@@ -166,9 +166,9 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 
 ### 텍스트 링크
 
-<pre><code>[내용](url)
+<pre><code>[GitBlog-자주 검색하는 마크다운](urlhttps://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B8%EC%9A%A9%EB%AC%B8)
 </code></pre>
-
+[GitBlog-자주 검색하는 마크다운](urlhttps://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B8%EC%9A%A9%EB%AC%B8)
 
 ## 개체 활용
 
