@@ -166,7 +166,7 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 
 ### 텍스트 링크
 
-<pre><code>[GitBlog-자주 검색하는 마크다운](urlhttps://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B8%EC%9A%A9%EB%AC%B8)
+<pre><code>[GitBlog-자주 검색하는 마크다운](https://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B8%EC%9A%A9%EB%AC%B8)
 </code></pre>
 [GitBlog-자주 검색하는 마크다운](urlhttps://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B8%EC%9A%A9%EB%AC%B8)
 
@@ -177,7 +177,8 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 2. 깃블로그의 Repository -> Issues -> New Issue 진행
 3. description 칸에 이미지 붙여넣기 후 기다리면 이미지파일이 마크다운 형식으로 변환 됨
 4. 삽입할 post에 복붙  
-
+<pre><code>![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9)
+</code></pre>
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9)
 
 ### 표 생성
