@@ -2,7 +2,7 @@
 layout: post
 title: GitBlog-Jekyll 업그레이드 적용
 date:   2024-01-14
-category: gitblog
+category: gitBlog
 thumbnail: /style/image/thumbnails/jekyll.png
 icon: web
 ---
@@ -244,7 +244,7 @@ bundle install
 
 ---
 
-# 생각정리
+# 생각 정리
 1. 깃블로그를 처음 생성할 때만 Ruby를 다뤘기 때문에 기억이 안나는 부분을 다시 공부해야 했다.  
     그래도 이전에 정리한 내용을 다시 보며 금방 기억해낼 수 있었다(역시 블로그 쓰길 잘했다)  
 2. 폴더에 줄곧 함께하고 있었던 Gemfile과 Gemfile.lock의 정체를 이 기회에 알 수 있었다.  
