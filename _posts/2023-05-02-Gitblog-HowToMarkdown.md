@@ -12,7 +12,8 @@ icon: web
 
 ## 마크다운 기본
 
-[Markdown Guid - Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)에서 기본적인 문법구조를 참고했다.  
+*GitHub Docs - Writing on GitHub* [^1] 과 
+*Markdown Guid - Cheat Sheet* [^2] 에서 기본적인 문법구조를 참고했다.  
 다양한 서식을 사용하고 싶을 땐 HTML을 병행하는 방식이 좋다.
 <pre><code>기본적인 텍스트는 입력한 그대로 보여진다.
 </code></pre>
@@ -94,7 +95,7 @@ icon: web
 ~~*취소된 Italic 서식*~~
 
 ### 색상 활용
-
+기본적인 내용은 *용님* [^3] 의 블로그를 통해 배웠고, 색상표는 *Rapid Tables* [^4] 를 참고할 수 있다.
 #### 글자색
 ```html
 <span style="color:red"> RED </span>
@@ -127,8 +128,6 @@ icon: web
 <span style="background-color:#cce5ff"> 연파랑 </span> 
 <span style="background-color:#ccccff"> 연보라 </span> 
 
-색상표 참고 사이트: [(https://www.rapidtables.com/web/color/RGB_Color.html)](https://www.rapidtables.com/web/color/RGB_Color.html)
-
 ### 코드블럭
 ````
 ```cpp
@@ -156,13 +155,39 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 ## 인용
 
 ### 인용문
-<pre><code>&gt; 내용
+<pre><code>&gt; 인용할 문장  
+```cpp
+int main() {
+printf("인용문 내부에서 다른 표현도 가능하다");
+return 0;
+}
+```
 
 </code></pre>
 
-> 내용
+> 인용할 문장
+```cpp
+int main() {
+printf("인용문 내부에서 다른 표현도 가능하다");
+return 0;
+}
+```
 
-벗어나고자 할 땐 개행을 두번 해줘야 한다.
+인용문을 벗어나고자 할 땐 개행을 두번 해줘야 한다.
+
+### 각주
+```
+참조할문장 [^7].  
+
+[^7]: 참조 정보
+```
+
+참조할문장 [^7].  
+
+[^7]: 참조 정보  
+
+동일한 내용을 참조할수도 있다.  
+순서 어떤 번호를 쓰든 상관없이 해당 Post에 입력한 순번 대로 따라간다.
 
 ### 텍스트 링크
 
@@ -176,13 +201,36 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 1. 이미지 파일 복사
 2. 깃블로그의 Repository -> Issues -> New Issue 진행
 3. description 칸에 이미지 붙여넣기 후 기다리면 이미지파일이 마크다운 형식으로 변환 됨
-4. 삽입할 post에 복붙  
+4. 파일형식은 `PNG` `JPEG` `GIF` `MOV` `MP4`까지 가능하다  
+  단, 이미지 형식의 경우 파일당 10MB, 영상은 100MB까지 제한이 있다.[^5]
+5. 삽입할 post에 복붙  
 <pre><code>![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9)
-</code></pre>
+</code></pre>   
+
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9)
 
+
+
+기본값이 이미지 크기 그대로 페이지의 중앙 정렬로 되어있고 세부 조절하고싶은 부분은 `HTML`로 작업할 수 있다.  
+
+```
+<a href="https://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%82%BD%EC%9E%85">
+<img align="left" width="200" title="왼쪽정렬+너비200" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9">
+</a>
+<br clear="left"/>
+```
+
+<a href="https://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%82%BD%EC%9E%85">
+<img align="left" width="200" title="왼쪽정렬+너비200" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9">
+</a>  
+`<a href="">`  
+`<img>` `align="left"` `width=""` `title=""` `src`  
+`</a>`  
+`<br clear="left"/>`
+<br clear="left"/>
+
 ### 표 생성
-[AnyWayData](https://anywaydata.com/app#)로 통해 복잡한 표를 대신 만들어주는 사이트를 활용할 수 있다.  
+*AnyWayData* [^6] 로 통해 복잡한 표를 대신 만들어주는 사이트를 활용할 수 있다.  
 
 ```
 | 정렬방식 | 내용 |
@@ -210,7 +258,9 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 
 ## Reference
 
-[Mattcone. Markdown Guide. Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)  
-[용씨(2023.02.03). im-shung.log. 마크다운 글 색상/형광펜](https://velog.io/@im-shung/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EA%B8%80-%EC%83%89%EC%83%81%ED%98%95%EA%B4%91%ED%8E%9C)  
-[RapidTables. RapidTables. RGB color](https://www.rapidtables.com/web/color/RGB_Color.html)  
-[Alan Richardson(2022). AnyWayData. Table Editor and Data Generator](https://anywaydata.com/app.html)
+[^1]: [GitHub Docs. GitHubDocs. Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)  
+[^2]: [Mattcone. Markdown Guide. Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)  
+[^3]: [용씨(2023.02.03). im-shung.log. 마크다운 글 색상/형광펜](https://velog.io/@im-shung/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EA%B8%80-%EC%83%89%EC%83%81%ED%98%95%EA%B4%91%ED%8E%9C)  
+[^4]: [RapidTables. RapidTables. RGB color](https://www.rapidtables.com/web/color/RGB_Color.html)  
+[^5]: [Borislav Hadzhiev(2023).bobbhadz.com.How to embed a video into Github README.md(Markdown)](https://bobbyhadz.com/blog/embed-video-into-github-readme-markdown)  
+[^6]: [Alan Richardson(2022). AnyWayData. Table Editor and Data Generator](https://anywaydata.com/app.html)  
