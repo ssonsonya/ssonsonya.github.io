@@ -794,24 +794,23 @@ textarea:-ms-input-placeholder {
 
 .sidebar .meta-title {
     font-size: 19.6px;
-    width: 100%;
-    height: 40px;
-    padding: 0 100px 0;
+    padding: 80px 80px 0;
     text-decoration: none;
     color: #78ffff
 }
 
 .sidebar .meta-sublist {
     font-size: 19.6px;
-    width: 100%;
-    height: 40px;
-    padding: 20px 80px 0px;
+    padding: 10px 10px 0px;
     text-decoration: none;
     color: #aaaaaa
 }
 
-.sidebar .meta-posts {
-
+.sidebar .meta-item {
+    font-size: 19.6px;
+    padding: 10px 10px 0px;
+    text-decoration: none;
+    color: #aaaaaa
 }
 
 .main-content {

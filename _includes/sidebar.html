@@ -1,15 +1,17 @@
 <sidebar id="sidebar" class="sidebar">
 
 <div class="meta-item meta-posts">
-  <h3 class="meta-title">Agenda</h3>
-  <h2 class="meta-sublist">Portfolio</h2>
-  {% for post in site.posts %}
-    {% if post.category == Portfolio %}
-      <li>
-          <a href="{{ post.url }}">{{ post.category }}</a>
-      </li>
-      {%endif%}
-  {% endfor %}
+  <h2 class="meta-title">Agenda</h2>
+  <h3 class="meta-sublist">Portfolio</h3>
+    <div class="meta-item"> 
+      {% for post in site.posts %}
+        {% if post.category == 'portfolio' %}
+          <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {%endif%}
+      {% endfor %}
+    </div>
 </div>
 
 <div class="sidebar-nav-item"></div>
