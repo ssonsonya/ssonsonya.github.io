@@ -2,7 +2,7 @@
 layout: post
 title: GitBlog-자주 검색하는 마크다운
 date:   2023-08-09
-category: gitBlog
+category: gitblog
 thumbnail: /style/image/thumbnails/GitBlog_Markdown.png
 icon: web
 ---

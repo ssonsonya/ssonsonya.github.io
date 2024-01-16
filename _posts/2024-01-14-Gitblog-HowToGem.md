@@ -2,7 +2,7 @@
 layout: post
 title: GitBlog-Jekyll 업그레이드 적용
 date:   2024-01-14
-category: gitBlog
+category: gitblog
 thumbnail: /style/image/thumbnails/jekyll.png
 icon: web
 ---

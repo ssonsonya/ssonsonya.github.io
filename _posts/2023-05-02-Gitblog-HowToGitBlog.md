@@ -2,7 +2,7 @@
 layout: post
 title: GitBlog-깃블로그 만들기
 date:   2023-05-02
-category: gitBlog
+category: gitblog
 thumbnail: /style/image/thumbnails/Gitblog_Setup.png
 icon: web
 ---
