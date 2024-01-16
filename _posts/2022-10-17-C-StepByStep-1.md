@@ -3,10 +3,12 @@ layout: post
 title: C 기초 이론 복습 - 1
 date:   2022-10-17
 category: tutorial
+tag:
+- C
+- 강의노트
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
 ---
-
 
 * content
 {:toc}
@@ -54,6 +56,8 @@ icon: book
 ![19](https://user-images.githubusercontent.com/116151781/235865753-ced6eec5-c06e-4d6f-acce-f651d51dd9b6.png)
 ![20](https://user-images.githubusercontent.com/116151781/235865782-9eaee6b9-71ac-4acb-8756-1f7d9eb2e402.png)
 ![23](https://user-images.githubusercontent.com/116151781/235870324-1ab67fb9-ef78-455b-baf5-19a751e781f5.JPG)  
-  
+
+🏷️Tags : `C` `강의노트`
+
 ***
 학원에서 배운 내용을 복습하며 정리했습니다.
