@@ -12,25 +12,11 @@
         {%endif%}
       {% endfor %}
     </div>
-  <h3 class="meta-sublist">Leveling Up</h3>
+  <h3 class="meta-sublist">Levelling Up</h3>
     <div class="meta-item">
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     </div>
 </div>
-
-<div class="sidebar-nav-item"></div>
-  <nav class="content-ul">
-    {% for category in post.category %}
-    <a href="{{ root_url }}/{{ post.category }}#{{ category | first }}"
-       class="sidebar-nav-item pl-3rem">
-                          <span class="name">
-                              {{ category | first }}
-                          </span>
-      <span class="badge">{{ category | last | size }}</span>
-    </a>
-    {% endfor %}
-  </nav>
-
 </sidebar>
