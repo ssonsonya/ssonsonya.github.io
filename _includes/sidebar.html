@@ -1,3 +1,10 @@
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+  {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
+  {% endif %}
+{% endfor %}
+
 <sidebar id="sidebar" class="sidebar">
 
 <div class="meta-item meta-posts">
@@ -14,9 +21,19 @@
     </div>
   <h3 class="meta-sublist">Levelling Up</h3>
     <div class="meta-item">
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+      <ul class="taxonomy__index">
+        {% for i in (1..categories_max) %}
+          {% for category in site.categories %}
+            {% if category[1].size == i %}
+              <li>
+                <a href="#{{ category[0] | slugify }}">
+                  <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
     </div>
 </div>
 </sidebar>

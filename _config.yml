@@ -6,16 +6,28 @@ resume_site: https://ssonsonya.github.io
 description: 게임 프로그래머 쏘냐의 개발일지
 github_username: ssonsonya
 github: https://github.com/ssonsonya
-plugins: [jekyll-paginate]
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
 permalink: /:year-:month-:day-:title
 paginate: 12
 paginate_path: "/page/:num/"
-category:
-  type: liquid
+category_archive:
+  type: jekyll-archives
   path: /categories/
-tag:
-  type: liquid
+tag_archive:
+  type: jekyll-archives
   path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archives
+    tag: archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge

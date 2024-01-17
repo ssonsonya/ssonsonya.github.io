@@ -57,7 +57,7 @@ icon: book
 ![20](https://user-images.githubusercontent.com/116151781/235865782-9eaee6b9-71ac-4acb-8756-1f7d9eb2e402.png)
 ![23](https://user-images.githubusercontent.com/116151781/235870324-1ab67fb9-ef78-455b-baf5-19a751e781f5.JPG)  
 
-🏷️Tags : `C` `강의노트`
+🏷️Tags : `C/CPP` `강의노트`
 
 ***
 학원에서 배운 내용을 복습하며 정리했습니다.
