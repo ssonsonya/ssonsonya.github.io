@@ -45,11 +45,11 @@ html {
 
 body {
     font-family: -apple-system, SF UI Text, "IBMPlexSansKR-Regular", Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
-    line-height: 1.8;
+    line-height: 1.5;
     margin: 0 auto;
-    color: #767676;
+    color: #5c5c5c;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
