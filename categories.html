@@ -1,3 +1,29 @@
 ---
-layout: categories
+layout: default
 ---
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+{% if category[1].size > categories_max %}
+{% assign categories_max = category[1].size %}
+{% endif %}
+{% endfor %}
+
+<div class="main-content archive-page clearfix">
+    <div class="category-item">
+        <div class="post-lists">
+            <div class="post-lists-body">
+                <ul class="taxonomy_index">
+                    {% for i in (1..categories_max) %}
+                    {% for category in site.categories %}
+                    {% if category[1].size == i %}
+                    <a href="#{{ category[0] | slugify }}">
+                        <div class="category-title">{{ category[0] }} <span class="taxonomy_count">{{ i }}</span>
+                        </div></a>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
