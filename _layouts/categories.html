@@ -1,32 +1,30 @@
 ---
 layout: default
 ---
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+{% if category[1].size > categories_max %}
+{% assign categories_max = category[1].size %}
+{% endif %}
+{% endfor %}
 
-<div class="main-content index-page clearfix">
-    <div class="main-container">
-        <div class="post-container">
-            <article class="post-content">
-                {{ content }}
-            </article>
+<div class="main-content archive-page clearfix">
+    <div class="category-item">
+        <div class="post-lists">
+            <div class="post-lists-body">
+                <ul class="taxonomy_index">
+                    {% for i in (1..categories_max) %}
+                    {% for category in site.categories %}
+                    {% if category[1].size == i %}
+                    <div class="category-title"><a href="#{{ category[0] | slugify }}">
+                        {{ category[0] }} <span class="taxonomy_count">{{ i }}</span>
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
-
-    {% if paginator.total_pages > 1 %}
-    <div class="lists-navigator clearfix">
-        <ol class="page-navigator">
-            {% if paginator.previous_page %}
-            <li class="prev"><a href="{{ paginator.previous_page_path | relative_url }}">←</a></li>
-            {% endif %}
-            {% for page in (1..paginator.total_pages) %}
-            <li {% if page==paginator.page %} class="current" {% endif %}>
-                <a href="{% if page == 1 %}{{  '/' | prepend: site.baseurl }}{% else %}{{ site.paginate_path | relative_url | replace: ':num', page }}{% endif %}">{{
-                    page }}</a>
-            </li>
-            {% endfor %}
-            {% if paginator.next_page %}
-            <li class="next"><a href="{{ paginator.next_page_path | relative_url }}">→</a></li>
-            {% endif %}
-        </ol>
-    </div>
-    {% endif %}
 </div>
