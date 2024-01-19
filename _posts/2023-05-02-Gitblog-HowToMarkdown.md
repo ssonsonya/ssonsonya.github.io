@@ -152,6 +152,8 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 <pre><code>내용
 </code></pre>
 
+코드블럭 내에 있는 문자가 코드로 읽혀질 경우 escape character를 활용해야 한다 [^5].
+
 ## 인용
 
 ### 인용문
@@ -182,9 +184,9 @@ return 0;
 [^7]: 참조 정보
 ```
 
-참조할문장 [^7].  
+참조할문장 [^8].  
 
-[^7]: 참조 정보  
+[^8]: 참조 정보  
 
 동일한 내용을 참조할수도 있다.  
 순서 어떤 번호를 쓰든 상관없이 해당 Post에 입력한 순번 대로 따라간다.
@@ -202,7 +204,7 @@ return 0;
 2. 깃블로그의 Repository -> Issues -> New Issue 진행
 3. description 칸에 이미지 붙여넣기 후 기다리면 이미지파일이 마크다운 형식으로 변환 됨
 4. 파일형식은 `PNG` `JPEG` `GIF` `MOV` `MP4`까지 가능하다  
-  단, 이미지 형식의 경우 파일당 10MB, 영상은 100MB까지 제한이 있다.[^5]
+  단, 이미지 형식의 경우 파일당 10MB, 영상은 100MB까지 제한이 있다.[^6]
 5. 삽입할 post에 복붙  
 <pre><code>![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9)
 </code></pre>   
@@ -230,7 +232,7 @@ return 0;
 <br clear="left"/>
 
 ### 표 생성
-*AnyWayData* [^6] 로 통해 복잡한 표를 대신 만들어주는 사이트를 활용할 수 있다.  
+*AnyWayData* [^7] 로 통해 복잡한 표를 대신 만들어주는 사이트를 활용할 수 있다.  
 
 ```
 | 정렬방식 | 내용 |
@@ -262,5 +264,6 @@ return 0;
 [^2]: [Mattcone. Markdown Guide. Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)  
 [^3]: [용씨(2023.02.03). im-shung.log. 마크다운 글 색상/형광펜](https://velog.io/@im-shung/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EA%B8%80-%EC%83%89%EC%83%81%ED%98%95%EA%B4%91%ED%8E%9C)  
 [^4]: [RapidTables. RapidTables. RGB color](https://www.rapidtables.com/web/color/RGB_Color.html)  
-[^5]: [Borislav Hadzhiev(2023).bobbhadz.com.How to embed a video into Github README.md(Markdown)](https://bobbyhadz.com/blog/embed-video-into-github-readme-markdown)  
-[^6]: [Alan Richardson(2022). AnyWayData. Table Editor and Data Generator](https://anywaydata.com/app.html)  
+[^5]: [Ma Teams. Ma Teams. HTML escape characters: complete list of HTML entities](https://mateam.net/html-escape-characters/)  
+[^6]: [Borislav Hadzhiev(2023).bobbhadz.com.How to embed a video into Github README.md(Markdown)](https://bobbyhadz.com/blog/embed-video-into-github-readme-markdown)  
+[^7]: [Alan Richardson(2022). AnyWayData. Table Editor and Data Generator](https://anywaydata.com/app.html)  
