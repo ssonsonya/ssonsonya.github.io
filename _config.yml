@@ -12,6 +12,12 @@ plugins:
 permalink: /:year-:month-:day-:title
 paginate: 12
 paginate_path: "/page/:num/"
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
 jekyll-archives:
   enabled:
     - categories
