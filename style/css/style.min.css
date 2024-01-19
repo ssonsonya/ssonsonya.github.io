@@ -827,7 +827,7 @@ textarea:-ms-input-placeholder {
 }
 
 .index-page .post-list-item-container .item-label {
-    padding: 10px 20px 40px
+    padding: 10px 20px 0
 }
 
 .post-lists {
@@ -843,7 +843,9 @@ textarea:-ms-input-placeholder {
 .post-list-item {
     float: left;
     width: 33.3333%;
+    max-width: 300px;
     height: auto;
+    max-height: 300px;
     padding: 15px;
     align-items: center
 }
@@ -852,7 +854,8 @@ textarea:-ms-input-placeholder {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 300px;
+    height: auto;
+    max-height: 285px;
     padding: 0;
     border-radius: 3px;
     background-color: #313131;
@@ -881,7 +884,7 @@ textarea:-ms-input-placeholder {
     top: 0;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 80%;
     padding: 40px 28px
 }
 
@@ -914,6 +917,16 @@ textarea:-ms-input-placeholder {
     opacity: 1
 }
 
+.post-list-item-container .item-slant.reverse-slant {
+    -webkit-transform: rotate(-10deg) translate(10px, -10px);
+    -ms-transform: rotate(-10deg) translate(10px, -10px);
+    transform: rotate(-10deg) translate(10px, -10px);
+    opacity: .7;
+    background-color: #f68e5f;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
 .post-list-item-container .item-slant {
     position: absolute;
     z-index: 0;
@@ -928,21 +941,17 @@ textarea:-ms-input-placeholder {
     background-color: #fff
 }
 
-.post-list-item-container .item-slant.reverse-slant {
-    -webkit-transform: rotate(-10deg) translate(10px, -10px);
-    -ms-transform: rotate(-10deg) translate(10px, -10px);
-    transform: rotate(-10deg) translate(10px, -10px);
-    opacity: .7;
-    background-color: #f68e5f;
-    -webkit-box-shadow: none;
-    box-shadow: none
+.post-list-item-container .item-label_noThumb {
+    position: relative;
+    height: 50px;
+    padding: 8px 25px;
+    background-color: #fff
 }
 
 .post-list-item-container .item-label {
     position: relative;
-    height: 130px;
-    padding: 25px 20px 40px;
-    transform: translate(0, -80px);
+    height: 110px;
+    transform: translate(0, -70px);
     background-color: #fff
 }
 
@@ -2386,7 +2395,7 @@ textarea:-ms-input-placeholder {
 
     .post-list-item {
         width: 100%;
-        padding: 10px 20px
+        padding: 20px 20px 20px
     }
 
     .post-list-item:first-child {
