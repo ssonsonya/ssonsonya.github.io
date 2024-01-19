@@ -21,14 +21,14 @@
   </div>
   <h3 class="meta-sublist">Levelling Up</h3>
   <div class="meta-item">
-    <ul class="taxonomy__index">
+    <div class="taxonomy__index">
       {% for category in site.categories %}
       <li>
         <a href="#{{ category[0] | slugify }}">
           <strong>{{ category[0] }}</strong></a>
       </li>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 </div>
 </sidebar>

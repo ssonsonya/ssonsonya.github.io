@@ -139,14 +139,14 @@ layout: default
 <pre>
 <code>&lt;h3 class="meta-sublist">Levelling Up</h3>
   &lt;div class="meta-item">
-    &lt;ul class="taxonomy__index">
+    &lt;div class="taxonomy__index">
       &#123;% for category in site.categories %&#125;
       &lt;li>
         &lt;a href="#&#123;&#123; category[0] | slugify &#125;&#125;">
           &lt;strong>&#123;&#123; category[0] &#125;&#125;</strong></a>
       &lt;/li>
       &#123;% endfor %&#125;
-    &lt;/ul>
+    &lt;/div>
   &lt;/div>
 </code>
 </pre>
