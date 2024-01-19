@@ -95,12 +95,11 @@ jekyll-archives:
 최대한 이해한 내용으로 정리하면 이렇다  
 ![2](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/1e4e45c9-8b7c-4c6d-9701-dc5984d962d0)
 
-### archives
-
-
 ### layouts
 
+모든 카테고리들을 모아놓은 페이지를 `categories.html`에, 태그는 `tags.html`에 정의한 포멧으로 만든다.  
 `Minimal-mistake`에 적용된 양식을 참고했다 [^4]  
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/3802a40a-b088-45fe-aefc-94127038ecd9)
 
 <pre>
 <code>---
@@ -131,10 +130,47 @@ layout: default
 </code>
 </pre>
 
-### 결과
-![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/3802a40a-b088-45fe-aefc-94127038ecd9)
+### archives
+
+하나의 카테고리 또는 태그와 연관된 post들을 모아놓은 조회 페이지 양식을 `archives.html`에 정의해준다  
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/eca0f2db-f349-4a66-9a13-18d54bc22bf5)
+
+<pre>
+<code>---
+layout: default
+---
+
+&lt;div class="main-content archive-page clearfix">
+    &lt;div class="category-item">
+        &lt;div class="post-lists">
+            &lt;div class="post-lists-body">
+                &lt;div class="category-title">&#123;&#123; page.title &#125;&#125;</div>
+                &#123;% for post in site.posts %&#125;
+                &#123;% capture this_category %&#125;&#123;&#123; post.category &#125;&#125;&#123;% endcapture %&#125;
+                &#123;% if this_category == page.title %&#125;
+                &lt;div class="post-list-item">
+                    &lt;div class="post-list-item-container">
+                        &lt;div class="item-label_noThumb">
+                            &lt;div class="item-title">&lt;a href="&#123;&#123; post.url &#125;&#125;">&#123;&#123; post.title &#125;&#125;&lt;/a>&lt;/div>
+                            &lt;div class="item-meta clearfix">
+                                &lt;div class="item-meta-date"> &#123;&#123; post.date | date: "%b %d, %Y" &#125;&#125; &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &#123;% endif %&#125;
+                &#123;% endfor %&#125;
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code>
+</pre>
 
 ## sidebar에 활용
+
+<img align="left" width = "300" title="VSCode-Explorer_site" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/7f7bb127-49d7-484b-b86d-d472ec805838">
+<br clear="left"/>
 
 <pre>
 <code>&lt;h3 class="meta-sublist">Levelling Up</h3>
@@ -142,16 +178,14 @@ layout: default
     &lt;div class="taxonomy__index">
       &#123;% for category in site.categories %&#125;
       &lt;li>
-        &lt;a href="#&#123;&#123; category[0] | slugify &#125;&#125;">
-          &lt;strong>&#123;&#123; category[0] &#125;&#125;</strong></a>
+        &lt;a href="categories/&#123;&#123; category[0] &#125;&#125;">
+        &lt;strong>&#123;&#123; category[0] &#125;&#125;</strong></a>
       &lt;/li>
       &#123;% endfor %&#125;
     &lt;/div>
   &lt;/div>
 </code>
 </pre>
-<img align="left" width = "300" title="VSCode-Explorer_site" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/7f7bb127-49d7-484b-b86d-d472ec805838">
-<br clear="left"/>
 
 ---
 
