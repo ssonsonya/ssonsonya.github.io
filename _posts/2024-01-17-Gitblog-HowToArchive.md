@@ -18,7 +18,7 @@ icon: web
 
 블로그 열람의 편의성을 위해 `jekyll-archives` 플러그인을 설치해 카테고리와 태그 조회 페이지를 만들었다.  
 
-![1](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/534a4c61-020c-42f9-9c30-89ddf8aaaa53)
+![1](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/98f494dc-a1de-4ed3-8e06-a0023b24089a)
 
 > 사용하는 Theme에 구현되어있는 플러그인에 따라 다르지만,
 카테고리나 태그로 모아보는 페이지를 관리하고자 할 땐 `jekyll-archives` 라는 플러그인을 설치해야 한다 [^1].  
@@ -70,13 +70,6 @@ plugins:
 ```
 
 ```yml
-category_archive:
-  type: jekyll-archives
-  path: /categories/
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
-
 jekyll-archives:
   enabled:                                # 구성할 아카이브 항목 - 연도, 월, 일자로도 구분할 수 있음
     - categories
@@ -100,17 +93,65 @@ jekyll-archives:
 ## layouts
 
 최대한 이해한 내용으로 정리하면 이렇다  
-![2](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/0059f7a6-ae6e-4fb9-b5d2-834011471a98)
+![2](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/1e4e45c9-8b7c-4c6d-9701-dc5984d962d0)
 
 ### archives
 
+
 ### layouts
 
+`Minimal-mistake`에 적용된 양식을 참고했다 [^4]  
+
+<pre>
+<code>---
+layout: default
+---
+&#123;% assign categories_max = 0 %&#125;
+&#123;% for category in site.categories %&#125;
+&#123;% if category[1].size > categories_max %&#125;
+&#123;% assign categories_max = category[1].size %&#125;
+&#123;% endif %&#125;
+&#123;% endfor %&#125;
+
+&lt;div class="main-content archive-page clearfix">
+    &lt;div class="category-item">
+        &lt;div class="post-lists">
+            &lt;div class="post-lists-body">
+                &lt;ul class="taxonomy_index">
+                    &#123;% for category in site.categories %&#125;
+                    &lt;a href="#&#123;&#123; category[0] | slugify &#125;&#125;">
+                        &lt;div class="category-title">&#123;&#123; category[0] &#125;&#125;
+                        &lt;/div>&lt;/a>
+                    &#123;% endfor %&#125;
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code>
+</pre>
+
 ### 결과
-![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/4c91187d-977a-4e23-93d9-cb02008a5082)  
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/3802a40a-b088-45fe-aefc-94127038ecd9)
 
 ## sidebar에 활용
 
+<pre>
+<code>&lt;h3 class="meta-sublist">Levelling Up</h3>
+  &lt;div class="meta-item">
+    &lt;ul class="taxonomy__index">
+      &#123;% for category in site.categories %&#125;
+      &lt;li>
+        &lt;a href="#&#123;&#123; category[0] | slugify &#125;&#125;">
+          &lt;strong>&#123;&#123; category[0] &#125;&#125;</strong></a>
+      &lt;/li>
+      &#123;% endfor %&#125;
+    &lt;/ul>
+  &lt;/div>
+</code>
+</pre>
+<img align="left" width = "300" title="VSCode-Explorer_site" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/7f7bb127-49d7-484b-b86d-d472ec805838">
+<br clear="left"/>
 
 ---
 
@@ -119,3 +160,4 @@ jekyll-archives:
 [^1]: [Jekyll. Docs Deployment.Your first plugin](https://jekyllrb.com/docs/plugins/your-first-plugin/)  
 [^2]: [Jekyll. Jekyll-archives. README.md](https://github.com/jekyll/jekyll-archives)  
 [^3]: [Michael Rose. Minimal Mistakes. Configuration](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#archive-settings)  
+[^4]: [Michael Rose. GitHub. Minimal-mistakes/_layouts/categories](https://github.com/mmistakes/minimal-mistakes/blob/master/_layouts/categories.html)
