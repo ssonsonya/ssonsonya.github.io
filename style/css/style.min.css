@@ -1425,17 +1425,17 @@ textarea:-ms-input-placeholder {
     clear: both;
 }
 
-.archive-page .category-title a {
-    color: #767676
-}
-
 .archive-page .category-title::before {
     position: absolute;
     top: 0;
     left: -15px;
-    padding: 0 30px;
+    padding: 0 0 0 30px;
     content: '#';
     color: #eb5055
+}
+
+.archive-page .category-title a {
+    color: #00ffea;
 }
 
 .archive-page .post-list-item-container {
