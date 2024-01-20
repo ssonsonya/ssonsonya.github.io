@@ -9,7 +9,7 @@ github: https://github.com/ssonsonya
 plugins: 
   - jekyll-paginate
   - jekyll-archives
-permalink: pretty
+permalink: /:year-:month-:day-:title
 paginate: 12
 paginate_path: "/page/:num/"
 categories:
