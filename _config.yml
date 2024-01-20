@@ -13,10 +13,10 @@ permalink: /:year-:month-:day-:title
 paginate: 12
 paginate_path: "/page/:num/"
 categories:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tags:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 jekyll-archives:
   enabled:
