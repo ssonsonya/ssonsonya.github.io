@@ -15,9 +15,8 @@ layout: default
             {% for i in (1..categories_max) %}
             {% for category in site.categories %}
             {% if category[1].size == i %}
-            <div class="category-title">
-                #[{{ category[0]}}<span class="taxonomy_count">{{ i }}</span>]({% link #{{ category[0]}}/index.html %})
-                </a>
+            <div class="category-title"><a href="#{{ {{ category[0] }} | prepend: site.baseurl }}">{{ category[0] }} | <span class="taxonomy_count">{{ i }}</span>
+            </a>
             </div>
             {% endif %}
             {% endfor %}
