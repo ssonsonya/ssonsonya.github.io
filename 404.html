@@ -17,7 +17,7 @@ layout: default
 	function delayURL(url) {
 		var delay = document.getElementById("404Time").innerHTML;
 		if(delay > 0) {
-			delay;
+			delay--;
 			document.getElementById("404Time").innerHTML = delay;
 		} else {
 			window.top.location.href = url;
