@@ -16,12 +16,10 @@ jekyll-archives:
   enabled:
     - categories
     - tags
-  layouts:
-    category: archives
-    tag: archives
+  layouts: archive
   permalinks:
-    category: "/categories/:name/"
-    tag: "/tags/:name/"
+    category: /categories/:name/
+    tag: /tags/:name/
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
