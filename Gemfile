@@ -36,3 +36,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
 gem 'faraday', '~> 2.7', '>= 2.7.11'
+gem 'faraday-retry', '~> 2.2.0'
