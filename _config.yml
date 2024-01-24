@@ -14,10 +14,10 @@ paginate: 12
 paginate_path: "/page/:num/"
 categories:
   type: jekyll-archives
-  path: /categories/:name/
+  path: "/categories/:name/"
 tags:
   type: jekyll-archives
-  path: /tags/:name/
+  path: "/tags/:name/"
 jekyll-archives:
   enabled:
     - categories
