@@ -26,8 +26,8 @@ jekyll-archives:
     category: archives
     tag: archives
   permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+    category: /categories/:title/
+    tag: /tags/:title/
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
