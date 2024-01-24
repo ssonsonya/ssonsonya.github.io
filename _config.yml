@@ -12,12 +12,6 @@ plugins:
 permalink: /:year-:month-:day-:title
 paginate: 12
 paginate_path: "/page/:num/"
-categories:
-  type: jekyll-archives
-  path: "/categories/:name/"
-tags:
-  type: jekyll-archives
-  path: "/tags/:name/"
 jekyll-archives:
   enabled:
     - categories
@@ -26,8 +20,8 @@ jekyll-archives:
     category: archives
     tag: archives
   permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+    category: "/categories/:name/"
+    tag: "/tags/:name/"
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
