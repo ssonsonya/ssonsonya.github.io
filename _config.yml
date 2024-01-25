@@ -6,22 +6,34 @@ resume_site: https://ssonsonya.github.io
 description: 게임 프로그래머 쏘냐의 개발일지
 github_username: ssonsonya
 github: https://github.com/ssonsonya
+
+# Permalinks
+permalink: /:year-:month-:day-:title
+
+# Plugins
 plugins: 
   - jekyll-paginate
   - jekyll-archives
-permalink: /:year-:month-:day-:title
+
+# Paginator
 paginate: 12
 paginate_path: "/page/:num/"
+
+# Archives
 jekyll-archives:
-  enabled: all
+  enabled:
+   - categories
+   - tags
   layouts: archive
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+  permalink: 
+    category: "/category/:name/"
+    tag: "/tag/:name/"
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
 markdown: kramdown
+
+# Gitalk Comments
 comments :
   gitalk :
     clientID : d7b73a64cd5bc7920119
