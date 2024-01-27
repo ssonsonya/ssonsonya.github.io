@@ -27,12 +27,16 @@ layout: default
                             <div class="item-meta-ico {% if post.icon %}bg-ico-{{ post.icon }}{% endif %}"
                                 style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;">
                             </div>
-                            <div class="item-meta-cat"><a href="{{ category.url | prepend: site.baseurl }}">
-                                {% if post.category[0] %}
-                                   {{ post.category[0] }} </a>
-                                {% else %}
-                                    {{ post.category }} </a>
-                                {% endif %}
+                            
+                            {% if post.category[0] %}
+                            {% assign cat = post.category[0] %}
+                            {% assign caturl = post.category[1] | split: "p-" %}
+                            {% else %}
+                            {% assign cat = post.category %}
+                            {% assign caturl = post.category | prepend: "category/" %}
+                            {% endif %}
+                            <div class="item-meta-cat"><a href="https://ssonsonya.github.io/{{ caturl }}">
+                                {{ cat }}</a>
                             </div>
                         </div>
                     </div>

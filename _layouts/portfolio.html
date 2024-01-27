@@ -10,7 +10,7 @@ layout: default
     <div class="post-lists">
         <div class="post-lists-body">
             {% for post in site.posts %}
-                {% if post.category == page.type %}
+                {% if post.category[1] == page.type %}
                 <div class="post-list-item">
                     <div class="post-list-item-container">
                         <div class="item-thumb bg-deepgrey"
