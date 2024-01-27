@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% assign sortedtags = site.tags | sort %}
+
+<div class="main-content archive-page clearfix">
+    <div class="category-item">
+        <div class="post-lists">
+            {% for tag in sortedtags %}
+            <div class="category-title"><a href="https://ssonsonya.github.io/tag/{{ tag[0] }}">
+                {{ tag[0] }}</a></div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
