@@ -2,25 +2,17 @@
 layout: default
 ---
 
-{% assign categories_max = 0 %}
-{% for category in site.categories %}
-  {% if category[1].size > categories_max %}
-    {% assign categories_max = category[1].size %}
-  {% endif %}
-{% endfor %}
+{% assign sortedcats = site.categories | sort %}
 
 <div class="main-content archive-page clearfix">
     <div class="category-item">
         <div class="post-lists">
-            {% for i in (1..categories_max) %}
-            {% for category in site.categories %}
-            {% if category[1].size == i %}
+            {% for category in sortedcats %}
+            {% assign i = category[1].size %}
             <div class="category-title"><a href="https://ssonsonya.github.io/category/{{ category[0] }}">
                 {{ category[0] }} _<span class="taxonomy_count">{{ i }}</span>
             </a>
-        </div>
-            {% endif %}
-            {% endfor %}
+            </div>
             {% endfor %}
         </div>
     </div>
