@@ -1,20 +1,24 @@
 <sidebar id="sidebar" class="sidebar">
 
-<div class="meta-item meta-posts">
-  <h2 class="meta-title">Agenda</h2>
-  <h3 class="meta-sublist">Portfolio</h3>
-  <div class="meta-item">
-    {% for post in site.posts %}
-    {% if post.category == 'portfolio' %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {%endif%}
-    {% endfor %}
-  </div>
-  <h3 class="meta-sublist">Levelling Up</h3>
-  <div class="meta-item">
-    <div class="taxonomy__index">
+  <div class="meta-item meta-posts">
+    <h2 class="meta-title">Agenda</h2>
+    <h3 class="meta-sublist">Portfolio</h3>
+    <div class="meta-item">
+      <li>
+        <a href="https://ssonsonya.github.io/tag/UE4">
+          UnrealEngine 4</a>
+      </li>
+      <li>
+        <a href="https://ssonsonya.github.io/tag/DX3D">
+          DirectX11 3D</a>
+      </li>
+      <li>
+        <a href="https://ssonsonya.github.io/tag/DX2D">
+          DirectX11 2D</a>
+      </li>
+    </div>
+    <h3 class="meta-sublist">Levelling Up</h3>
+    <div class="meta-item">
       {% for category in site.categories %}
       <li>
         <a href="https://ssonsonya.github.io/category/{{ category[0] }}">
@@ -23,5 +27,4 @@
       {% endfor %}
     </div>
   </div>
-</div>
 </sidebar>
