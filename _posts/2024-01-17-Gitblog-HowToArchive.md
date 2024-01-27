@@ -23,8 +23,8 @@ icon: web
 > 사용하는 Theme에 구현되어있는 플러그인에 따라 다르지만,
 Post의 `FrontMatter`에 입력한 카테고리나 태그들을 관리하고자 할 땐 `jekyll-archives` 라는 플러그인을 활용할 수 있다 [^1].  
 
-단, 아카이브 페이지의 자동생성은 `Jekyll` 블로그에서 가능하지만 GitHub Pages에선 지원되지 않아 매뉴얼로 각 페이지의 md파일을 생성해줘야 한다.
-플러그인 없이 카테고리&태그 관리 페이지를 생성 할 수 있는 방법도 있지만 [^2] 우선 구조적인 부분에 익숙해지고자 플러그인을 활용했다.
+단, 아카이브 페이지의 자동생성은 `Jekyll` 블로그에서 가능하지만 GitHub Pages에선 지원되지 않아 <span style="background-color:#ccccff">매뉴얼로 각 페이지의 md파일을 생성해줘야 한다.</span>
+플러그인 없이 카테고리&태그 관리 페이지를 생성 할 수 있는 방법도 있지만 [^2] <span style="background-color:#ccccff">구조적인 부분에 우선 익숙해지고자 플러그인을 활용했다.</span>
 
 ---
 
@@ -93,7 +93,7 @@ jekyll-archives:
 
 최대한 이해한 내용으로 정리하면 이렇다  
 ![2](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/62f8d934-7b7e-48d2-9866-66e416a71be0)  
-정의한 명칭들 `categories` `tags` `archive` `category` `tag` 에 주의하며 Config와 통일된 이름으로 파일구조를 만들어야 제대로 작동한다
+정의한 명칭들 `categories` `tags` `archive` `category` `tag` 에 주의하며 <span style="background-color:#ccccff">Config와 통일된 이름으로 파일구조를 만들어야 제대로 작동한다</span>
 
 ### archive.html
 
@@ -138,7 +138,9 @@ layout: default
 <img align="left" width = "250" title="_site_categories" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/be2a4797-0011-450e-8238-1dff75ab3e4a">
 <br clear="left"/>
 
-`Jekyll`블로그에선 마크다운 파일 없이도 자동으로 생성된 index.html에 archive레이아웃이 적용되어 생성되지만 GitHub Pages에선 지원되지 않아 매뉴얼로 만들어줘야 한다.
+`Jekyll`블로그에선 마크다운 파일 없이도 자동으로 생성된 index.html에 archive레이아웃이 적용되어 생성된다.  
+<span style="background-color:#ffffcc">*- localhost로 페이지를 랜더링 하면 추가작업 없이 페이지가 생성되는 모습을 볼 수 있다*</span>  
+하지만 GitHub Pages에선 이런 기능이 지원되지 않기 때문에 매뉴얼로 만들어줘야 한다.  
 앞으로의 포스트에 입력할 카테고리와 태그들이 커밋과 동시에 자동으로 마크다운 파일을 생성해주는 Action 기능이 있는 것 같지만 우선 Archive구조에 집중해보기로 했다
 
 마크다운 파일명은 `_site`에 자동생성된 각 카테고리, 태그들의 이름과 일치해야 하고
