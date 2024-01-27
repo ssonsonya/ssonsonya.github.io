@@ -5,25 +5,33 @@
     <h3 class="meta-sublist">Portfolio</h3>
     <div class="meta-item">
       <li>
-        <a href="https://ssonsonya.github.io/tag/UE4">
+        <a href="https://ssonsonya.github.io/UE4">
           UnrealEngine 4</a>
       </li>
       <li>
-        <a href="https://ssonsonya.github.io/tag/DX3D">
+        <a href="https://ssonsonya.github.io/DX3D">
           DirectX11 3D</a>
       </li>
       <li>
-        <a href="https://ssonsonya.github.io/tag/DX2D">
+        <a href="https://ssonsonya.github.io/DX2D">
           DirectX11 2D</a>
       </li>
     </div>
     <h3 class="meta-sublist">Levelling Up</h3>
     <div class="meta-item">
       {% for category in site.categories %}
-      <li>
-        <a href="https://ssonsonya.github.io/category/{{ category[0] }}">
-          <strong>{{ category[0] }}</strong></a>
-      </li>
+        {% if category[0] contains 'p-' %}
+          {% continue %}
+        {% else %}
+          {% if category[0] contains 'portfolio' %}
+            {% continue %}
+          {% else %}
+          <li>
+           <a href="https://ssonsonya.github.io/category/{{ category[0] }}">
+           <strong>{{ category[0] }}</strong></a>
+          </li>
+          {% endif %}
+        {% endif %}
       {% endfor %}
     </div>
   </div>

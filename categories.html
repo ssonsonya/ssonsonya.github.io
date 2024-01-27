@@ -8,11 +8,15 @@ layout: default
     <div class="category-item">
         <div class="post-lists">
             {% for category in sortedcats %}
-            {% assign i = category[1].size %}
-            <div class="category-title"><a href="https://ssonsonya.github.io/category/{{ category[0] }}">
+            {% if category[0] contains 'p-' %}
+                {% continue %}
+            {% else %}
+                {% assign i = category[1].size %}
+                <div class="category-title"><a href="https://ssonsonya.github.io/category/{{ category[0] }}">
                 {{ category[0] }} _<span class="taxonomy_count">{{ i }}</span>
-            </a>
-            </div>
+                </a>
+                </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>

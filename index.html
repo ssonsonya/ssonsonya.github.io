@@ -27,8 +27,12 @@ layout: default
                             <div class="item-meta-ico {% if post.icon %}bg-ico-{{ post.icon }}{% endif %}"
                                 style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;">
                             </div>
-                            <div class="item-meta-cat"><a href="{{ category.url | prepend: site.baseurl }}">{{
-                                    post.category }}</a>
+                            <div class="item-meta-cat"><a href="{{ category.url | prepend: site.baseurl }}">
+                                {% if post.category[0] %}
+                                   {{ post.category[0] }} </a>
+                                {% else %}
+                                    {{ post.category }} </a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

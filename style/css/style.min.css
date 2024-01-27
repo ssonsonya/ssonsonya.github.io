@@ -826,6 +826,12 @@ textarea:-ms-input-placeholder {
     padding: 120px 20px 0
 }
 
+.index-page .portfolio {
+    width: auto;
+    height: 500px;
+    padding: 20px 20px 20px
+}
+
 .index-page .post-list-item-container .item-label {
     padding: 10px 20px 0
 }
@@ -2187,7 +2193,7 @@ textarea:-ms-input-placeholder {
     }
 
     .archive-page {
-        padding: 80px 0 20px
+        padding: 80px 0 0px
     }
 
     .common-page {

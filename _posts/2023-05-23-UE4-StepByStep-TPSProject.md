@@ -3,7 +3,6 @@ layout: post
 title: UE C++ 맛보기 - TPSProject
 date:   2023-05-23
 category: tutorial
-tag: ue4-p
 thumbnail: /style/image/thumbnail.png
 icon: book
 ---
