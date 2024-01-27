@@ -1,15 +1,32 @@
 ---
 layout: default
 ---
-
 {% assign sortedtags = site.tags | sort %}
 
 <div class="main-content archive-page clearfix">
     <div class="category-item">
         <div class="post-lists">
             {% for tag in sortedtags %}
-            <div class="category-title"><a href="https://ssonsonya.github.io/tag/{{ tag[0] }}">
-                {{ tag[0] }}</a></div>
+            {% assign i = tag[1].size %}
+            <details>
+                <summary>
+                    <div class="category-title">{{ tag[0] }}_ {{ i }}</div>
+                </summary>
+                {% for post in site.posts %}
+                {% if post.tag contains tag[0] %}
+                <div class="post-list-item">
+                    <div class="post-list-item-container">
+                        <div class="item-label_noThumb">
+                            <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                            <div class="item-meta clearfix">
+                                <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </details>
             {% endfor %}
         </div>
     </div>
