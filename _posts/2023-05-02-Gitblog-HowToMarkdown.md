@@ -13,7 +13,7 @@ icon: web
 ## 마크다운 기본
 
 *GitHub Docs - Writing on GitHub* [^1] 과 
-*Markdown Guid - Cheat Sheet* [^2] 에서 기본적인 문법구조를 참고했다.  
+*Markdown Guide - Cheat Sheet* [^2] 에서 기본적인 문법구조를 참고했다.  
 다양한 서식을 사용하고 싶을 땐 HTML을 병행하는 방식이 좋다.
 <pre><code>기본적인 텍스트는 입력한 그대로 보여진다.
 </code></pre>
