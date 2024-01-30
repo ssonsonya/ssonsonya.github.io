@@ -10,7 +10,7 @@ tag:
  - Boss
  - BehaviorTree
  - EnemyAI
-thumbnail: /style/image/portfolio_thumbnails/UE4/Test.png
+thumbnail: /style/image/portfolio_thumbnails/Draft.png
 icon: game
 ---
 
@@ -19,9 +19,9 @@ icon: game
 
 ## 요약
 
-## 
+## Behavior Tree
 
-## 
+## Targeting
 
 ## 
 

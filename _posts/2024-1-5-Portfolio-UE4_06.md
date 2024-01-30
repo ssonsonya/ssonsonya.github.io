@@ -8,7 +8,7 @@ category:
 tag:
  - UnrealEngine
  - Cinematic
-thumbnail: /style/image/portfolio_thumbnails/UE4/Test.png
+thumbnail: /style/image/portfolio_thumbnails/Draft.png
 icon: game
 ---
 
