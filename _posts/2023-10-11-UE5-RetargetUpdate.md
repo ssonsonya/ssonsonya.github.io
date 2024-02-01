@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UE5 리타깃 어떻게 달라졌을까
+title: UE5 ↔ UE4 리타깃 어떻게 달라졌을까
 date: 2023-10-11
 category: 
  - in-depth
@@ -16,4 +16,4 @@ icon: idea
 * content
 {:toc}
 
-## 요약
+## 요약 
