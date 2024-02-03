@@ -7,18 +7,19 @@ tag:
   - GitHubPages
   - Iconfont
   - Fontello
-thumbnail: /style/image/thumbnails.png
+thumbnail: /style/image/thumbnails/iconfont.png
 icon: web
 ---
+
+footer에 이력서 링크도 추가하고 싶어 드디어 나도 iconfont를 만져보는 기회를 갖게 되었다
 
 * content
 {:toc}
 
-footer에 이력서 링크도 추가하고 싶어 드디어 나도 iconfont를 만져보는 기회를 갖게 되었다
-
 ## Icon Font
 
 > [Icon Font(아이콘폰트)란 문자형식이 아닌 아이콘 그래픽형식의 표기(glyph)단위를 가진 폰트를 말한다](https://fonts.google.com/knowledge/glossary/icon_font) [^1]  
+
 영문이면 알파벳, 한글은 글자 단위 또는 숫자나 기호를 하나의 단위로 가지는 것과 같이 icon font는 아이콘 이미지를 글자단위로 표기할 수 있다.  
 흔히 사용되는 부호에는 없는 모양이면서, 이모티콘과 달리 색상, 크기 등 커스터마이징이 가능한 벡터파일로 `CSS`에 호환이 되어 활용도가 높다고 한다.  
 
@@ -75,7 +76,7 @@ Please, note, that fontello is non-commercial project. It is intentional choice 
 ---
 
 ## Apply
-`zip`파일에 포함되어있는 `README.txt`파일을 읽어보면 어떻게 적용할 수 있는지 상세히 나와있다
+`zip`파일에 포함되어있는 `README.txt`파일을 읽어보면 어떻게 적용할 수 있는지 상세히 나와있다  
 
 ### 라이센스
 
@@ -83,7 +84,7 @@ Please, note, that fontello is non-commercial project. It is intentional choice 
 - If your project is open-source, usually, it will be ok to make LICENSE.txt
   file publicly available in your repository.
 ```
-GitHub Pages로 Repository를 Public으로 해두어 오픈소스인 깃블로그라 LICENSE.txt파일을 추가해주기만 해도 라이센스가 적용된다  
+GitHub Pages로 Repository를 Public으로 해두어 오픈소스인 깃블로그라 LICENSE.txt파일 추가로 충분하다  
 
 ### 사용
 
@@ -91,8 +92,8 @@ GitHub Pages로 Repository를 Public으로 해두어 오픈소스인 깃블로�
 - basic file, <your_font_name>.css - is usually enough, it contains @font-face
   and character code definitions
 ```
-이미 `@font-face`로 `CSS`에 적용될 수 있도록 파일이 구성되어있으므로 파일명만 원하는 이름으로 바꿔주면 된다
-기존에 있던 iconfont로 파일명과 내용중 파일경로, 파일명이 명시된 내용을 바꿔주었다
+이미 `@font-face`로 `CSS`에 적용될 수 있도록 파일이 구성되어있으므로 파일명만 원하는 이름으로 바꿔주면 된다  
+기존에 있던 iconfont로 파일명과 내용중 파일경로, 파일명이 명시된 내용을 바꿔주었다  
 
 ```css
 @font-face {
@@ -159,10 +160,14 @@ GitHub Pages로 Repository를 Public으로 해두어 오픈소스인 깃블로�
 
 이제 블로그내에서 `class='iconfont [아이콘명(ex. icon-home)]`을 통해 iconfont를 사용할 수 있다
 
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/82c0f4f5-ac63-4bed-95cc-f58f6d6f4bfd)
+
+
 ---
 
 ## 생각정리
-- 아이콘 하나를 추가하고 싶지만 폰트파일을 전부 바꿔줘야해서 기존 icon font도 다시 받아야 하는 부분이 비효율적이었던 것 같다
+- 아이콘 하나를 추가하고 싶지만 폰트파일을 전부 바꿔줘야해서 기존 icon font도 다시 받아야 하는 부분이 비효율적이었던 것 같다  
+
 하지만 윈도우에 기본적으로 제공되는 기호나 이모티콘보다 직관적인 아이콘을 어떠한 변형에도 깨지지 않는 글자처럼 활용이 가능한 폰트를 이해할 수 있었던 좋은 기회였다
 
 ---
