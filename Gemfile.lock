@@ -8,6 +8,7 @@ GEM
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x86-mingw32)
     faraday (2.9.0)
       faraday-net_http (>= 2.0, < 3.2)
@@ -15,8 +16,10 @@ GEM
       net-http
     faraday-retry (2.2.0)
       faraday (~> 2.0)
+    ffi (1.16.3-x64-mingw-ucrt)
     ffi (1.16.3-x86-mingw32)
     forwardable-extended (2.6.0)
+    google-protobuf (3.25.2-x64-mingw-ucrt)
     google-protobuf (3.25.2-x86-mingw32)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
@@ -72,6 +75,8 @@ GEM
     rexml (3.2.6)
     rouge (4.2.0)
     safe_yaml (1.0.5)
+    sass-embedded (1.70.0-x64-mingw-ucrt)
+      google-protobuf (~> 3.25)
     sass-embedded (1.70.0-x86-mingw32)
       google-protobuf (~> 3.25)
     terminal-table (3.0.2)
@@ -86,6 +91,7 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86-mingw32
 
 DEPENDENCIES
