@@ -54,6 +54,36 @@ Jekyll을 적용하지 않아도 기본 GitHub Pages의 템플릿을 활용할 �
 
 ### Ruby 설치
 
+나중에선 최신버전에 x64버전을 설치해도 문제없다는 걸 알았지만,  
+검색을 통해 무작정 따라하기를 하다보니 아래 버전으로 우선 초기 환경을 구성했다
+
+> Ruby+DevKit 2.7.8-1 (x86)  
+
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/2ae3db9e-7c62-4536-813b-f94a5bc636fa)
+
+![Ruby](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/82e4fedb-4be1-4f25-920d-6232709bfe53)
+
+
+### VS Code 설치
+Visual Studio만 사용해본 상태라 VS Code가 매우 낯설었지만  
+그것도 잠시, ✨신세계를 맛볼 수 있었다  
+설치는 어려움이 없었지만 실행해야 하는 .sln 파일이 없어 당황ㅎㅎ 곧 폴더 째로 열기가 가능하다는 것을 알았다
+지속적으로 사용하고, `HTML` `CSS` 관련 영상을 여럿 찾아보다 미리 알았다면 좋았을 Extension들을 더 설치해주었다
+
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/1db705f8-408a-43bb-88c9-d47d7e1ed7e8)
+
+1. Prettier
+ : 경고, 오류를 확인해 원인과 해결조언을 해준다
+
+2. Auto Close Tag
+ : Close Tag를 자동으로 입력해준다
+
+3. Live Server
+ : 깃블로그는 여러 파일들이 복합적으로 실행되어야 해서인지, 기대한 결과는 없지만,
+ 한 페이지를 미리보기로 열어 주는 확장자
+
+4. Material Icon Theme
+  : 필수는 아니지만, 좌측 탐색창에 파일 확장자를 아이콘으로 보여줘서 보기 좋다
 
 ---
 
@@ -64,6 +94,10 @@ Jekyll을 적용하지 않아도 기본 GitHub Pages의 템플릿을 활용할 �
   게임물리 이론 공부할 때 많은 도움을 주신 블로그! 깃블로그에 관심을 갖게해준 블로그이기도 하다
 2. Jekyll 공식 문서 ([https://jekyllrb-ko.github.io/](https://jekyllrb-ko.github.io/))
 3. GitHubPage 공식 문서 ([https://docs.github.com/ko/pages/quickstart](https://docs.github.com/ko/pages/quickstart))
+
+설치파일 다운로드 링크
+1. RubyInstaller for Windows ([https://rubyinstaller.org/downloads/archives/](https://rubyinstaller.org/downloads/archives/))
+2. 
 
 Jekyll Theme 모음
 1. Jekyll 공식 문서 - 테마 ([https://jekyllrb.com/docs/themes/](https://jekyllrb.com/docs/themes/))
