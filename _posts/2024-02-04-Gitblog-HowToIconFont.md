@@ -66,6 +66,8 @@ footer에 이력서 링크도 추가하고 싶어 드디어 나도 iconfont를 �
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d7493acd-6ad6-4aeb-95bc-fa11fe2ba350)
 
 프로그래밍을 사랑하며 수익보다 더 좋은 퀄리티로의 발전에 우선순위를 둔 제작팀 덕분에 이 곳의 icon font들은 모두 무료이며 open source라고 한다 [^3].  
+원문 멘트를 읽으니 사용하면서 더 기분이 좋아지는 것 같았다ㅎㅎ
+
 > [Why fontello is open source and free](https://github.com/fontello/fontello/wiki/Introduction#why-fontello-is-open-source-and-free)
 Fontello is a pet-project, sponsored by RC Design. We do it just because we love programming and doing something interesting.
 Please, note, that fontello is non-commercial project. It is intentional choice to have more time for development. We prefer to spend time for reaching highest quality, instead of making money. That's the main reason, when we select priorities for new features.
