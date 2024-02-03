@@ -29,37 +29,6 @@ footer에 이력서 링크도 추가하고 싶어 드디어 나도 iconfont를 �
 `_style/iconfont` 경로에 위치해있었고, ttf파일 외 각종 폰트파일 확장자들과 적용을 위한 `CSS`파일에 @font-face로 테마에 적용을 해주고 있다
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/b43e7a0d-f2fd-421e-9b25-9073579c9f2c)
 
-```css
-@font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1547905446251'); /* IE9 */
-  src: url('iconfont.eot?t=1547905446251#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQQAAsAAAAACDgAAAPEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDfIMoATYCJAMQCwoABCAFhG0HPRsPB1FULrJkPyRJihTwRuABFQAAADhOSrAHgPMwAIgHar/07f69CzC6pJWAoAgUILuOJ4s2wpRshQkacf+31ubEX0fso9rc0qn/2fVZZgdrJinRuFSuIR5pVMZs7ip6pBPuOhJGEfG/x3zsRrrR/7kc311ZAvPbWS5jbR2bxqKjXoDRBAp07I0BF1DOmTSMXXkR0wko1WmEY9XGXpT4JUa9gHBWkUrEn9JJNZFBsSBf0jUJb+QUx6fxF+K1//mwYCr4iXIZo+m24+tVsjQtPzOa3SlkOeQaTI1nAetFhnFEIpwstR3mCn3jXEqV77gtRhQrFpmWn66aGS1woWAvsmLTTuz944U8I7wcTEJ/xrS8jROZrsLJmBkV3MBUCRQjj/f4CzCl3j8LomxVYwuPv3g+9ek7ij3E+hsJe55Qw8QG78gg3/w62Mb6WycFEIp34mMNaCIb231a6oTjZPqufhjruLuL1o+L+Z7WK+BPCfRrKy/ZVI3t63qQlD2qAPuHhYhwcVOCFBAP2Rsla4LAf6REMfaha31/LAG/wE8qoz0Be3fQja0+xLt70AGA/cTg4y8FHz8p/+n/kqSUd7KkZHpwjm6SPuhKF6DwhCr79cHRZQQdLfldz+wT0g3iUhClNIFUwWi1vQ+iOfRkNn7H0X95Vw47UJNkM+rUs8IXCJAqy+ID09MiEZTBgnSL7iYpjpL/gyQrjvdChHP3Zid7Ygk2rHoWWK6Sy5Yk2US3/Odwr5+ivtO7Qpb1WU0j9muqdf+Ble0P/cwmms3/7Pj6ZWZuW7cuR7EV2/zT/aiaOk0sFvm0Rm1M3m+8VEugv/74E2rMr1ZWIgEAAHBLyEgCBKxIHJfAf60GBv9nvSKqTP/o8MJy7pOcP6IUrpUuWXaHn8Nvzf+L/JZpSRUa+pRkkc3TWiWruEBEqWnk34Wo9TOGowGJLUEx50OIinRAplg/ksjjkFNmEvKKLYVSYzZ7l6nDuYRUglFXAIJqjxBVmoJMtTqSyN+Q0+gP8qqDC0rtCXVDlhkMSnAlx5LAKpRPQKkwk1pGEQwiwygd6CWeFPrUOHJbccKkumY2uIkm8jFa2IfSlBAUKGcGbIDZUNcZWJypWBFjshDWzLhGfNmFxirMIEErcahEQFWg7ARQVDAm6mYXgrn3hyHJAV0JryFUWOMQZ1PKB5PGTLRANmVmK8K17GI7JJkiCBSgOMYANoAF6aaPAVZ5JRWqEMbIPTyWGeMoE20rG5tfYTzhEihlrJVCDFlIISd/QhHyQdl9khnoOmfbhAA=') format('woff2'),
-  url('iconfont.woff?t=1547905446251') format('woff'),
-  url('iconfont.ttf?t=1547905446251') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('iconfont.svg?t=1547905446251#iconfont') format('svg'); /* iOS 4.1- */
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-github:before {
-  content: "\e7ab";
-}
-
-.icon-home:before {
-  content: "\e626";
-}
-
-.icon-rss:before {
-  content: "\e690";
-}
-```
-
 ## Fontello.com
 
 기존 구성엔 사용중인 3개의 icon font만 정보가 나와있는 듯 하여 추가하고 싶은 iconfont를 동일한 출처인 [Fontello](https://fontello.com/) [^2] 에서 내려받았다 
@@ -97,70 +66,7 @@ GitHub Pages로 Repository를 Public으로 해두어 오픈소스인 깃블로�
 이미 `@font-face`로 `CSS`에 적용될 수 있도록 파일이 구성되어있으므로 파일명만 원하는 이름으로 바꿔주면 된다  
 기존에 있던 iconfont로 파일명과 내용중 파일경로, 파일명이 명시된 내용을 바꿔주었다  
 
-```css
-@font-face {
-  font-family: 'iconfont';
-  src: url('iconfont.eot?63301349');
-  src: url('iconfont.eot?63301349#iefix') format('embedded-opentype'),
-       url('iconfont.woff2?63301349') format('woff2'),
-       url('iconfont.woff?63301349') format('woff'),
-       url('iconfont.ttf?63301349') format('truetype'),
-       url('iconfont.svg?63301349#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?63301349#fontello') format('svg');
-  }
-}
-*/
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "iconfont";
-  font-style: normal;
-  font-weight: normal;
-  speak: never;
-
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-home:before { content: '\e800'; } /* '' */
-.icon-rss:before { content: '\f09e'; } /* '' */
-.icon-github:before { content: '\f113'; } /* '' */
-.icon-file-pdf:before { content: '\f1c1'; } /* '' */
-```
-
-이제 블로그내에서 `class='iconfont [아이콘명(ex. icon-home)]`을 통해 iconfont를 사용할 수 있다
+오류없이 컴파일이 완료됐다면 `class='iconfont [아이콘명(ex. icon-home)]`을 통해 iconfont를 사용할 수 있다
 
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/82c0f4f5-ac63-4bed-95cc-f58f6d6f4bfd)
 
