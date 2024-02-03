@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitBlog-iconfont 적용하기
+title: GitBlog-iconfont 사용하기
 date:   2024-02-04
 category: gitblog
 tag:
