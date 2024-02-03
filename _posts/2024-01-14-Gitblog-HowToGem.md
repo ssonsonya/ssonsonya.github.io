@@ -22,15 +22,19 @@ icon: web
 
 ## Setting
 
+깃블로그 환경설치 과정은 이전 포스트 참고!  
+> [깃블로그 만들기](2023-05-02-Gitblog-HowToGitBlog)  
+
 |기존|현재|비고|
 |:---:|:---:|:---:|
 |Ruby 2.7.8|Ruby 3.1.4|오늘자 기준 [Stable Release](https://www.ruby-lang.org/en/downloads/) 된 버전들 중 가장 낮은 버전 선택|
+|Bundler 2.1.4|Bundler 2.5.5| gem install bundler를 통해 최신버전으로 업데이트 가능|
 |jekyll 3.8.5|jekyll 4.3.3|[3.x to 4.x](https://jekyllrb.com/docs/upgrading/3-to-4/) 개선사항 확인!|
 
-\*버전확인 cmd : 
+*버전확인 cmd : 
 `ruby -v`
+`bundler -v`
 `jekyll -v`
-<br>\*깃블로그 환경설치 과정은 이전 포스트 참고!
 
 GitHub의 기존 깃블로그 Repository를 현재 PC에 Clone 한 뒤 평소처럼 cmd창에 `bundle exec jekyll serve`를 했더니 오류 발생!
 
@@ -72,6 +76,15 @@ bundle exec jekyll serve
 [Ruby경로]Ruby31/lib/ruby/gems/3.1.0/gems/jekyll-4.3.3/lib/jekyll/external.rb:70:
 in `rescue in block in require_with_graceful_fail':
 jekyll-paginate (Jekyll::Errors::MissingDependencyException)
+```
+
+3. Action Build Warning
+
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/ee1859c3-f743-4883-ab3d-3264f842978f)
+
+> Git Commit Push 후 Build 과정에서 발생하는 경고문
+```
+Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.5.5). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.5.5`.
 ```
 
 ---
@@ -242,13 +255,77 @@ bundle install
 
 *추가로 GitHub Page가 보안관련으로 Jekyll을 3.9로 업그레이드 했다하여 3.8.5 사용을 피하라는 얘기도 있다
 
+### default gem 변경
+
+```
+Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.5.5). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.5.5`.
+```
+로컬환경의 bundler 버전을 2.5.5로 업데이트 해보았으나 여전히 해결되지 않았다.  
+*예상으론 GitHub Pages에서 커밋푸쉬된 내용을 적용할 때 실행하는 Bundler의 버전이 2.1.4가 아닌가 생각이 든다.*  
+그래도 로컬환경에서의 버전차는 최소화시키고자 아래 방법을 적용했다.
+
+1. 로컬 Bundler버전과 Gemfile의 Bundler버전 확인
+  + 로컬 버전 : git bash로 확인 가능
+  ```bash
+  [루비경로]/Ruby31-x64/lib/ruby/gems/3.1.0/specifications/default
+  $ gem list bundler
+  bundler (2.5.5, default: 2.3.26)
+  ```
+  현재 2.5.5.와 2.3.26버전 두개가 있는 상태이고 default가 2.3.26으로 설정되어있는 상태  
+  + Gemfile의 버전 : 보통 Gemfile.lock의 마지막 줄에 명시되어있다
+  ```ruby
+  BUNDLED WITH
+   2.1.4
+  ```
+  *깃블로그는 2.1.4버전으로 build가 되어있는 상태  
+
+2. 로컬 기존 Bundler uninstall 
+  ```bash
+  $ gem bundler uninstall
+  ```
+
+3. 또는 특정 버전만 삭제
+  + gem파일의 설치 디렉토리 확인하기  
+    ```bash
+    $ gem environment
+    RubyGems Environment:
+      -RUBYGEMS VERSION: 3.3.26
+      -RUBY VERSION: 3.1.4 (2023-03-30 patchlevel 223) [x64-mingw-ucrt]
+      -INSTALLATION DIRECTORY: C:/Ruby31-x64/lib/ruby/gems/3.1.0
+      -USER INSTALLATION DIRECTORY: C:/Users/hyons/.gem/ruby/3.1.0
+    ```  
+  + gem파일들의 디폴트 값이 설정된 파일로 디렉토리 변경  
+    ```bash
+    $ cd [루비경로]/Ruby31-x64/lib/ruby/gems/3.1.0/specifications/default
+    ```  
+  + 특정 버전 remove  
+    ```bash
+    $ rm bundler-2.3.26.gemspec
+    ```  
+default 버전으로 설정된 2.3.26은 uninstall 또는 삭제가 불가하다는 문구가 나온다  
+`rm`으론 해결이 되지 않지만 uninstall 시 bundler -v를 하면 조회가 되지 않으면서 제거가 가능하다
+
+4. 최신 버전 defualt로 install 
+  ```bash
+  $ gem install --default -v2.5.5 bundler
+  Successfully installed bundler-2.5.5 as a default gem
+  Done installing documentation for bundler after 0 seconds
+  ```
+
+5. 깃블로그 다시 Build하기
+  cmd 터미널 경로를 깃블로그 디렉토리로 `cd`
+  ```cmd
+  bundle exec jekyll build
+  ``` 
+
 ---
 
 ## 생각 정리
-1. 깃블로그를 처음 생성할 때만 Ruby를 다뤘기 때문에 기억이 안나는 부분을 다시 공부해야 했다.  
+1. 작업환경이 바뀔 때마다 사전 Setting을 하나하나 해주기 보단 가급적 Gemfile에 필요한 gem들의 버전을 명시해주는게 좋을 것 같다.
+2. 깃블로그를 처음 생성할 때만 Ruby를 다뤘기 때문에 기억이 안나는 부분을 다시 공부해야 했다.  
     그래도 이전에 정리한 내용을 다시 보며 금방 기억해낼 수 있었다(역시 블로그 쓰길 잘했다)  
-2. 폴더에 줄곧 함께하고 있었던 Gemfile과 Gemfile.lock의 정체를 이 기회에 알 수 있었다.  
-3. bundle install을 통해 일괄적으로 적용한 gem들을 구체적으로 뜯어보지 않았는데 이번 기회에 구성을 알게되었다.  
+3. 폴더에 줄곧 함께하고 있었던 Gemfile과 Gemfile.lock의 정체를 이 기회에 알 수 있었다.  
+4. bundle install을 통해 일괄적으로 적용한 gem들을 구체적으로 뜯어보지 않았는데 이번 기회에 구성을 알게되었다.  
 
 
 ---
