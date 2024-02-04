@@ -3,6 +3,11 @@ layout: post
 title: GitBlog-깃블로그 만들기
 date:   2023-05-02
 category: gitblog
+tag:
+ - Gitblog
+ - GitHubPages
+ - Ruby
+ - Jekyll
 thumbnail: /style/image/thumbnails/Gitblog_Setup.png
 icon: web
 ---
@@ -155,18 +160,18 @@ Visual Studio만 사용해본 상태라 VS Code가 매우 낯설었지만 그것
 ### config.yml
 
 ```yml
-name: 메인 상단과 브라우저 탭에 보여질 이름
-author: About에 소개될 내이름
-url: 본 페이지 주소 또는 소개될 이름 클릭 시 연결시키고 싶은 url
+name:                     # 메인 상단과 브라우저 탭에 보여질 이름
+author:                   # About에 소개될 내이름
+url:                      # 본 페이지 주소 또는 소개될 이름 클릭 시 연결시키고 싶은 url
 baseurl: 
-resume_site: 이력서를 보여줄 수 있는 url페이지 연결
+resume_site:              # 이력서를 보여줄 수 있는 url페이지 연결
 description: 
-github_username: 깃허브 아이디
-github: 깃허브 주소
-plugins: [jekyll-paginate]      적용된 플러그인
-permalink: /:year-:month-:day-:title    각 게시물들의 url 형태
-paginate: 12                    jekyll-paginate 플러그인의 기능으로 12페이지까지 만든다는 뜻
-paginate_path: "/page/:num/"    jekyll-paginate의 각 페이지 url 형태
+github_username:          # 깃허브 아이디
+github:                   # 깃허브 주소
+permalink: /:year-:month-:day-:title        # 각 게시물들의 url 형태
+plugins: [jekyll-paginate]                             # 적용된 플러그인
+paginate: 9                                                      # jekyll-paginate : 한 페이지당 게시물 갯수
+paginate_path: "/page/:num/"                  # jekyll-paginate : 각 페이지 url 형태
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
 markdown: kramdown
