@@ -1435,11 +1435,26 @@ textarea:-ms-input-placeholder {
     padding: 120px 20px 40px
 }
 
-.archive-page .category-title {
+.archive-page .tag-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,250px));
+    align-items: start;
+}
+
+.archive-page .tag-title {
     font-size: 17px;
     font-weight: 600;
     position: relative;
     margin: 0px auto;
+    padding: 0px 30px;
+    color: #00ffea;
+    clear: both;
+}
+
+.archive-page .category-title {
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
     padding: 0px 30px;
     color: #00ffea;
     clear: both;
@@ -1458,6 +1473,18 @@ textarea:-ms-input-placeholder {
     color: #00ffea;
 }
 
+.archive-page .category-title:hover {
+    color: #eb5055;
+}
+
+.archive-page .category-title:focus {
+    color: #eb5055;
+}
+
+.archive-page .category-title:active {
+    color: #eb5055;
+}
+
 .archive-page .post-list-item-container {
     border: 1px solid rgba(184, 197, 214, .2);
     border-radius: 3px;
@@ -1467,6 +1494,7 @@ textarea:-ms-input-placeholder {
 }
 
 .archive-page .post-list-item-container .item-label {
+    display: absolute;
     height: 95px;
     background: #fff
 }

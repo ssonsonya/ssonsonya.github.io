@@ -4,30 +4,104 @@ layout: default
 {% assign sortedtags = site.tags | sort %}
 
 <div class="main-content archive-page clearfix">
-    <div class="category-item">
-        <div class="post-lists">
-            {% for tag in sortedtags %}
-            {% assign i = tag[1].size %}
-            <details>
-                <summary>
-                    <div class="category-title">{{ tag[0] }}_ {{ i }}</div>
-                </summary>
-                {% for post in site.posts %}
-                {% if post.tag contains tag[0] %}
-                <div class="post-list-item">
-                    <div class="post-list-item-container">
-                        <div class="item-label_noThumb">
-                            <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-                            <div class="item-meta clearfix">
-                                <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }}</div>
-                            </div>
-                        </div>
+    <span style="color: #fff; font-size: 1.5em;">Unreal Engine</span>
+    <div class="tag-lists">
+        {% for tag in sortedtags %}
+        {% assign i = tag[1].size %}
+        {% assign curTag = tag[0] | split: "|" %}
+        {% if curTag[0] == "1" %}
+            <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
+        {% endif %}
+        {% endfor %}
+
+        {% for post in site.posts %}
+        {% if post.tag contains tag[0] %}
+        <div class="post-list-item">
+            <div class="post-list-item-container">
+                <div class="item-label_noThumb">
+                    <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                    <div class="item-meta clearfix">
+                        <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }}</div>
                     </div>
                 </div>
-                {% endif %}
-                {% endfor %}
-            </details>
-            {% endfor %}
+            </div>
         </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <span style="color: #fff; font-size: 1.5em;">Programming</span>
+    <div class="tag-lists">
+        {% for tag in sortedtags %}
+        {% assign i = tag[1].size %}
+        {% assign curTag = tag[0] | split: "|" %}
+        {% if curTag[0] == "2" %}
+            <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
+        {% endif %}
+        {% endfor %}
+
+        {% for post in site.posts %}
+        {% if post.tag contains tag[0] %}
+        <div class="post-list-item">
+            <div class="post-list-item-container">
+                <div class="item-label_noThumb">
+                    <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                    <div class="item-meta clearfix">
+                        <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <span style="color: #fff; font-size: 1.5em;">GitBlog</span>
+    <div class="tag-lists">
+        {% for tag in sortedtags %}
+        {% assign i = tag[1].size %}
+        {% assign curTag = tag[0] | split: "|" %}
+        {% if curTag[0] == "3" %}
+            <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
+        {% endif %}
+        {% endfor %}
+
+        {% for post in site.posts %}
+        {% if post.tag contains tag[0] %}
+        <div class="post-list-item">
+            <div class="post-list-item-container">
+                <div class="item-label_noThumb">
+                    <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                    <div class="item-meta clearfix">
+                        <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <span style="color: #fff; font-size: 1.5em;">Etc</span>
+    <div class="tag-lists">
+        {% for tag in sortedtags %}
+        {% assign i = tag[1].size %}
+        {% assign curTag = tag[0] | split: "|" %}
+            {% if curTag.size < 2 %}
+                <div class="category-title">{{ curTag | slice: 0 }}_ {{ i }}</div>
+            {% endif %}
+        {% endfor %}
+
+        {% for post in site.posts %}
+        {% if post.tag contains tag[0] %}
+        <div class="post-list-item">
+            <div class="post-list-item-container">
+                <div class="item-label_noThumb">
+                    <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                    <div class="item-meta clearfix">
+                        <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
