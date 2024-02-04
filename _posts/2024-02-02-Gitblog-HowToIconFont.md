@@ -48,7 +48,7 @@ Please, note, that fontello is non-commercial project. It is intentional choice 
 
 ## Apply
 
-![download](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/31745747-b5b8-46c4-a8ef-7fa09e52bcb6)
+![download](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d449d3a9-ee3b-49b2-8896-bcb6340fb1bc)
 
 `zip`파일에 포함되어있는 `README.txt`파일을 읽어보면 어떻게 적용할 수 있는지 상세히 나와있다  
 
