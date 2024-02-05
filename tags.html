@@ -10,7 +10,7 @@ layout: default
         {% assign i = tag[1].size %}
         {% assign curTag = tag[0] | split: "|" %}
         {% if curTag[0] == "1" %}
-            <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
+            <button class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</button>
         {% endif %}
         {% endfor %}
 
@@ -35,7 +35,7 @@ layout: default
         {% assign i = tag[1].size %}
         {% assign curTag = tag[0] | split: "|" %}
         {% if curTag[0] == "2" %}
-            <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
+            <button class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</button>
         {% endif %}
         {% endfor %}
 
@@ -60,7 +60,7 @@ layout: default
         {% assign i = tag[1].size %}
         {% assign curTag = tag[0] | split: "|" %}
         {% if curTag[0] == "3" %}
-            <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
+            <button class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</button>
         {% endif %}
         {% endfor %}
 
@@ -85,7 +85,7 @@ layout: default
         {% assign i = tag[1].size %}
         {% assign curTag = tag[0] | split: "|" %}
         {% if curTag[0] == "3" %}
-            <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
+            <button class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</button>
         {% endif %}
         {% endfor %}
 
@@ -110,7 +110,7 @@ layout: default
         {% assign i = tag[1].size %}
         {% assign curTag = tag[0] | split: "|" %}
             {% if curTag.size < 2 %}
-                <div class="category-title">{{ curTag | slice: 0 }}_ {{ i }}</div>
+                <button class="category-title">{{ curTag | slice: 0 }}_ {{ i }}</button>
             {% endif %}
         {% endfor %}
 
