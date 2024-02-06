@@ -3,6 +3,15 @@ layout: post
 title: C 기초 이론 복습 - 2
 date:   2022-10-26
 category: tutorial
+tag:
+- 3|ControlFlow
+- 3|Loop
+- 3|Array
+- 3|Random
+- 3|String
+- 3|Stream
+- 3|Function
+
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
 ---

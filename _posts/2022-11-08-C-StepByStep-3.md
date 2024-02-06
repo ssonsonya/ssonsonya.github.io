@@ -3,6 +3,15 @@ layout: post
 title: C 기초 이론 복습 - 3
 date:   2022-11-18
 category: tutorial
+tag:
+- 3|메모리구조
+- 3|재귀함수
+- 3|사용자정의자료형
+- 3|포인터
+- 3|이중포인터
+- 3|함수포인터
+- 3|동적할당
+- 3|파일입출력
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
 ---

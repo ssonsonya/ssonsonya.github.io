@@ -3,6 +3,9 @@ layout: post
 title: winAPI 기초 이론 복습 - 1
 date:   2022-12-25
 category: tutorial
+tag:
+- 4|winAPI
+- 4|강의노트
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
 ---

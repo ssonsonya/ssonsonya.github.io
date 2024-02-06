@@ -19,6 +19,12 @@ layout: default
             <ul class="nav sidenav"></ul>
         </div>
         <article class="post-content">
+            <p><span class='iconfont icon-tags'>Tags : 
+                {% for tag in page.tag %}
+                {% assign curTag = tag | split: "|" %}
+                <code>{{ curTag | slice: 1 }}</code>
+                {% endfor %}</p>
+                <hr>
             {{ content }}
         </article>
         <div class="post-content">
