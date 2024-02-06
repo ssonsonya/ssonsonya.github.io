@@ -4,8 +4,25 @@ title: C++ 기초 이론 복습 - 1
 date:   2022-12-02
 category: tutorial
 tag:
-- 3|C/CPP
-- 3|강의노트
+- 3|객체지향
+- 3|패러다임
+- 3|namespace
+- 3|cout
+- 3|iostream
+- 3|오버로딩
+- 3|네임맹글링
+- 3|&ref
+- 3|random_device
+- 3|mt19937
+- 3|Class
+- 3|SAFE_DELETE
+- 3|추상화
+- 3|캡슐화
+- 3|상속
+- 3|다형성
+- 3|virtual
+- 3|오버라이드
+- 3|Cast
 thumbnail: /style/image/thumbnail_CPP_sbs.PNG
 icon: book
 ---

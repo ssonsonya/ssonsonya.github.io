@@ -5,6 +5,7 @@ date:   2022-10-17
 category: tutorial
 tag:
 - 3|HelloWorld
+- 3|프로그램생성과정
 - 3|stdafx
 - 3|코드표기법
 - 3|자료형

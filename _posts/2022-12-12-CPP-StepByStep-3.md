@@ -4,8 +4,18 @@ title: C++ 기초 이론 복습 - 3
 date:   2022-12-21
 category: tutorial
 tag:
-- 3|C/CPP
-- 3|강의노트
+- 3|범위기반ForLoop
+- 3|auto_ptr
+- 3|unique_ptr
+- 3|shared_ptr
+- 3|weak_ptr
+- 3|람다함수
+- 3|STL
+- 3|array
+- 3|vector
+- 3|list
+- 3|map
+- 3|unordered_map
 thumbnail: /style/image/thumbnail_CPP_sbs.PNG
 icon: book
 ---
