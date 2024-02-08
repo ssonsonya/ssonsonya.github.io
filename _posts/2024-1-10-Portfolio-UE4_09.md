@@ -6,9 +6,8 @@ category:
  - portfolio
  - p-UE4
 tag:
- - UnrealEngine
- - Player
- - Component
+ - 1|Player
+ - 1|Component
 thumbnail: /style/image/portfolio_thumbnails/Draft.png
 icon: game
 ---

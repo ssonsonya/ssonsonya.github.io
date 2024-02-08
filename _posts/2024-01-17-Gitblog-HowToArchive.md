@@ -4,9 +4,8 @@ title: GitBlog-카테고리&태그 페이지
 date:   2024-01-17
 category: gitblog
 tag:
-  - GitHubPages
-  - Jekyll
-  - Jekyll-archives
+  - 5|Jekyll
+  - 5|Jekyll-archives
 thumbnail: /style/image/thumbnails/Gitblog_Jekyll-archives.png
 icon: web
 ---

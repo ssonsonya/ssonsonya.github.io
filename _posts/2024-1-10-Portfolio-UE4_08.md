@@ -6,10 +6,9 @@ category:
  - portfolio
  - p-UE4
 tag:
- - UnrealEngine
- - Enemy
- - BehaviorTree
- - EnemyAI
+ - 1|Enemy
+ - 1|BehaviorTree
+ - 1|EnemyAI
 thumbnail: /style/image/portfolio_thumbnails/Draft.png
 icon: game
 ---

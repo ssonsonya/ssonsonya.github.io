@@ -5,10 +5,9 @@ date: 2023-10-11
 category: 
  - in-depth
 tag:
- - UnrealEngine
- - Animation
- - Retarget
- - Mixamo
+ - 1|Animation
+ - 1|Retarget
+ - 1|Mixamo
 thumbnail: /style/image/portfolio_thumbnails/.png
 icon: idea
 ---

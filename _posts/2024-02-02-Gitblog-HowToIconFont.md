@@ -4,9 +4,9 @@ title: GitBlog-iconfont 사용하기
 date:   2024-02-02
 category: gitblog
 tag:
-  - 1|GitHubPages
-  - 1|Iconfont
-  - 1|Fontello
+  - 5|GitHubPages
+  - 5|Iconfont
+  - 5|Fontello
 thumbnail: /style/image/thumbnails/iconfont.png
 icon: web
 ---

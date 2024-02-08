@@ -4,8 +4,7 @@ title: UE NVIDIA 버그 에디터 검정UI 해결법
 date:   2024-01-28
 category: in-depth
 tag:
-- Unreal Engine
-- Error
+- 1|Error
 thumbnail: /style/image/thumbnails/UIBlackout.png
 icon: idea
 ---
