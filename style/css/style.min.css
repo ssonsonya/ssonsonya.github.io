@@ -246,7 +246,7 @@ hr {
     margin: 15px 0;
     padding: 0;
     border: 0;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #c9c9c9;
     background: 0 0
 }
 
@@ -864,6 +864,16 @@ textarea:-ms-input-placeholder {
 }
 
 .post-list-item {
+    float: left;
+    width: 33.3333%;
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
+    padding: 0 10px 20px;
+    align-items: center
+}
+
+.post-list-item-noThumb {
     float: left;
     max-width: 300px;
     height: auto;
@@ -2179,6 +2189,14 @@ textarea:-ms-input-placeholder {
     padding: 0 0 10px;
     text-decoration: none;
     color: #767676
+}
+
+.footer-meta .meta-posts {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding: 0 0 0 90px;
 }
 
 .footer-meta .meta-posts li {
