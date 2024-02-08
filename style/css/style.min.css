@@ -841,7 +841,7 @@ textarea:-ms-input-placeholder {
 .index-page .portfolio {
     width: auto;
     height: 500px;
-    padding: 15px 15px 15px;
+    padding: 15px 10px 15px;
 }
 
 .index-page .portfolio .preview {
@@ -871,7 +871,7 @@ textarea:-ms-input-placeholder {
     max-width: 300px;
     height: auto;
     max-height: 300px;
-    padding: 15px;
+    padding: 0 10px 20px;
     align-items: center
 }
 
@@ -880,7 +880,7 @@ textarea:-ms-input-placeholder {
     overflow: hidden;
     width: 100%;
     height: auto;
-    max-height: 285px;
+    max-height: 270px;
     padding: 0;
     border-radius: 3px;
     background-color: #313131;
@@ -990,7 +990,7 @@ textarea:-ms-input-placeholder {
 .post-list-item-container .item-label .item-meta {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     padding: 0 15px 15px;
     text-align: right
