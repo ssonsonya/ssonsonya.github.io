@@ -849,7 +849,10 @@ textarea:-ms-input-placeholder {
 }
 
 .index-page .post-list-item-container .item-label {
-    padding: 10px 20px 0
+    position: absolute;
+    width: 100%;
+    bottom: -75px;
+    padding: 0 20px 0;
 }
 
 .post-lists {
@@ -867,8 +870,6 @@ textarea:-ms-input-placeholder {
     float: left;
     width: 33.3333%;
     max-width: 300px;
-    height: auto;
-    max-height: 300px;
     padding: 0 10px 20px;
     align-items: center
 }
@@ -877,7 +878,6 @@ textarea:-ms-input-placeholder {
     float: left;
     max-width: 300px;
     height: auto;
-    max-height: 300px;
     padding: 0 10px 20px;
     align-items: center
 }
@@ -887,7 +887,6 @@ textarea:-ms-input-placeholder {
     overflow: hidden;
     width: 100%;
     height: auto;
-    max-height: 270px;
     padding: 0;
     border-radius: 3px;
     background-color: #313131;
@@ -903,7 +902,7 @@ textarea:-ms-input-placeholder {
 .post-list-item-container .item-thumb {
     position: relative;
     display: inherit;
-    min-height: 250px;
+    min-height: 330px;
     -webkit-transition: -webkit-transform .5s ease, filter .5s ease;
     -moz-transition: -moz-transform .5s ease, filter .5s ease;
     transition: transform .5s ease, filter .5s ease;
@@ -997,7 +996,7 @@ textarea:-ms-input-placeholder {
 .post-list-item-container .item-label .item-meta {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: -5px;
     width: 100%;
     padding: 0 15px 15px;
     text-align: right
