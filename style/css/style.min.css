@@ -536,7 +536,6 @@ textarea:-ms-input-placeholder {
     position: fixed;
     z-index: 10;
     top: 0;
-    display: block;
     width: 100%;
     height: 70px;
     padding: 0;
@@ -564,40 +563,49 @@ textarea:-ms-input-placeholder {
 }
 
 .navbar-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
     width: 1040px;
     max-width: 100%;
     height: 70px;
     margin: 0 auto
 }
 
+.sidebar-button-container{
+    z-index: -1;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 35px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
 .navbar-logo {
     font-size: 22px;
     font-weight: 600;
-    line-height: 22px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
     width: auto;
+    height: 100%;
     max-width: 50%;
-    height: 32px;
-    margin-top: -28px;
-    margin-left: 25px;
-    text-decoration: none
+    margin: 13px 0 0 5px;
+    text-decoration: none;
+    overflow: hidden;
 }
 
 .navbar-logo img {
     width: auto;
-    height: 56px;
+    height: 70px;
     outline: 0;
     border-radius: 50%;
 }
 
 .navbar-menu {
     z-index: 10;
-    display: inline-block;
-    width: auto;
+    width: max-content;
+    height: 100%;
     padding-right: 5px
 }
 
@@ -785,7 +793,7 @@ textarea:-ms-input-placeholder {
     border-radius: 20px;
     outline: 0;
     background-color: #fff;
-    -webkit-appearance: none
+    appearance: none
 }
 
 .sidebar {
@@ -1025,7 +1033,7 @@ textarea:-ms-input-placeholder {
 }
 
 .post-list-item-container .item-label .item-meta .item-meta-ico {
-    display: inline-block;
+    display: block;
     float: right;
     width: 42px;
     height: 42px;
@@ -1645,7 +1653,7 @@ textarea:-ms-input-placeholder {
     background-color: #fff;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
-    -webkit-appearance: none
+    appearance: none
 }
 
 .search-page .search-box .spsubmit {
@@ -1988,7 +1996,7 @@ textarea:-ms-input-placeholder {
 }
 
 .comment-header .avatar {
-    display: inline-block;
+    display: block;
     float: left;
     width: 40px;
     height: 40px;
@@ -1999,7 +2007,7 @@ textarea:-ms-input-placeholder {
 .comment-header .comment-author {
     font-size: 13px;
     line-height: 45px;
-    display: inline-block;
+    display: block;
     float: left;
     margin: 0 20px
 }
@@ -2356,7 +2364,7 @@ textarea:-ms-input-placeholder {
     }
 }
 
-@media(max-width:650px) {
+@media(max-width:800px) {
     .navbar-menu {
         display: none
     }
@@ -2619,13 +2627,9 @@ textarea:-ms-input-placeholder {
 }
 
 a.navbar-logo span {
-    margin-top: -20px;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
     position: relative;
-    top: -16px;
-    color: #5E5E7A
+    top: -20px;
+    color: #5E5E7A;
 }
 
 .main-container {
