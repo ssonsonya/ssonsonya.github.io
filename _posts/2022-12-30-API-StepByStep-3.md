@@ -3,6 +3,15 @@ layout: post
 title: winAPI 기초 이론 복습 - 3
 date:   2022-12-30
 category: tutorial
+tag:
+- 3|SetTimer
+- 3|WM_TIMER
+- 3|Singleton
+- 3|GetKeyboardState
+- 3|InputProc
+- 3|<chrono>
+- 3|DeltaTime
+- 3|Collision
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
 ---

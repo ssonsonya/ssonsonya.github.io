@@ -4,13 +4,13 @@ title: C 기초 이론 복습 - 2
 date:   2022-10-26
 category: tutorial
 tag:
-- 3|제어문
-- 3|Loop
-- 3|배열
-- 3|Random
-- 3|String
-- 3|Stream
-- 3|함수
+- 4|제어문
+- 4|Loop
+- 4|배열
+- 4|Random
+- 4|String
+- 4|Stream
+- 4|함수
 
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book

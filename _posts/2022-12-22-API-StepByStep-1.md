@@ -4,8 +4,11 @@ title: winAPI 기초 이론 복습 - 1
 date:   2022-12-25
 category: tutorial
 tag:
-- 4|winAPI
-- 4|강의노트
+- 3|winDesc
+- 3|winProc
+- 3|WINCLASSEXW
+- 3|c_str()
+- 3|PeekMessage
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
 ---
@@ -14,7 +17,7 @@ icon: book
 * content
 {:toc}
 
-## API Application Programming Interface
+## API
 
 ![API (1)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/71912cf0-bf17-4770-853a-4fe3e5339959)
 ![API (2)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/f1c9719d-7f02-46b8-8253-fb4e4a640c3c)
@@ -33,7 +36,7 @@ icon: book
 ![API (12)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/be169921-e341-47e6-bf9a-46dcdb93f454)
 ![API (13)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/150e1605-4858-4bcd-b6fd-983826137f7c)
 
-## 정리해보자
+## 생성과정 정리
 
 ![API (14)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/57cb7ede-ae9d-4604-97e1-e937580a615b)
 ![API (15)](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/25c213f2-ce26-49b0-9bf4-76a53ad17a20)  

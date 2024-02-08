@@ -4,12 +4,15 @@ title: C 기초 이론 복습 - 1
 date:   2022-10-17
 category: tutorial
 tag:
-- 3|HelloWorld
-- 3|프로그램생성과정
-- 3|stdafx
-- 3|코드표기법
-- 3|자료형
-- 3|연산자
+- 4|HelloWorld
+- 4|프로그램생성과정
+- 4|stdafx
+- 4|코드표기법
+- 4|PascalCase
+- 4|camelCase
+- 4|snake_case
+- 4|자료형
+- 4|연산자
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
 ---
