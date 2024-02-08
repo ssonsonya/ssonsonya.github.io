@@ -21,7 +21,6 @@ layout: default
     <button class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</button>
     {% endif %}
     {% endfor %}
-    <br>
     {% for post in site.posts %}
     {% if post.tag contains t %}
     <div class="post-list-item">
@@ -70,9 +69,9 @@ layout: default
     <summary>
     <div class="category-title">{{ curTag | slice: 1 }}_ {{ i }}</div>
     </summary>
-    <br>
     {% for post in site.posts %}
     {% if post.tag contains tag[0] %}
+    <div class="post-list-item">
     <div class="post-list-item-container">
         <div class="item-label_noThumb">
             <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
@@ -81,9 +80,9 @@ layout: default
             </div>
         </div>
     </div>
+    </div>
     {% endif %}
     {% endfor %}
-    <br>
     </details>
     {% endif %}
     {% endfor %}

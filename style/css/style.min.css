@@ -44,8 +44,7 @@ html {
 }
 
 details {
-    display: inline-table;
-    width: max-content;
+    display: unset; 
 }
 
 summary::-webkit-details-marker {
@@ -53,14 +52,13 @@ summary::-webkit-details-marker {
 }
 summary {
     list-style-type: none;
-    width: max-content;
 }
 
 body {
     font-family: -apple-system, SF UI Text, "IBMPlexSansKR-Regular", Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
     font-size: 12px;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.3;
     margin: 0 auto;
     color: #5c5c5c;
     text-rendering: geometricPrecision;
@@ -867,7 +865,6 @@ textarea:-ms-input-placeholder {
 
 .post-list-item {
     float: left;
-    width: 33.3333%;
     max-width: 300px;
     height: auto;
     max-height: 300px;
@@ -969,7 +966,7 @@ textarea:-ms-input-placeholder {
 .post-list-item-container .item-label_noThumb {
     position: relative;
     height: 50px;
-    padding: 8px 25px;
+    padding: 10px 15px;
     background-color: #fff
 }
 
@@ -1454,7 +1451,6 @@ textarea:-ms-input-placeholder {
     font-size: 17px;
     font-weight: 600;
     position: relative;
-    width: fit-content;
     padding: 0px 30px;
     color: #00ffea;
     background-color: unset;
@@ -1495,15 +1491,12 @@ textarea:-ms-input-placeholder {
 }
 
 .archive-page .post-list-item-container .item-label {
-    display: absolute;
-    width: fit-content;
     height: 95px;
     background: #fff
 }
 
 .archive-page .post-list-item-container .item-label .item-title a {
     font-size: 14px;
-    display: block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -2446,7 +2439,6 @@ textarea:-ms-input-placeholder {
     }
 
     .post-list-item {
-        width: 100%;
         padding: 20px 20px 20px
     }
 
