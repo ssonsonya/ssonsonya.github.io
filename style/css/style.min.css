@@ -2703,11 +2703,11 @@ a.navbar-logo span {
     }
 
     .post-container .post-content {
-        width: 80%
+        width: 100%
     }
 
     .post-container-full {
-        width: 80%;
+        width: 100%;
         padding: 0 10px
     }
 
