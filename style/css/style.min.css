@@ -579,9 +579,9 @@ textarea:-ms-input-placeholder {
     width: 70px;
     height: 70px;
     margin-top: 35px;
-    margin-left: 5px;
+    margin-left: 35px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #fff
 }
 
 .navbar-logo {
@@ -800,35 +800,32 @@ textarea:-ms-input-placeholder {
     position: absolute;
     z-index: 1;
     display: block;
-    width: 20%;
+    padding-top: 100px;
+    width: fit-content;
+    min-width: 200px;
     height: auto;
-    padding: 180px 10px 40px;
-    margin: 0 auto;
     text-align: left;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .1)
 }
 
 .sidebar .meta-title {
     font-size: 19.6px;
-    padding: 80px 80px 0;
-    text-decoration: none;
+    text-align: center;
     color: #78ffff
 }
 
 .sidebar .meta-sublist {
+    padding-top: 15px;
     font-size: 19.6px;
-    padding: 10px 10px 0px;
-    text-decoration: none;
     color: #aaaaaa
 }
 
 .sidebar .meta-item {
-    font-size: 19.6px;
-    padding: 10px 10px 0px;
-    text-decoration: none;
-    color: #aaaaaa
+    display: grid;
+    padding-left: 10px;
+    width: 100%;
+    line-height: 35px;
+    text-transform: capitalize;
+    font-size: 15px;
 }
 
 .main-content {
@@ -2313,6 +2310,17 @@ textarea:-ms-input-placeholder {
     .footer-meta .meta-item {
         padding: 0 20px
     }
+
+    .sidebar-button-container{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        margin-top: 35px;
+        margin-left: 5px;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+    }
 }
 
 @media(max-width:700px) {
@@ -2709,5 +2717,9 @@ a.navbar-logo span {
 
     .post-container-full .post-content {
         width: 100%
+    }
+
+    .sidebar {
+        display: none;
     }
 }

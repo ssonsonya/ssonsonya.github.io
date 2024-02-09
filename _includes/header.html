@@ -1,4 +1,7 @@
 <header id="header" class="header bg-white">
+    <div class="sidebar-button-container">
+          {% include sidebar.html %}
+    </div>
     <div class="navbar-container">
         <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-logo">
             <img src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="{{ site.title }}" />
@@ -18,8 +21,6 @@
                 <li><a href="{{ '/timeline' | prepend: site.baseurl }}"><span class='iconfont icon-calendar'></span></a></li>
                 <li><a href="{{ '/about' | prepend: site.baseurl }}"><span class='iconfont icon-user'></span></a></li>
             </ul>
-        </div>
-        <div class="sidebar-button-container">
         </div>
     </div>
 </header>
