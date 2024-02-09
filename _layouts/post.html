@@ -14,10 +14,6 @@ layout: default
 </article>
 <div class="main-container">
     <div class="post-container">
-        <div class="navigation" id="navigation">
-            <h1>Contents</h1>
-            <ul class="nav sidenav"></ul>
-        </div>
         <article class="post-content">
             <p><span class='iconfont icon-tags'>Tags : 
                 {% for tag in page.tag %}
@@ -27,6 +23,10 @@ layout: default
                 <hr>
             {{ content }}
         </article>
+        <div class="navigation" id="navigation">
+            <h1>Contents</h1>
+            <ul class="nav sidenav"></ul>
+        </div>
         <div class="post-content">
          {% include comment.html %}
         </div>

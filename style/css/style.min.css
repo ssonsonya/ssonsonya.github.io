@@ -2306,7 +2306,8 @@ textarea:-ms-input-placeholder {
     }
 
     .main-content {
-        margin: 0 auto
+        padding: 90px 0 0 80px;
+        margin-bottom: 16px;
     }
 
     .footer-meta .meta-item {
@@ -2340,7 +2341,8 @@ textarea:-ms-input-placeholder {
     }
 
     .page-page {
-        padding: 90px 25px 0
+        padding: 90px 0 0 80px;
+        margin-bottom: 16px;
     }
 
     .search-page .search-tags {
@@ -2399,7 +2401,8 @@ textarea:-ms-input-placeholder {
     }
 
     .post-page {
-        padding: 90px 25px 0
+        padding: 90px 0 0 80px;
+        margin-bottom: 16px;
     }
 
     .common-page .post-list-item {
@@ -2488,7 +2491,8 @@ textarea:-ms-input-placeholder {
     }
 
     .main-content {
-        margin: 0 auto
+        padding: 90px 0 0 80px;
+        margin-bottom: 16px;
     }
 
     .post-onelist-item-container {
@@ -2628,7 +2632,7 @@ textarea:-ms-input-placeholder {
 
 a.navbar-logo span {
     position: relative;
-    top: -20px;
+    top: -35px;
     color: #5E5E7A;
 }
 
@@ -2639,17 +2643,18 @@ a.navbar-logo span {
 .post-container {
     position: relative;
     text-align: justify;
-    padding-left: 249px;
-    width: 1084px;
+    padding-right: auto;
+    width: 1051px;
     display: inline-block
 }
 
 .post-container .navigation {
+    z-index: 1;
     display: inline-block;
     width: 210px;
     text-align: left;
     position: fixed;
-    margin-left: -226px
+    margin-left: 20px;
 }
 
 .post-container .post-content {
@@ -2673,7 +2678,7 @@ a.navbar-logo span {
 
 .post-container-full .post-content {
     display: inline-block;
-    width: 1050px;
+    width: 1051px;
     text-align: left;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -2683,27 +2688,23 @@ a.navbar-logo span {
     margin-bottom: 22px
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1050px) {
     .post-container {
         width: 100%;
         padding: 0 10px
     }
 
-    .post-container .navigation {
-        display: none
-    }
-
     .post-container .post-content {
-        width: 100%
+        width: 80%
     }
 
     .post-container-full {
-        width: 100%;
+        width: 80%;
         padding: 0 10px
     }
 
     .post-container-full .navigation {
-        display: none
+        display: block;
     }
 
     .post-container-full .post-content {
