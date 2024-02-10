@@ -885,8 +885,7 @@ textarea:-ms-input-placeholder {
     float: left;
     max-width: 300px;
     height: auto;
-    padding: 0 10px 20px;
-    align-items: center
+    padding: 5px;
 }
 
 .post-list-item-container {
