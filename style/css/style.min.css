@@ -1464,10 +1464,11 @@ textarea:-ms-input-placeholder {
 }
 
 .archive-page .category-title {
+    width: 100%;
     font-size: 17px;
     font-weight: 600;
     position: relative;
-    padding: 0px 30px;
+    padding: 10px 30px;
     color: #00ffea;
     background-color: unset;
     clear: both;
@@ -1475,7 +1476,6 @@ textarea:-ms-input-placeholder {
 
 .archive-page .category-title::before {
     position: absolute;
-    top: 0;
     left: -15px;
     padding: 0 0 0 30px;
     content: '#';
