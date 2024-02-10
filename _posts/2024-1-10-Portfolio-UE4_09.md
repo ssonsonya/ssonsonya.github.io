@@ -7,7 +7,15 @@ category:
  - p-UE4
 tag:
  - 1|Player
- - 1|Component
+ - 1|MoveComponent
+ - 1|StateComponent
+ - 1|StatusComponent
+ - 1|WeaponComponent
+ - 1|IKComponent
+ - 1|ParkourComponent
+ - 1|TransformComponent
+ - 1|InventoryComponent
+ - 1|HUD
 thumbnail: /style/image/portfolio_thumbnails/Draft.png
 icon: game
 ---
