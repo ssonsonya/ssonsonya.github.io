@@ -13,11 +13,11 @@
 }
 
 .highlight .k {
-    font-weight: 600
+    color: #BEB7FF;
 }
 
 .highlight .o {
-    font-weight: 600
+    font-weight: 100
 }
 
 .highlight .cm {
@@ -27,17 +27,19 @@
 
 .highlight .cp {
     color: #999;
-    font-weight: 600
+}
+
+.highlight .cpf {
+    color: #E8C9BB;
 }
 
 .highlight .c1 {
-    color: #998;
+    color: #57A64A;
     font-style: italic
 }
 
 .highlight .cs {
     color: #999;
-    font-weight: 600;
     font-style: italic
 }
 
@@ -82,7 +84,7 @@
 }
 
 .highlight .gs {
-    font-weight: 600
+    font-weight: 100
 }
 
 .highlight .gu {
@@ -94,24 +96,23 @@
 }
 
 .highlight .kc {
-    font-weight: 600
+    font-weight: 100
 }
 
 .highlight .kd {
-    font-weight: 600
+    font-weight: 100
 }
 
 .highlight .kp {
-    font-weight: 600
+    font-weight: 100
 }
 
 .highlight .kr {
-    font-weight: 600
+    font-weight: 100
 }
 
 .highlight .kt {
-    color: #458;
-    font-weight: 600
+    color: #569CD6;
 }
 
 .highlight .m {
@@ -119,20 +120,23 @@
 }
 
 .highlight .s {
-    color: #d14
+    color: #E8C9BB
+}
+
+.highlight .n {
+    color: #9CDCFE
 }
 
 .highlight .na {
-    color: teal
+    color: #9CDCFE
 }
 
 .highlight .nb {
-    color: #0086B3
+    color: #9CDCFE
 }
 
 .highlight .nc {
-    color: #458;
-    font-weight: 600
+    color: #4EC9B0;
 }
 
 .highlight .no {
@@ -145,12 +149,10 @@
 
 .highlight .ne {
     color: #900;
-    font-weight: 600
 }
 
 .highlight .nf {
-    color: #900;
-    font-weight: 600
+    color: #DCDCAA;
 }
 
 .highlight .nn {
@@ -158,7 +160,11 @@
 }
 
 .highlight .nt {
-    color: navy
+    color: #569CD6
+}
+
+.highlight .nl {
+    color: #569CD6
 }
 
 .highlight .nv {
@@ -166,7 +172,7 @@
 }
 
 .highlight .ow {
-    font-weight: 600
+    font-weight: 100
 }
 
 .highlight .w {
@@ -182,7 +188,7 @@
 }
 
 .highlight .mi {
-    color: #099
+    color: #B5CEA8
 }
 
 .highlight .mo {
@@ -202,7 +208,7 @@
 }
 
 .highlight .s2 {
-    color: #d14
+    color: #E8C9BB
 }
 
 .highlight .se {
@@ -230,7 +236,7 @@
 }
 
 .highlight .ss {
-    color: #990073
+    color: #DCDCDC
 }
 
 .highlight .bp {

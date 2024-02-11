@@ -216,8 +216,8 @@ code {
     margin: 0 3px;
     padding: 2px 6px;
     border-radius: 5px;
-    color: #bfbfbf;
-    background-color: #313131;
+    color: #DCDCDC;
+    background-color: #1E1E1E;
 }
 
 pre code {
@@ -1241,10 +1241,7 @@ textarea:-ms-input-placeholder {
 
 .post-content pre code {
     line-height: 20px;
-    margin: 0;
     padding: 1.3em;
-    color: #bfbfbf;
-    background-color: #313131
 }
 
 .post-content a {

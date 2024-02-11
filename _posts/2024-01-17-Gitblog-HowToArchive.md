@@ -99,33 +99,33 @@ jekyll-archives:
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/eca0f2db-f349-4a66-9a13-18d54bc22bf5)
 
 <pre>
-<code>---
+<code html>---
 layout: default
 ---
 
 &lt;div class="main-content archive-page clearfix">
-    &lt;div class="category-item">
-        &lt;div class="post-lists">
-            &lt;div class="post-lists-body">
-                &lt;div class="category-title">&#123;&#123; page.title &#125;&#125;</div>
-                &#123;% for post in site.posts %&#125;
-                &#123;% capture this_category %&#125;&#123;&#123; post.category &#125;&#125;&#123;% endcapture %&#125;
-                &#123;% if this_category == page.title %&#125;
-                &lt;div class="post-list-item">
-                    &lt;div class="post-list-item-container">
-                        &lt;div class="item-label_noThumb">
-                            &lt;div class="item-title">&lt;a href="&#123;&#123; post.url &#125;&#125;">&#123;&#123; post.title &#125;&#125;&lt;/a>&lt;/div>
-                            &lt;div class="item-meta clearfix">
-                                &lt;div class="item-meta-date"> &#123;&#123; post.date | date: "%b %d, %Y" &#125;&#125; &lt;/div>
-                            &lt;/div>
-                        &lt;/div>
+  &lt;div class="category-item">
+    &lt;div class="post-lists">
+      &lt;div class="post-lists-body">
+        &lt;div class="category-title">&#123;&#123; page.title &#125;&#125;</div>
+          &#123;% for post in site.posts %&#125;
+          &#123;% capture this_category %&#125;&#123;&#123; post.category &#125;&#125;&#123;% endcapture %&#125;
+          &#123;% if this_category == page.title %&#125;
+            &lt;div class="post-list-item">
+              &lt;div class="post-list-item-container">
+                &lt;div class="item-label_noThumb">
+                  &lt;div class="item-title">&lt;a href="&#123;&#123; post.url &#125;&#125;">&#123;&#123; post.title &#125;&#125;&lt;/a>&lt;/div>
+                    &lt;div class="item-meta clearfix">
+                      &lt;div class="item-meta-date"> &#123;&#123; post.date | date: "%b %d, %Y" &#125;&#125; &lt;/div>
                     &lt;/div>
                 &lt;/div>
-                &#123;% endif %&#125;
-                &#123;% endfor %&#125;
+              &lt;/div>
             &lt;/div>
-        &lt;/div>
+          &#123;% endif %&#125;
+          &#123;% endfor %&#125;
+      &lt;/div>
     &lt;/div>
+  &lt;/div>
 &lt;/div>
 </code>
 </pre>
