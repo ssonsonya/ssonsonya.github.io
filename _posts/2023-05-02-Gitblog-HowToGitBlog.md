@@ -197,7 +197,6 @@ comments :        댓글관련 기능 사용가능 - gitalk을 활용한다
 초기 환경설정 참고 및 다운로드 링크
 1. GitHub Page ([https://docs.github.com/ko/pages/quickstart](https://docs.github.com/ko/pages/quickstart))
 2. RubyInstaller for Windows ([https://rubyinstaller.org/downloads/archives/](https://rubyinstaller.org/downloads/archives/))
-3. 
 
 Jekyll Theme 모음
 1. Jekyll 공식 문서 - 테마 ([https://jekyllrb.com/docs/themes/](https://jekyllrb.com/docs/themes/))
