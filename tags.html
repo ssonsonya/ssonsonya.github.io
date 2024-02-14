@@ -7,7 +7,7 @@ layout: default
     3 : WinAPI
     4 : C/C++
     5 : GitBlog
-    9 : Etc
+    9 : Errors
 --> 
 
 {% assign sortedtags = site.tags | sort %}
@@ -153,8 +153,8 @@ layout: default
     {% endif %}
     {% endfor %}
     <hr>
-    <!-- Etc -->
-    <p><span style="color: #fff; font-size: 1.5em;">Etc</span></p>
+    <!-- Errors -->
+    <p><span style="color: #fff; font-size: 1.5em;">Errors</span></p>
     {% for tag in sortedtags %}
     {% assign i = tag[1].size %}
     {% assign curTag = tag[0] | split: "|" %}

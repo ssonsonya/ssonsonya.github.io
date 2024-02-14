@@ -6,6 +6,7 @@ category: gitblog
 tag:
 - 5|Ruby
 - 5|Gemfile
+- 9|DependencyError
 thumbnail: /style/image/thumbnails/jekyll.png
 icon: web
 ---
