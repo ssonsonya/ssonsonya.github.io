@@ -2,9 +2,10 @@
 layout: post
 title: UE NVIDIA 버그 에디터 검정UI 해결법
 date:   2024-01-28
-category: in-depth
+category: challenge
 tag:
-- 1|Error
+- 1|BlackUI
+- 9|Multiplane-Overlay
 thumbnail: /style/image/thumbnails/UIBlackout.png
 icon: idea
 ---
