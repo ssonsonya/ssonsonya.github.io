@@ -25,7 +25,7 @@ icon: web
 
 ## Setting
 
-깃블로그 환경설치 과정은 이전 포스트 참고!  
+깃블로그 환경설치 과정은 이전 포스트 참고!
 > [깃블로그 만들기](2023-05-02-Gitblog-HowToGitBlog)  
 
 |기존|현재|비고|
@@ -67,11 +67,11 @@ bundle exec jekyll serve
 ```
 결과
 ```
-  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies
-  installed. In order to use Jekyll as currently configured, you'll need to install this gem.
-  If you've run Jekyll with `bundle exec`, ensure that you have included the jekyll-paginate gem in your
-  Gemfile as well. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate'
-  If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/!
+Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies
+installed. In order to use Jekyll as currently configured, you'll need to install this gem.
+If you've run Jekyll with `bundle exec`, ensure that you have included the jekyll-paginate gem in your
+Gemfile as well. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate'
+If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/!
                     ------------------------------------------------
       Jekyll 4.3.3   Please append `--trace` to the `serve` command
                      for any additional information or backtrace.
@@ -82,8 +82,8 @@ jekyll-paginate (Jekyll::Errors::MissingDependencyException)
 ```
 
 3. Action Build Warning
-![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/ee1859c3-f743-4883-ab3d-3264f842978f)
-> Git Commit Push 후 Build 과정에서 발생하는 경고문
+![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/ee1859c3-f743-4883-ab3d-3264f842978f)  
+Git Commit Push 후 Build 과정에서 발생하는 경고문
 ```
 Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.5.5). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.5.5`.
 ```
@@ -98,17 +98,18 @@ Warning: the running version of Bundler (2.1.4) is older than the version that c
 
 　→ 요기 Gemfile의 내용에 따라   
 `bundle install` 시 명시된 gem들을 설치해 Gemfile.lock이 업데이트 된다!  
+<br clear="left"/>  
 
 *기존과 신규 Gemfile 내용 비교  
 
 + <span style="background-color:#E6E6FA">깃블로그에 적용할 jekyll버전 상이</span>  
     그에 따른 minima 등등 오류메세지에 나오는 gem들도 상이한 버전으로 작업이 불가하다
 
-+ <span style="background-color:#E6E6FA">내 깃블로그에 필요한 `jekyll-paginate` 누락</span>  
++ <span style="background-color:#E6E6FA">내 깃블로그에 필요한 `jekyll-paginate` 누락</span>     
     신규 버전에선 다른 작업으로 대체된것 같지만 이 템플릿의 모든 구조를 따라 바꾸기엔 너무 시간이 오래 걸릴 것 같으니 누락된 gem을 추가해주기로 했다
 
 <details>
-<summary> <u>기존 jekyll 3.8.5 Gemfile</u></summary>
+<summary> <u>기존 jekyll 3.8.5 Gemfile (click!)</u></summary>
 
 <pre>
 <code>
@@ -147,9 +148,9 @@ gem "jekyll-paginate", "~> 1.1"
 </code>
 </pre>
 </details>
-<br>
+<br>  
 <details>
-<summary> <u>신규 설치된 jekyll 4.3.3 Gemfile</u></summary>
+<summary><u>신규 설치된 jekyll 4.3.3 Gemfile (click!)</u></summary>
 
 <pre>
 <code>
@@ -188,7 +189,9 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 </code>
 </pre>
-</details>  
+</details>
+<br>
+
 최종 적용된 Gemfile
 <pre>
 <code>

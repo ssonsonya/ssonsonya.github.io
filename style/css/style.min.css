@@ -78,11 +78,15 @@ body>:last-child {
 blockquote,
 dl,
 ol,
-p,
 pre,
 table,
 ul {
     margin: 20px 0;
+    vertical-align: baseline
+}
+
+p {
+    margin: 0 0 20px 0;
     vertical-align: baseline
 }
 
@@ -211,7 +215,7 @@ pre {
 
 code {
     font-family: consolas, "IBMPlexSansKR-Regular";
-    font-size: 13px;
+    font-size: 12px;
     font-weight: normal;
     margin: 0 3px;
     padding: 2px 6px;
@@ -221,7 +225,7 @@ code {
 }
 
 pre code {
-    font-size: 14px;
+    font-size: 12px;
     display: block;
     overflow: auto;
     padding: 1.3em;

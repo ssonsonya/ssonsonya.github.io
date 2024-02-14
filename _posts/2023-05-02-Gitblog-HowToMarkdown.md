@@ -78,7 +78,7 @@ icon: web
 #### Bold
 <pre><code>기본 굵기 **Bold 굵기**
 </code></pre>
-기본 굵기 **Bold 굵기** - 이 템플릿에 적용된 서식이 기본적으로 Bold체 여서 차이가 없다
+기본 굵기 **Bold 굵기**
 
 #### Italic
 <pre><code>기본 서식 *Italic 서식*
@@ -93,6 +93,11 @@ icon: web
 <pre><code>~~*취소된 Italic 서식*~~
 </code></pre>
 ~~*취소된 Italic 서식*~~
+
+#### 밑줄
+<pre><code>기본 서식 <u>밑줄 서식</u>
+</code></pre>
+기본 서식 <u>밑줄 서식</u>
 
 ### 색상 활용
 기본적인 내용은 *용님* [^3] 의 블로그를 통해 배웠고, 색상표는 *Rapid Tables* [^4] 를 참고할 수 있다.
@@ -154,6 +159,8 @@ Syntax강조기능은 없지만 복잡한 구조일 땐 `HTML`의 코드블럭 �
 
 코드블럭 내에 있는 문자가 코드로 읽혀질 경우 escape character를 활용해야 한다 [^5].
 
+---
+
 ## 인용
 
 ### 인용문
@@ -196,6 +203,8 @@ return 0;
 <pre><code>[GitBlog-자주 검색하는 마크다운](https://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B8%EC%9A%A9%EB%AC%B8)
 </code></pre>
 [GitBlog-자주 검색하는 마크다운](urlhttps://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B8%EC%9A%A9%EB%AC%B8)
+
+---
 
 ## 개체 활용
 
@@ -257,6 +266,8 @@ return 0;
 ⭐✨🔥  
 💖💕  
 ➡️🎁
+
+---
 
 ## Reference
 

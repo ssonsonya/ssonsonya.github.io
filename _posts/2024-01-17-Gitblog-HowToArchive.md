@@ -168,20 +168,21 @@ layout: default
 &#123;% endfor %&#125;
 
 &lt;div class="main-content archive-page clearfix">
-    &lt;div class="category-item">
-        &lt;div class="post-lists">
-            &#123;% for i in (1..categories_max) %&#125;
-            &#123;% for category in site.categories %&#125;
-            &#123;% if category[1].size == i %&#125;
-                &lt;div class="category-title">&lt;a href="https://ssonsonya.github.io/category/&#123;&#123; category[0] &#125;&#125;">
-                &#123;&#123; category[0] &#125;&#125; _&lt;span class="taxonomy_count">&#123;&#123; i &#125;&#125;&lt;/span>
-                &lt;/a>
-                &lt;/div>
-            &#123;% endif %&#125;
-            &#123;% endfor %&#125;
-            &#123;% endfor %&#125;
+  &lt;div class="category-item">
+    &lt;div class="post-lists">
+      &#123;% for i in (1..categories_max) %&#125;
+      &#123;% for category in site.categories %&#125;
+      &#123;% if category[1].size == i %&#125;
+        &lt;div class="category-title">
+        &lt;a href="https://ssonsonya.github.io/category/&#123;&#123; category[0] &#125;&#125;">
+        &#123;&#123; category[0] &#125;&#125; _&lt;span class="taxonomy_count">&#123;&#123; i &#125;&#125;&lt;/span>
+        &lt;/a>
         &lt;/div>
+      &#123;% endif %&#125;
+      &#123;% endfor %&#125;
+      &#123;% endfor %&#125;
     &lt;/div>
+  &lt;/div>
 &lt;/div>
 </code>
 </pre>
