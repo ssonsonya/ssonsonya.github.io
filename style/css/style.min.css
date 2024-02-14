@@ -194,7 +194,8 @@ ul li>:first-child {
 }
 
 li {
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin: 0 0 5px 0;
 }
 
 li p {
@@ -1255,6 +1256,7 @@ textarea:-ms-input-placeholder {
 .post-content a {
     color: #313131;
     border-bottom: 1px solid #ccc;
+    line-height: 1.5;
 }
 
 .post-content p a:hover {
