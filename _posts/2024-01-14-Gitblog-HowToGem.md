@@ -46,7 +46,7 @@ GitHub의 기존 깃블로그 Repository를 현재 PC에 Clone 한 뒤 평소처
 ## Error
 
 1. could not find jekyll-3.8.5
-> 입력
+입력
 ```
 bundle exec jekyll serve
 ```
@@ -61,7 +61,7 @@ Run `bundle install` to install missing gems.
 ```
 
 2. Dependency Error: Yikes!
-> 입력
+입력
 ```
 bundle exec jekyll serve
 ```
@@ -82,9 +82,7 @@ jekyll-paginate (Jekyll::Errors::MissingDependencyException)
 ```
 
 3. Action Build Warning
-
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/ee1859c3-f743-4883-ab3d-3264f842978f)
-
 > Git Commit Push 후 Build 과정에서 발생하는 경고문
 ```
 Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.5.5). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.5.5`.
@@ -101,7 +99,8 @@ Warning: the running version of Bundler (2.1.4) is older than the version that c
 　→ 요기 Gemfile의 내용에 따라   
 `bundle install` 시 명시된 gem들을 설치해 Gemfile.lock이 업데이트 된다!  
 
-*기존과 신규 Gemfile 내용 비교
+*기존과 신규 Gemfile 내용 비교  
+
 + <span style="background-color:#E6E6FA">깃블로그에 적용할 jekyll버전 상이</span>  
     그에 따른 minima 등등 오류메세지에 나오는 gem들도 상이한 버전으로 작업이 불가하다
 
@@ -109,7 +108,7 @@ Warning: the running version of Bundler (2.1.4) is older than the version that c
     신규 버전에선 다른 작업으로 대체된것 같지만 이 템플릿의 모든 구조를 따라 바꾸기엔 너무 시간이 오래 걸릴 것 같으니 누락된 gem을 추가해주기로 했다
 
 <details>
-<summary> 기존 jekyll 3.8.5 Gemfile</summary>
+<summary> <u>기존 jekyll 3.8.5 Gemfile</u></summary>
 
 <pre>
 <code>
@@ -148,9 +147,9 @@ gem "jekyll-paginate", "~> 1.1"
 </code>
 </pre>
 </details>
-
+<br>
 <details>
-<summary> 신규 설치된 jekyll 4.3.3 Gemfile</summary>
+<summary> <u>신규 설치된 jekyll 4.3.3 Gemfile</u></summary>
 
 <pre>
 <code>
