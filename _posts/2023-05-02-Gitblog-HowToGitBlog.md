@@ -163,7 +163,11 @@ Visual Studio만 사용해본 상태라 VS Code가 매우 낯설었지만 그것
 ## Customize
 
 ### Structure
-테마마다 다른 구성을 가지고 있지만 내가 적용한 Pinghsu-jekyll 테마의 경우 조금 단순한 구조로 이루어져있다
+테마마다 다른 구성을 가지고 있지만 내가 적용한 Pinghsu-jekyll 테마의 경우 조금 단순하면서도 단일화된 구조로 이루어져있다
+
+```
+구성 PPT로 정리된 이미지 업로드하기
+```
 
 ### config.yml
 기본적인 블로그의 `title`, `url`, `permlink`, `plugin` 등을 명시해주는 description같은 파일이다  
@@ -191,9 +195,12 @@ comments :        # 댓글관련 기능 사용가능 - gitalk을 활용한다
     repo : 
     owner : 
     admin : 
-```
+```  
 
-
+### index.html
+디렉토리 최상위에 있는 `index.html`은 메인 페이지를 꾸며주는 파일이다
+여기서부턴 `html` `css` `liquid`를 총동원해 블로그를 꾸며줄 수 있는 부분으로  
+jekyll의 theme을 적용해 이미 구현된 `_layouts` `_includes` `style.css`를 조금씩 수정하며 내 스타일대로 꾸며주었다
 
 ---
 
