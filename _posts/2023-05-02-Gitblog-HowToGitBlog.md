@@ -89,7 +89,7 @@ Jekyll을 적용하지 않아도 기본 GitHub Pages의 템플릿을 활용할 �
 |작업|내용|
 |:---:|:-------------------------------:|
 |[Ruby](https://rubyinstaller.org/downloads/)|2.4.0 이상 Devkit이 포함된 버전으로 설치해야 한다|
-|[Git](https://git-scm.com/downloads)|cmd로 작업해야 하는 부분이 빈번하게 있다|
+|[Git](https://git-scm.com/downloads)|git bash로 작업해야 하는 부분이 빈번하게 있다|
 |[GitHub Desktop](https://desktop.github.com/)|필수는 아니지만 기본적인 Git작업을 하기에 시각적으로 사용하기 편하다|
 |[VS Code](https://code.visualstudio.com/)|깃블로그 작업 관리가 편하다|
 
@@ -98,7 +98,7 @@ Jekyll을 적용하지 않아도 기본 GitHub Pages의 템플릿을 활용할 �
 나중에선 최신버전에 x64버전을 설치해도 문제없다는 걸 알았지만,  
 검색을 통해 무작정 따라하기를 하다보니 아래 버전으로 우선 초기 환경을 구성했다
 
-> Ruby+DevKit 2.7.8-1 (x86)  
+> **Ruby+DevKit 2.7.8-1 (x86)**  
 
 ![image](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/2ae3db9e-7c62-4536-813b-f94a5bc636fa)
 
@@ -118,7 +118,17 @@ Jekyll 관련 gem들 설치
 >gem install jekyll bundler
 ```
 
-깃블로그 디렉토리로 `cd` 해준 뒤 아래를 입력하면 local host 주소로 블로그 페이지를 확인해 볼 수 있다 
+깃블로그 디렉토리로 `cd` 해준 뒤 필요한 gem들 추가설치
+```
+>bundle install
+```
+
+깃블로그 초기 구성 `build`
+```
+>bundle exec jekyll build
+```
+
+아래를 입력하면 local host 주소로 블로그 페이지를 확인해 볼 수 있다 
 ```
 >bundle exec jekyll serve
 ```
@@ -127,7 +137,6 @@ Jekyll 관련 gem들 설치
 모두 Build되고 라이브로 Deploy되어 보여지기까지 최대 10분정도 소요될 수 있다고 한다
 > [Note: It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub.](https://docs.github.com/ko/pages/getting-started-with-github-pages/creating-a-github-pages-site)  
   
-
 
 ### VS Code 설치
 Visual Studio만 사용해본 상태라 VS Code가 매우 낯설었지만 그것도 잠시, ✨신세계를 맛볼 수 있었다  
@@ -156,8 +165,8 @@ Visual Studio만 사용해본 상태라 VS Code가 매우 낯설었지만 그것
 ### Structure
 테마마다 다른 구성을 가지고 있지만 내가 적용한 Pinghsu-jekyll 테마의 경우 조금 단순한 구조로 이루어져있다
 
-
 ### config.yml
+기본적인 블로그의 `title`, `url`, `permlink`, `plugin` 등을 명시해주는 description같은 파일이다  
 
 ```yml
 name:                     # 메인 상단과 브라우저 탭에 보여질 이름
@@ -170,12 +179,12 @@ github_username:          # 깃허브 아이디
 github:                   # 깃허브 주소
 permalink: /:year-:month-:day-:title        # 각 게시물들의 url 형태
 plugins: [jekyll-paginate]                             # 적용된 플러그인
-paginate: 9                                                      # jekyll-paginate : 한 페이지당 게시물 갯수
+paginate: 9                                            # jekyll-paginate : 한 페이지당 게시물 갯수
 paginate_path: "/page/:num/"                  # jekyll-paginate : 각 페이지 url 형태
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
 markdown: kramdown
-comments :        댓글관련 기능 사용가능 - gitalk을 활용한다
+comments :        # 댓글관련 기능 사용가능 - gitalk을 활용한다
   gitalk :
     clientID : 
     clientSecret : 
@@ -185,6 +194,8 @@ comments :        댓글관련 기능 사용가능 - gitalk을 활용한다
 ```
 
 
+
+---
 
 ## Reference
 
