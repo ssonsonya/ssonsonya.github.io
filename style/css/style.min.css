@@ -52,6 +52,7 @@ summary::-webkit-details-marker {
 }
 summary {
     list-style-type: none;
+    cursor: pointer;
 }
 
 body {
