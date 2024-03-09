@@ -10,15 +10,17 @@ thumbnail: /style/image/thumbnails/UIBlackout.png
 icon: idea
 ---
 
+언리얼 에디터 작업 중 갑작스럽게 에디터의 UI가 검은 창으로 변하여 알아볼 수 없는 현상이 발생했다
+![UIBlackout](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/3f758015-c896-4fe4-b0d8-a029950a0d1b)
+
 * content
 {:toc}
 
 ## 문제발생
 
-![UIBlackout](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/3f758015-c896-4fe4-b0d8-a029950a0d1b)
-
-이전 노트북에서 작업했을 땐 발생하지 않았던 검정 UI오류가 확인되어 검색을 해보았다.  
-처음엔 실행프로그램이 많아 과부하가 걸린거라 여기고 종료 후 재실행을 반복했으나,  
+이전 노트북에서 작업했을 땐 발생하지 않았던 검정 UI오류가 확인되어 검색을 해보았다  
+기억나는 대로 필요한 항목의 위치에 커서를 올려 클릭 시 실행엔 문제가 없었지만 보이지 않아 작업 진행에 불편을 겪어야 했다  
+처음엔 프로그램의 과부하로 인한 현상으로 여기고 종료 후 재실행을 반복했으나,  
 작업진행에 방해가 될 정도로 너무 자주 발생해 검색해본 결과 [^1] 그래픽카드를 사용하는 PC에서 언리얼 엔진 뿐 아니라 모든 프로그램에서 흔히 발생하는 NVIDIA 버그임을 알게되었다
 
 ---
