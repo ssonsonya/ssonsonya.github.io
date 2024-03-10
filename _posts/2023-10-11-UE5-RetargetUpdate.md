@@ -8,7 +8,7 @@ tag:
  - 1|Animation
  - 1|Retarget
  - 1|Mixamo
-thumbnail: /style/image/portfolio_thumbnails/.png
+thumbnail: /style/image/portfolio_thumbnails/Draft.png
 icon: idea
 ---
 
