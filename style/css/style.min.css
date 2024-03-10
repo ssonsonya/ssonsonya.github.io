@@ -2642,6 +2642,18 @@ a.navbar-logo span {
     margin-bottom: 22px
 }
 
+.post-container .about-content {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding-left: 40px;
+    padding-right: 24px;
+    font-size: 16px;
+    margin-bottom: 22px
+}
+
 .post-container-full {
     position: relative;
     text-align: justify;
