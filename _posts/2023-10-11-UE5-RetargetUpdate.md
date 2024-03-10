@@ -10,6 +10,8 @@ tag:
  - 1|Mixamo
 thumbnail: /style/image/portfolio_thumbnails/Draft.png
 icon: idea
+related: 
+ - /2023-11-11-UE4_RetargetMixamo
 ---
 
 * content
