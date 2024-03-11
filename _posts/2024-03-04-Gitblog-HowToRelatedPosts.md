@@ -26,15 +26,15 @@ Front Matter는 `YAML` 언어로, Jekyll에서 페이지 구현에 적용시켜�
 
 ```markdown
 ---
-layout: post  ## 전역변수 : 페이지 양식
-title: GitBlog-연관 게시글 설정 ## 전역변수 : 페이지 제목 (브라우저 창 또는 탭에 표시)
-date: 2024-03-04  ## 전역변수 : 작성일 (Jekyll에선 Permalink에 활용)
-category: gitblog ## Jekyll-Archive변수 : 카테고리
-tag:  ## Jekyll-Archive변수 : 태그리스트
+layout: post  # 전역변수 : 페이지 양식
+title: GitBlog-연관 게시글 설정 # 전역변수 : 페이지 제목 (브라우저 창 또는 탭에 표시)
+date: 2024-03-04  # 전역변수 : 작성일 (Jekyll에선 Permalink에 활용)
+category: gitblog # Jekyll-Archive변수 : 카테고리
+tag:  # Jekyll-Archive변수 : 태그리스트
  - 5|FrontMatter
  - 5|Liquid
-thumbnail: /style/image/thumbnails/.png ## 커스텀변수(테마) : 썸네일 이미지 링크 활용
-icon: web ## 커스텀변수(테마) : 게시글 아이콘 활용
+thumbnail: /style/image/thumbnails/.png # 커스텀변수(테마) : 썸네일 이미지 링크 활용
+icon: web # 커스텀변수(테마) : 게시글 아이콘 활용
 ---
 ```  
 
@@ -55,7 +55,7 @@ Front Matter에 명시된 내용은 `liquid`로 조회가 가능하다
 
 plugin을 사용하면 이러한 특정 조건이 적용되지 않고 일괄 설정되기 때문에 직접 설정이 가능한 Front Matter를 활용했고, 의도치않은 게시글들의 노출로 개연성을 무너뜨리지 않는 연관 게시물 설정 기능을 추가할 수 있게 되었다  
 
-```
+```markdown
 related: 
  - /2023-05-02-Gitblog-HowToGitBlog
  - /2023-08-09-Gitblog-HowToMarkdown
