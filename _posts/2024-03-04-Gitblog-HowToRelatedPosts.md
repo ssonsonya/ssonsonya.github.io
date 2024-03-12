@@ -6,7 +6,7 @@ category: gitblog
 tag:
  - 5|FrontMatter
  - 5|Liquid
-thumbnail: /style/image/thumbnails/.png
+thumbnail: /style/image/thumbnails/RelatedPost.png
 icon: web
 related: 
  - /2023-05-02-Gitblog-HowToGitBlog
@@ -24,7 +24,7 @@ Front Matter는 `YAML` 언어로, Jekyll에서 페이지 구현에 적용시켜�
 페이지의 Layout, title 등 [Jekyll에서 전역변수로 설정된 Front Matter](https://jekyllrb.com/docs/front-matter/) [^11] 로 페이지 양식을 기본적으로 적용시켜주기도 하며,  
 특정 정보를 담고 활용하기 위해 변수를 선언할 수 있다  
 
-```markdown
+```yml
 ---
 layout: post  # 전역변수 : 페이지 양식
 title: GitBlog-연관 게시글 설정 # 전역변수 : 페이지 제목 (브라우저 창 또는 탭에 표시)
@@ -47,15 +47,16 @@ Front Matter에 명시된 내용은 `liquid`로 조회가 가능하다
 
 ### Why not Plugin?
 
-검색을 통해 연관 게시글을 조회할 수 있는 [다수의 plugin들](https://github.com/toshimaru/jekyll-tagging-related_posts) [^12] 을 알아보았지만, 특정 내용에 대한 연관된 글을 찾아주는 기능이 아닌 최신 업로드된 글들을 몇개까지 리스트하는 기능이었다  
+검색을 통해 연관 게시글을 조회할 수 있는 [다수의 plugin들](https://github.com/toshimaru/jekyll-tagging-related_posts) [^12] 을 알아보았지만, 특정 내용에 대한 연관된 글을 찾아주는 기능이 아닌 최신 업로드된 글들을 설정된 개수만큼 리스트하는 기능뿐이었다  
 
 내가 설정하고자 하는 연관 게시물은 다음과 같은 조건으로 보여지고 싶었다  
-- 연관 게시글 직접 설정 가능 (의도하지 않은 게시글이 보여지는 걸 방지)
-- 하나 이상 또는 아예 설정하지 않을 수 있음
+- 연관 게시글 직접 설정 가능
+- 하나 이상의 연관 게시물 지정, 또는 설정하지 않을 수 있음
 
-plugin을 사용하면 이러한 특정 조건이 적용되지 않고 일괄 설정되기 때문에 직접 설정이 가능한 Front Matter를 활용했고, 의도치않은 게시글들의 노출로 개연성을 무너뜨리지 않는 연관 게시물 설정 기능을 추가할 수 있게 되었다  
+관련도가 떨어지거나 의도치 않은 게시글들의 노출로 개연성을 무너뜨리는 상황을 방지할 수 있도록 설정하고 싶었으나, 이러한 기능을 갖춘 plugin은 아직 발견되지 않았다  
+이후엔 키워드 설정으로 연관게시물을 상호 리스트업 할 수 있도록 설계하는 방법도 연구해 보면 좋을 것 같다  
 
-```markdown
+```yml
 related: 
  - /2023-05-02-Gitblog-HowToGitBlog
  - /2023-08-09-Gitblog-HowToMarkdown
