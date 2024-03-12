@@ -82,16 +82,16 @@ Additive Layer Track은 애니메이션 시퀀스에 특정 본의 트렌스폼(
 
 ---
 
-## Blender Root
+## Root Motion
 
-### Root Motion
+### Mixamo In Place
 ![rootmotion](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/d500629f-238c-4c6c-bd49-c5707c4e67d4)
 Mixamo의 Skeleton 구조는 언리얼 기본 Skeleton과 다르다  
 특히 캐릭터 애니메이션의 기준점을 지정해주는 `Root`이 `Hips`로 지정되어 있어 기준점에 고정되지 않은 애니메이션의 경우 Root Motion 적용이 어렵다  
 이러한 애니메이션을 Root가 있는 UE4 Mannequin에 Retarget 시 Root Motion이 적용되지 않을 뿐더러, 최상위 부모 본의 계산부터 틀어져 전체적인 동작이 이상한 애니메이션이 만들어질 수 있다
 
 Mixamo에서 다운로드 옵션에 최상위 본에 위치를 고정해주는 `In Place`이 있지만, 모든 애니메이션이 이 옵션을 가지고 있진 않다  
-고정 옵션이 있는 소수의 애니메이션만으로 작업을 할 수 밖에 없었고, 필요한 에셋을 구하는데 예상치 못한 제한이 생겨 스트레스를 겪었다  
+고정 옵션이 있는 소수의 애니메이션만으로 작업을 할 수 밖에 없었고, 필요한 에셋을 구하는데 예상치 못한 제한이 생기자 스트레스를 받았다  
 ![download_option](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/ca08617d-1755-46d9-b5c5-d76a69aef8c6)
 
 나와 같은 불편함을 겪은 사람들의 의견을 검색해본 결과, [Blender 프로그램을 통해 애니메이션에 Root본을 삽입하는 plugin 기능을 알게 되었다](https://www.youtube.com/watch?v=gq8k5ZOBjww) [^31]  
@@ -110,29 +110,41 @@ Mixamo에서 다운로드 옵션에 최상위 본에 위치를 고정해주는 `
 
 최상위 본이 맞춰진 상태로 Root Motion 여부와 상관없이 애니메이션 Retarget을 할 수 있게 되었다  
 
+---
+
 ## Unite Skeleton
 
-언리얼 마켓플레이스의 무료 에셋으로 내려받는 Skeletal Mesh는 인간형인 이상 대부분 UE Mannequin Skeleton에 호환이 된다  
-플레이어 캐릭터로 받아놓은 Raphael Skeletal Mesh와 애너미 캐릭터인 Man또한 똑같은 UE Mannequin Skeleton파일을 각각 사용하고 있었다  
-Skeleton파일을 기반으로 애니메이션이 연결되기 때문에 아무리 똑같은 모양과 Skeleton이라도 애니메이션을 사용하기 위해선 각각 Retarget을 통해 또 하나의 애니메이션 파일을 생성해줘야 하는 것  
-수십개의 애니메이션들을 캐릭터마다 Retarget 해 중복된 애니메이션 파일을 갖는것이 비효율적이라 생각되어 방법을 검색해보았다  
+언리얼 마켓플레이스의 무료 에셋으로 내려받는 인간형 Skeletal Mesh는 대부분 UE Mannequin Skeleton을 베이스로 갖는다  
+플레이어 캐릭터로 받아놓은 [Manuel](https://www.unrealengine.com/marketplace/ko/item/9d2acd4da41a46d0b025c13c459d27d9) [^41] 의 Skeletal Mesh와 애너미 캐릭터인 [Man](https://www.unrealengine.com/marketplace/ko/item/d943cdcf09364e0fb439dc5f00b66bbc) [^42] 또한 똑같은 UE Mannequin Skeleton파일을 각각 사용하고 있다  
+
+![character_mesh](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/5fc3f105-ba8d-4172-afde-baa6c8282b92)
+
+이렇기 때문에 각각의 Skeleton을 타깃으로 하는 애니메이션을 사용해야 하고, 중복된 애니메이션들을 수십개 리타깃해야 하는 일이 생기게 되었다  
+이러한 방식이 메모리상 비효율적이라 생각되어 방법을 검색해본 결과 `Assign Skeleton` 기능을 알게 되었다
 
 ### Assign Skeleton
 
-예상보다 쉬운 방법이 있었고 예상치 못한 부분까지 효율적이라 적용 후 매우 만족할 수 있었다  
+Skeletal Mesh 우클릭 > 스켈레톤 > 스켈레톤 할당 > 스켈레톤 선택
+![assign_skeleton](https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/f69154b5-5a7b-4843-9adf-286e15cf1350)
 
+
+예상보다 훨씬 간단한 방법이었고, 이후 `FootIK` 또는 공격기능에 추가해야하는 소켓들또한 단일화된 Skeleton 하나에만 추가하면 모두 적용이 되어 중복된 작업을 하지 않아도 되었다
+
+---
 
 ## 생각정리
 
 학원을 통해 배운내용도 그렇고 수많은 언리얼 튜토리얼들을 보았지만, 아무래도 기능 위주로 보여주다보니 플레이어 캐릭터를 기본 UE Mannequin을 사용하거나 세트로 준비된 Skeletal Mesh와 애니메이션을 사용하는 내용들이 대부분이었다  
 굳이 Skeletal Mesh를 변신시키는 작업 또한 많지 않았다  
 
-사실상 직접 게임을 만든다고 하면 이러한 에셋들은 더 이상 조작할 필요 없이 마련되어 있을거라 프로젝트에 중점적으로 보여지지 않을 부분이란 생각도 들었다  
+사실상 직접 게임을 만든다고 하면 에셋들은 이미 사용할 준비가 되어있는 상태이기 때문에 프로젝트에 중점적으로 다뤄지지 않을 부분이란 생각도 들었다  
 
-하지만 나는 비록 배고픈 개발자 교육생이지만 이러한 제한점을 최소한으로 줄이면서 더 높은 완성도를 이룰 수 있다는 도전심에 굳이 한 땀 한 땀 작업을 이어나갔던 것 같다  
+하지만 지금의 나에겐 그런 준비된 에셋은 없고 유료결제를 하기엔 경제적 부담이 컸으며,  
+최소한의 비용으로 높은 완성도를 이루겠다는 도전심에 굳이 한 땀 한 땀 작업을 이어나갔던 것 같다  
 
 비효율적인 단순반복 작업으로 예상보다 많은 시간을 들였지만, 앞으로 끔찍히 어려워 보이는 일을 맞딱드렸을 때 묵묵히 해나갈 수 있다는 용기를 준 과정이었다  
 
+---
 
 ## Reference
 
@@ -145,6 +157,9 @@ Skeleton파일을 기반으로 애니메이션이 연결되기 때문에 아무�
 [^31]: [OpenReality(2023.02.02).YouTube. Fix Mixamo Root Motion Animations in Unreal Engine UE4](https://www.youtube.com/watch?v=gq8k5ZOBjww)  
 [^32]: [Blender Foundation. Blender. Download](https://www.blender.org/download/) 4.0.2  
 [^33]: [enjiop(2022). GitHub. Mixamo_converter](https://github.com/enziop/mixamo_converter)  
+
+[^41]: [Renderpeople. Unreal Engine Marketplace. Scanned 3D People Pack](https://www.unrealengine.com/marketplace/ko/item/9d2acd4da41a46d0b025c13c459d27d9)  
+[^42]: [Bugrimov Maksim. Unreal Engine Marketplace. Advanture Character](https://www.unrealengine.com/marketplace/ko/item/d943cdcf09364e0fb439dc5f00b66bbc)  
 
 [Giuseppe Portelli(2017.11.1). A clockwork berry. Automated foot sync markers using animation modifiers in Unreal Engine](http://www.aclockworkberry.com automated-foot-sync-markers-using-animation-modifiers-unreal-engine/)  
 
