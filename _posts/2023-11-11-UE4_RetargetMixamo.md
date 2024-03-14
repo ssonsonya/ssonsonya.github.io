@@ -160,8 +160,3 @@ Skeletal Mesh 우클릭 > 스켈레톤 > 스켈레톤 할당 > 스켈레톤 선�
 
 [^41]: [Renderpeople. Unreal Engine Marketplace. Scanned 3D People Pack](https://www.unrealengine.com/marketplace/ko/item/9d2acd4da41a46d0b025c13c459d27d9)  
 [^42]: [Bugrimov Maksim. Unreal Engine Marketplace. Advanture Character](https://www.unrealengine.com/marketplace/ko/item/d943cdcf09364e0fb439dc5f00b66bbc)  
-
-[Giuseppe Portelli(2017.11.1). A clockwork berry. Automated foot sync markers using animation modifiers in Unreal Engine](http://www.aclockworkberry.com automated-foot-sync-markers-using-animation-modifiers-unreal-engine/)  
-
-
-
