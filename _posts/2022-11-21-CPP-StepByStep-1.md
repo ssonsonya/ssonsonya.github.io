@@ -25,6 +25,9 @@ tag:
 - 4|Cast
 thumbnail: /style/image/thumbnail_CPP_sbs.PNG
 icon: book
+related:
+- next
+- previous
 ---
 
 

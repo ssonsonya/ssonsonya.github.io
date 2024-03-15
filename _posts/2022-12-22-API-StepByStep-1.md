@@ -11,6 +11,8 @@ tag:
 - 3|PeekMessage
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
+related:
+- next
 ---
 
 

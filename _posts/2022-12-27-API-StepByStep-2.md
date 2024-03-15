@@ -15,6 +15,9 @@ tag:
 - 4|강의노트
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
+related:
+- next
+- previous
 ---
 
 * content

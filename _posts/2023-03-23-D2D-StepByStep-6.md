@@ -5,6 +5,8 @@ date:   2023-03-23
 category: tutorial
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book
+related:
+- previous
 ---
 
 * content

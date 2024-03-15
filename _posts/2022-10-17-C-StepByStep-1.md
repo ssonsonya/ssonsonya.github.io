@@ -15,6 +15,8 @@ tag:
 - 4|연산자
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
+related:
+- next
 ---
 
 * content

@@ -11,9 +11,11 @@ tag:
 - 4|String
 - 4|Stream
 - 4|함수
-
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
+related:
+- next
+- previous
 ---
 
 

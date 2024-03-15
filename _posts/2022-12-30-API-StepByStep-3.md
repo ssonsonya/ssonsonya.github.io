@@ -14,6 +14,8 @@ tag:
 - 3|Collision
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
+related:
+- previous
 ---
 
 * content

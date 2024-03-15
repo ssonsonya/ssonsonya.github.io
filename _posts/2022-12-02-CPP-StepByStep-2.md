@@ -11,9 +11,11 @@ tag:
 - 4|Singleton
 - 4|template<>
 - 4|friend
-
 thumbnail: /style/image/thumbnail_CPP_sbs.PNG
 icon: book
+related:
+- next
+- previous
 ---
 
 

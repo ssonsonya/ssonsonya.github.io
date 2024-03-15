@@ -18,6 +18,8 @@ tag:
 - 2|Viewport
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book
+related:
+- next
 ---
 
 * content

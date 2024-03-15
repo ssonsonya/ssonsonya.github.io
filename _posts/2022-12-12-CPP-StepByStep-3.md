@@ -18,6 +18,8 @@ tag:
 - 4|unordered_map
 thumbnail: /style/image/thumbnail_CPP_sbs.PNG
 icon: book
+related:
+- previous
 ---
 
 

@@ -18,6 +18,8 @@ tag:
 - 4|FILE*
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
+related:
+- previous
 ---
 
 
