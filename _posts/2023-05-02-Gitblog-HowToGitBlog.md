@@ -17,13 +17,13 @@ icon: web
 
 ## Background
 
-<span style="background-color:#E6E6FA">블로그를 만드는 이유 Best 3 : </span>
+<span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)">블로그를 만드는 이유 Best 3 : </span>
 1. PPT로 정리한 학원수업내용을 파일형식으로 가지고 다니기 불편함  
   또한 이미 배운내용을 잊어버려 다시 시간쓰지 않도록 내 공간에 기록할 수 있음
 2. (내가 그랬듯) 내가 이해한 내용을 공유해 많은 사람들의 공부에 도움이 될 수 있으면 좋을 것 같다
 3. 모두에게 공개되는 글이라 더욱 꼼꼼히 보게되어, 오탈자 개선 및 가독성있는 글을 쓰는 스킬을 기르기 위함  
 
-<span style="background-color:#E6E6FA">GitHub Page를 통해 블로그를 운영하는 이유 : </span>
+<span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)">GitHub Page를 통해 블로그를 운영하는 이유 : </span>
 1. 높은 자유도  
   할 수 있는 모든 방법을 동원해 개성에 맞게 블로그를 꾸밀 수 있는 부분이 마음에 든다.
 2. 새로운 코드문법에 대한 도전  

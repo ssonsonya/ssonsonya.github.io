@@ -114,25 +114,25 @@ icon: web
 
 #### 글자 배경색
 ```html
-<span style="background-color:#ffcccc"> 연빨강 </span>
-<span style="background-color:#ffe5cc"> 연주황 </span>
-<span style="background-color:#ffffcc"> 연노랑 </span>
-<span style="background-color:#e5ffcc"> 연두 </span>
-<span style="background-color:#ccffcc"> 연초록 </span>
-<span style="background-color:#ccffe5"> 연청록 </span>
-<span style="background-color:#ccffff"> 하늘색 </span>
-<span style="background-color:#cce5ff"> 연파랑 </span>
-<span style="background-color:#ccccff"> 연보라 </span>
+<span style="background-color:#ffcccc"> 연빨강 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)"> 연주황 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ffffcc, transparent)"> 연노랑 </span> 
+<span style="background:repeating-linear-gradient(transparent, #e5ffcc, transparent)"> 연두 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccffcc, transparent)"> 연초록 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccffe5, transparent)"> 연청록 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccffff, transparent)"> 하늘색 </span> 
+<span style="background:repeating-linear-gradient(transparent, #cce5ff, transparent)"> 연파랑 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccccff, transparent)"> 연보라 </span> 
 ```
 <span style="background-color:#ffcccc"> 연빨강 </span> 
-<span style="background-color:#ffe5cc"> 연주황 </span> 
-<span style="background-color:#ffffcc"> 연노랑 </span> 
-<span style="background-color:#e5ffcc"> 연두 </span> 
-<span style="background-color:#ccffcc"> 연초록 </span> 
-<span style="background-color:#ccffe5"> 연청록 </span> 
-<span style="background-color:#ccffff"> 하늘색 </span> 
-<span style="background-color:#cce5ff"> 연파랑 </span> 
-<span style="background-color:#ccccff"> 연보라 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)"> 연주황 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ffffcc, transparent)"> 연노랑 </span> 
+<span style="background:repeating-linear-gradient(transparent, #e5ffcc, transparent)"> 연두 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccffcc, transparent)"> 연초록 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccffe5, transparent)"> 연청록 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccffff, transparent)"> 하늘색 </span> 
+<span style="background:repeating-linear-gradient(transparent, #cce5ff, transparent)"> 연파랑 </span> 
+<span style="background:repeating-linear-gradient(transparent, #ccccff, transparent)"> 연보라 </span> 
 
 ### 코드블럭
 ````

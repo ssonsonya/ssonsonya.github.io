@@ -19,8 +19,8 @@ icon: web
 새 PC를 장만하고 기존 작업환경을 새로운 PC에 구축하다보니 여기저기 프로그램들의 버전호환이 필요하단 걸 알게되었다.  
 이 깃블로그도 최신버전을 적용하는 과정에 그 동안 생소했던 Ruby사용법과 Gem들에 대해 좀 더 이해할 수 있었다.  
 
-+ <span style="background-color:#E6E6FA">업데이트 된 Jekyll버전(4.3.3) 적용하기</span>  
-+ <span style="background-color:#E6E6FA">Gemfile을 통해 기존 깃블로그에 적용된 gem 설치하기</span>  
++ <span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)">업데이트 된 Jekyll버전(4.3.3) 적용하기</span>  
++ <span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)">Gemfile을 통해 기존 깃블로그에 적용된 gem 설치하기</span>  
 
 ---
 
@@ -103,10 +103,10 @@ Warning: the running version of Bundler (2.1.4) is older than the version that c
 
 *기존과 신규 Gemfile 내용 비교  
 
-+ <span style="background-color:#E6E6FA">깃블로그에 적용할 jekyll버전 상이</span>  
++ <span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)">깃블로그에 적용할 jekyll버전 상이</span>  
     그에 따른 minima 등등 오류메세지에 나오는 gem들도 상이한 버전으로 작업이 불가하다
 
-+ <span style="background-color:#E6E6FA">내 깃블로그에 필요한 `jekyll-paginate` 누락</span>     
++ <span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)">내 깃블로그에 필요한 `jekyll-paginate` 누락</span>     
     신규 버전에선 다른 작업으로 대체된것 같지만 이 템플릿의 모든 구조를 따라 바꾸기엔 너무 시간이 오래 걸릴 것 같으니 누락된 gem을 추가해주기로 했다
 
 <details>
@@ -249,7 +249,7 @@ bundle install
 *채택된 답변 내용
 + 전역 jekyll을 통해 gem install 하는 방식을 지양하는 편
 + Gemfile에 Jekyll버전을 명시해 수정 후 bundler를 통해 install
-+ <span style="background-color:#E6E6FA">기존의 로컬 Gemfile구성환경으로 설정하기</span>
++ <span style="background:repeating-linear-gradient(transparent, #ffe5cc, transparent)">기존의 로컬 Gemfile구성환경으로 설정하기</span>
 
 cmd의 디렉토리를 깃블로그위치로 cd해 주고 아래 명령어 입력
 ```
