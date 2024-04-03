@@ -854,6 +854,15 @@ textarea:-ms-input-placeholder {
     animation-duration: .5s
 }
 
+.main-content-title {
+    display: block;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .index-page {
     padding: 90px 20px 0
 }
