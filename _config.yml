@@ -16,7 +16,7 @@ plugins:
   - jekyll-archives
 
 # Paginator
-paginate: 9
+paginate: 6
 paginate_path: "/page/:num/"
 
 # Archives
