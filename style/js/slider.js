@@ -9,15 +9,14 @@ function runSlider(event)
 {
     var index = event
     .target.closest('.slider_thumb')
-    .dataset.thumb;
+    .dataset.thumbId;
 
     // Remove active class (thumbs)
     sliderThumbs
-    .querySelector('.slider_thumb_active')
-    .classList.remove('.slider_thumb_active');
-
+    .querySelector('.slider_thumb_active').classList.remove('slider_thumb_active');
+      
     // Add active class (thumbs)
     sliderThumbs
     .querySelector(`[data-thumb-id='${index}']`)
-    .classList.add('.slider_thumb_active');
+    .classList.add('slider_thumb_active');
 }

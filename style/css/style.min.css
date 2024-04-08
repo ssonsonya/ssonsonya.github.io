@@ -962,7 +962,7 @@ textarea:-ms-input-placeholder {
     justify-content: space-evenly;
 }
 
-.slider_thumb {
+.slider_thumb_img {
     display: block;
     width: 150px;
     height: 100px;
@@ -973,11 +973,11 @@ textarea:-ms-input-placeholder {
     transition: opacity 0.4s linear;
 }
 
-.slider_thumb:hover {
+.slider_thumb_img:hover {
     opacity: 1;
 }
 
-.slider_thumb_active .slider_thumb {
+.slider_thumb_active .slider_thumb_img {
     opacity: 1;
 }
 
