@@ -4,6 +4,9 @@ layout: default
 
 <div class="main-content index-page clearfix">
   <div class="main-content-title">Portfolio</div>
+  {% for page in site.portfolios %}
+  {{ page }}
+  {% endfor %}
   <div class="slider">
     <!-- imgs -->
     <div class="slider_imgs">
