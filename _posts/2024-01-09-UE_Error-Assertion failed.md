@@ -42,6 +42,8 @@ icon: idea
 
 ## 해결방법
 
+> 에러메세지에 답이 있다!
+
 에러메세지의 내용에 따르면, Asset Data `T_Weapon_Set2_Normal.uasset`이 손상되어 Crash가 발생했다고 한다  
 해당 Asset파일을 새로 받아 직접 덮어씌워주었더니 해결되었다  
 
