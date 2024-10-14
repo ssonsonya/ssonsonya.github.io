@@ -240,9 +240,7 @@ return 0;
 <a href="https://ssonsonya.github.io/2023-08-09-Gitblog-HowToMarkdown#%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%82%BD%EC%9E%85">
 <img align="left" width="200" title="왼쪽정렬+너비200" src="https://github.com/ssonsonya/ssonsonya.github.io/assets/116151781/6c17296d-fa31-4a5a-8f85-898a2edc5ec9">
 </a>  
-`<a href="">`  
-`<img>` `align="left"` `width=""` `title=""` `src`  
-`</a>`  
+ `align="left"` `width="200"` `title="왼쪽정렬+너비200"`  
 `<br clear="left"/>`
 <br clear="left"/>
 
