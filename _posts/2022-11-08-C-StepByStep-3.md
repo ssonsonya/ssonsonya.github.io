@@ -4,18 +4,18 @@ title: C 기초 이론 복습 - 3
 date:   2022-11-18
 category: tutorial
 tag:
-- 4|메모리구조
-- 4|FILO
-- 4|재귀함수
-- 4|struct
-- 4|union
-- 4|enum
-- 4|*ptr
-- 4|이중포인터
-- 4|함수포인터
-- 4|malloc
-- 4|realloc
-- 4|FILE*
+- 3|메모리구조
+- 3|FILO
+- 3|재귀함수
+- 3|struct
+- 3|union
+- 3|enum
+- 3|*ptr
+- 3|이중포인터
+- 3|함수포인터
+- 3|malloc
+- 3|realloc
+- 3|FILE*
 thumbnail: /style/image/thumbnail_C_sbs.png
 icon: book
 related:

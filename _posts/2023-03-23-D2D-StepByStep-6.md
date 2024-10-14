@@ -3,6 +3,10 @@ layout: post
 title: DirectX 2D 기초 이론 복습 - 6
 date:   2023-03-23
 category: tutorial
+tag:
+- 2|ImGUI
+- 2|FMOD
+- 2|Animation
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book
 related:

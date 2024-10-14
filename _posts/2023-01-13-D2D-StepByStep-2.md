@@ -3,6 +3,17 @@ layout: post
 title: DirectX 2D 기초 이론 복습 - 2
 date:   2023-01-13
 category: tutorial
+tag:
+- 2|Vertex
+- 2|VertexShader
+- 2|PixelShader
+- 2|WVP
+- 2|RS
+- 2|PS
+- 2|DS
+- 2|UV
+- 2|SRV
+- 2|OM
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book
 related:

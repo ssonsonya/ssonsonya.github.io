@@ -2,10 +2,10 @@
 layout: default
 ---
 <!--
-    1 : Unreal Enging
-    2 : DirectX11
-    3 : WinAPI
-    4 : C/C++
+    1 : Unreal Engine
+    2 : WinAPI/DirectX11
+    3 : C/C++
+    4 : Computer Science
     5 : GitBlog
     9 : Errors
 --> 
@@ -42,7 +42,7 @@ layout: default
     {% endfor %}
     <hr>
     <!-- DX -->
-    <p><span style="color: #fff; font-size: 1.5em;">DirectX</span></p>
+    <p><span style="color: #fff; font-size: 1.5em;">WinAPI/DirectX11</span></p>
     {% for tag in sortedtags %}
     {% assign i = tag[1].size %}
     {% assign curTag = tag[0] | split: "|" %}
@@ -70,7 +70,7 @@ layout: default
     {% endfor %}
     <hr>
     <!-- WinAPI -->
-    <p><span style="color: #fff; font-size: 1.5em;">winAPI</span></p>
+    <p><span style="color: #fff; font-size: 1.5em;">C/C++</span></p>
     {% for tag in sortedtags %}
     {% assign i = tag[1].size %}
     {% assign curTag = tag[0] | split: "|" %}
@@ -98,7 +98,7 @@ layout: default
     {% endfor %}
     <hr>
     <!-- C/C++ -->
-    <p><span style="color: #fff; font-size: 1.5em;">C/C++</span></p>
+    <p><span style="color: #fff; font-size: 1.5em;">Computer Science</span></p>
     {% for tag in sortedtags %}
     {% assign i = tag[1].size %}
     {% assign curTag = tag[0] | split: "|" %}

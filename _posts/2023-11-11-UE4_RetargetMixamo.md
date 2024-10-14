@@ -3,7 +3,8 @@ layout: post
 title: Mixamo 애니메이션 리타깃 꿀팁
 date: 2023-11-11
 category: 
- - challenge
+ - tutorial
+ - p-UE4
 tag:
  - 1|Animation
  - 1|Retarget

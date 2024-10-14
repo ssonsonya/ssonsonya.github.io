@@ -4,11 +4,11 @@ title: winAPI 기초 이론 복습 - 1
 date:   2022-12-25
 category: tutorial
 tag:
-- 3|winDesc
-- 3|winProc
-- 3|WINCLASSEXW
-- 3|c_str()
-- 3|PeekMessage
+- 2|winDesc
+- 2|winProc
+- 2|WINCLASSEXW
+- 2|c_str()
+- 2|PeekMessage
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
 related:

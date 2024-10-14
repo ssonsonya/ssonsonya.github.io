@@ -4,15 +4,14 @@ title: winAPI 기초 이론 복습 - 2
 date:   2022-12-27
 category: tutorial
 tag:
-- 3|WM_CREATE
-- 3|WM_PAINT
-- 3|DrawText
-- 3|LineTo
-- 3|Rectangle
-- 3|Ellipse
-- 3|WM_KEYDOWN
-- 3|Vector3
-- 4|강의노트
+- 2|WM_CREATE
+- 2|WM_PAINT
+- 2|DrawText
+- 2|LineTo
+- 2|Rectangle
+- 2|Ellipse
+- 2|WM_KEYDOWN
+- 2|Vector3
 thumbnail: /style/image/thumbnail_API_sbs.png
 icon: book
 related:

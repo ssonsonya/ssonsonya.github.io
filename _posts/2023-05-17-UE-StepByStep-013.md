@@ -2,7 +2,9 @@
 layout: post
 title: UE C++ 맛보기 - ShootingGame 마무리
 date:   2023-05-17
-category: tutorial
+category: 
+ - tutorial
+ - p-UE4
 thumbnail: /style/image/thumbnail.png
 icon: book
 ---

@@ -10,10 +10,8 @@ tag:
 - 2|DEVICE
 - 2|DC
 - 2|SwapChain
-- 2|DXGI_MODE_DESC
-- 2|DXGI_SAMPLE_DESC
+- 2|DXGI
 - 2|MSAA
-- 2|SSAA
 - 2|RenderTargetView
 - 2|Viewport
 thumbnail: /style/image/thumbnail_D2D_sbs.png

@@ -3,6 +3,12 @@ layout: post
 title: DirectX 2D 기초 이론 복습 - 5
 date:   2023-02-16
 category: tutorial
+tag:
+- 2|Collision
+- 2|Adapter
+- 2|과제_스크린샷
+- 2|과제_창분활
+- 2|과제_쉐이더효과
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book
 related:

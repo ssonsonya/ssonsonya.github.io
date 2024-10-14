@@ -3,6 +3,9 @@ layout: post
 title: DirectX 2D 기초 이론 복습 - 3
 date:   2023-01-18
 category: tutorial
+tag:
+- 2|Render
+- 2|과제_사각형그리기
 thumbnail: /style/image/thumbnail_D2D_sbs.png
 icon: book
 related:
