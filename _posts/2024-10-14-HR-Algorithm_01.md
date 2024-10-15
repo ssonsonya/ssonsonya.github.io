@@ -8,6 +8,8 @@ tag:
 
 thumbnail: /style/image/thumbnail.png
 icon: code
+related: 
+ - /2024-10-14-HR-Algorithm_02
 ---
 
 HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어보기  
