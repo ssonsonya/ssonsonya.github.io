@@ -3,6 +3,9 @@ layout: post
 title: 칸아카데미 알고리즘 - 1
 date:   2024-10-14
 category: cs
+tag:
+ - 4|이진검색
+
 thumbnail: /style/image/thumbnail.png
 icon: code
 ---

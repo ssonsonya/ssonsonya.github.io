@@ -3,11 +3,14 @@ layout: post
 title: HackerRank Algorithm - 1
 date:   2024-10-14
 category: cs
+tag:
+ - 4|WarmUp
+
 thumbnail: /style/image/thumbnail.png
 icon: code
 ---
 
-HackerRank 초보난이도에서부터 순서대로 쭈-욱 풀어보기  
+HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어보기  
 
 * content
 {:toc}
@@ -37,7 +40,7 @@ HackerRank 초보난이도에서부터 순서대로 쭈-욱 풀어보기
 |8|Mini-Max Sum|2중for문 + if조건|`sort()` 정렬|함수기능 적시에 사용할 줄 알기|
 |9|Birthday Cake Candles|`sort()` + for문 + if문|max를 찾는 함수 실행||
 |10|Time Conversion|`substr()`<br>`stoi()``to_string()`|string의 인덱스로 조회|string 복습필요!|
-|11|Grading Students|for문 + if조건|동일|!해결못함!|
+|11|Grading Students|for문 + if조건|동일|나머지연산 연습필요!|
 
 
 ***
