@@ -1,16 +1,17 @@
 ---
 layout: post
-title: 칸아카데미 - 알고리즘-1
+title: 칸아카데미 알고리즘 - 1
 date:   2024-10-14
 category: cs
 thumbnail: /style/image/thumbnail.png
 icon: code
 ---
 
+CS 기본지식을 위해 차근차근 알아가자는 마음으로 틈틈히 강의보기
+
 * content
 {:toc}
 
-CS 기본지식을 위해 차근차근 알아가자는 마음으로 틈틈히 강의보기
 
 ##  시작
 
