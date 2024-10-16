@@ -603,15 +603,16 @@ textarea:-ms-input-placeholder {
     width: auto;
     height: 100%;
     max-width: 50%;
-    margin: 13px 0 0 5px;
-    text-decoration: none;
-    overflow: hidden;
+    margin: 0 0 0 5px;
+    padding: 5px 0 0 0;
 }
 
 .navbar-logo img {
     width: auto;
-    height: 70px;
-    outline: 0;
+    height: 63px;
+    outline-style: solid;
+    outline-width: 0.5px;
+    outline-color: #5E5E7A;
     border-radius: 50%;
 }
 
@@ -2736,7 +2737,7 @@ textarea:-ms-input-placeholder {
 
 a.navbar-logo span {
     position: relative;
-    top: -35px;
+    top: -22px;
     color: #5E5E7A;
 }
 
