@@ -6,7 +6,7 @@ category: cs
 tag:
  - 4|이진검색
 
-thumbnail: /style/image/thumbnail.png
+thumbnail: /style/image/khan.png
 icon: code
 ---
 
