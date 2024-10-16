@@ -6,7 +6,7 @@ category: cs
 tag:
  - 4|WarmUp
 
-thumbnail: /style/image/thumbnail.png
+thumbnail: /style/image/HR.png
 icon: code
 related: 
  - /2024-10-14-HR-Algorithm_02
