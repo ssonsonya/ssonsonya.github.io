@@ -40,7 +40,7 @@ HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어�
 ***
 ##  해결못한 문제 
 
-[Between Two Sets](https://www.hackerrank.com/challenges/between-two-sets/problem?isFullScreen=true)
+### [Between Two Sets](https://www.hackerrank.com/challenges/between-two-sets/problem?isFullScreen=true)
 
 + 계산이 필요한 수 범위 정확히 알기  
     > These numbers are referred to as being between the two arrays.  

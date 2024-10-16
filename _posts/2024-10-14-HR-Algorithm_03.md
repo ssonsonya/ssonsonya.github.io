@@ -42,7 +42,7 @@ HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어�
 ***
 ##  해결못한 문제 
 
-[Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true)
+### [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true)
 
 + 마지막 원소까지 신경쓰기  
 
@@ -81,7 +81,7 @@ int migratoryBirds(vector<int> arr) {
 
 ***  
 
-[Day of the Programmer](https://www.hackerrank.com/challenges/day-of-the-programmer/problem?isFullScreen=true)
+### [Day of the Programmer](https://www.hackerrank.com/challenges/day-of-the-programmer/problem?isFullScreen=true)
 
 + 날짜계산은 어렵게 수식쓰지말고 상수값으로 쉽게 계산할 방법을 먼저 찾자
 
@@ -113,7 +113,7 @@ string dayOfProgrammer(int year) {
 
 ***
 
-[Sales by Match](https://www.hackerrank.com/challenges/sock-merchant/problem?isFullScreen=true)
+### [Sales by Match](https://www.hackerrank.com/challenges/sock-merchant/problem?isFullScreen=true)
 
 + 해쉬맵 활용하기 좋은 예시!
 + 메모이제이션 활용 사례도 함께 보기
