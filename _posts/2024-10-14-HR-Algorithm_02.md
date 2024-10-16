@@ -5,7 +5,6 @@ date:   2024-10-15
 category: cs
 tag:
  - 4|WarmUp
-
 thumbnail: /style/image/HR.png
 icon: code
 related: 
@@ -34,7 +33,7 @@ HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어�
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |1|Apple and Orange|15분|for문 + &&조건 |동일|범위조건 사용불가|
 |2|Number Line Jumps|24분|while문 + if조건|if조건안에서 while문|timeout오류 주의|
-|3|Between Two Sets|30분 초과|각배열 2중for문|특정범위내 for문과 flag|문제해석 주의|
+|3|Between Two Sets|30분 초과|각배열 2중for문|`유클리드호제법`|문제해석 주의|
 |4|Breaking the Records|14분|for문 + if조건|동일|결과 출력순서 주의|
 
 

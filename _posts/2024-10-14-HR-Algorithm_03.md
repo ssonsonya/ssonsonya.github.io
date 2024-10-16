@@ -23,7 +23,7 @@ HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어�
 
 |문제풀이|평균소요시간|난이도|체감난이도|해결못한문제|
 |:---:|:---:|:---:|:---:|:---:|
-|4개|약23분|easy|익숙해짐|1개|
+|4개|약23분|easy|실수가많아짐|1개|
 
 ***
 
@@ -35,6 +35,8 @@ HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어�
 |2|Divisible Sum Pairs|8분|2중for문과 &&조건| |조건을 잘 읽자|
 |3|Migratory Birds|30분초과|`sort()`|id당 갯수 벡터|예외상황 주의하기|
 |4|Day of Programmer|30분초과|if 잔뜩!|동일|쉽지만 긴문제|
+|5|Bill Division|12분|누적덧셈과 if|동일||
+|6|Sales by Match|검색| |해쉬맵,메모이제이션|배웠다!|
 
 ***
 ##  해결못한 문제 
@@ -107,4 +109,56 @@ string dayOfProgrammer(int year) {
     }
 }
 ```
+
+***
+
+[Sales by Match](https://www.hackerrank.com/challenges/sock-merchant/problem?isFullScreen=true)
+
++ 해쉬맵 활용하기 좋은 예시!
++ 메모이제이션 활용 사례도 함께 보기
+
+단순히 하나하나 지워나가는 방식을 쓰는건 비효율적이라는 생각이 들었다.  
+이런 문제는 어떤 stl을 사용하나 알고싶어 답부터 검색해봤다.
+
+```cpp
+// 맵 활용
+int sockMerchant(int n, vector<int> ar) {
+    map<int,int> map;
+    for(size_t i = 0; i<n; i++){
+        if(map.find(ar[i]) != map.end())
+        {
+            map[ar[i]]++;
+        }
+        else{
+            map.insert(make_pair(ar[i],1));
+        }
+    }
+    
+    int answer = 0;
+    for(auto iter: map){
+        answer += iter.second / 2;  // 소숫점을 버린 값만 계산된다
+        cout << iter.second << '\n';
+    }
+
+    return answer;
+}
+```
+
+```cpp
+// 메모이제이션
+int sockMerchant(int n, vector<int> ar) {
+    int temp[101] = {}; // 양말색 101가지
+    
+    for(size_t i = 0; i< ar.size(); i++){
+        temp[ar[i]]++;
+    }
+    
+    int answer = 0;
+    for(auto iter : temp){
+        answer += iter /2;
+    }
+    return answer;
+}
+```
+
 <br>
