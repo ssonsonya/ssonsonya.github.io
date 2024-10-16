@@ -5,11 +5,10 @@ date:   2024-10-14
 category: cs
 tag:
  - 4|WarmUp
-
 thumbnail: /style/image/HR.png
 icon: code
 related: 
- - /2024-10-14-HR-Algorithm_02
+ - /2024-10-15-HR-Algorithm_02
 ---
 
 HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어보기  
