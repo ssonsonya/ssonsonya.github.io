@@ -2435,11 +2435,6 @@ textarea:-ms-input-placeholder {
         padding: 0
     }
 
-    .main-content {
-        padding: 90px 0 0 0;
-        margin-bottom: 16px;
-    }
-
     .footer-meta .meta-item {
         padding: 0 20px
     }
@@ -2494,6 +2489,7 @@ textarea:-ms-input-placeholder {
     .post-onelist-item-container .onelist-item-thumb {
         min-height: 240px
     }
+    
 }
 
 @media(max-width:800px) {
