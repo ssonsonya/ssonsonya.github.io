@@ -578,6 +578,7 @@ textarea:-ms-input-placeholder {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow: hidden;
     align-content: space-around;
     position: absolute;
     top: 0;
@@ -2581,6 +2582,14 @@ textarea:-ms-input-placeholder {
 @media(max-width:580px) {
     .navbar-search form {
         width: 150px
+    }
+
+    a.navbar-logo span {
+        position: relative;
+        top: -22px;
+        color: #5E5E7A;
+        font-size: 15px;
+        font-weight: 600;
     }
 
     .index-page {
