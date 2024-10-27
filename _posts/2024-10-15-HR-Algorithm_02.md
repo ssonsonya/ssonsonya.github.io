@@ -44,45 +44,41 @@ HackerRank Warming Up 초보 난이도에서부터 순서대로 쭈-욱 풀어�
 
 + 계산이 필요한 수 범위 정확히 알기  
     > These numbers are referred to as being between the two arrays.  
-    
     두 배열의 원소까지 포함을 뜻한다 (a배열의 마지막 원소값 이상인 줄 알았다)  
 + 조건만족과 진입지점 flag로 구분하면 반복문의 탈출지점 설정을 못하는 실수를 예방할 수 있다  
++ 유클리드 호제법  
+> 최대공약수(Great Common Divisor)를 구하는 함수를 gcd(x,y)라 할 때,  
+x % y = 0 이면 gcd(x,y) = y  
+y % x != 0 이면 gcd(x,y) = gcd(x, x%y)가 성립한다 
 
 두 배열의 범위 내 a배열의 배수와 b배열의 약수가 되는 숫자의 갯수 구하기  
 배수와 약수 얘기인줄 모르고 또 `%`나머지 연산자를 보며 나락에 빠져버린 생각들..  
 
 ```cpp
-int getTotalX(vector<int> a, vector<int> b) 
-{
+int getTotalX(vector<int> a, vector<int> b) {
     int count = 0;
     
     // 범위는 a배열의 최소원소값 이상 b배열의 최소원소 이하
-    for(int i = a[0] ; i<= b[0]; i++) 
-    {
+    for(int i = a[0] ; i<= b[0]; i++) {
         // 두번째 for문 진입조건 flag 
         bool isTrue = true;
         
-        // b배열 원소의 약수가 되는 수 구하고 만족 시 탈출
-        for(int elm : b )
-        {
-            if(elm % i != 0)
-            {
+        // b배열 원소의 약수가 되는 수 구하고 조건부합 시 다음 if문 진입불가
+        for(int elm : b ){
+            if(elm % i != 0){
                isTrue = false;
                break;
             }  
         }
         
         // b배열 원소의 약수조건 만족된 수만 진입
-        if(isTrue)
-        {
+        if(isTrue){
             // 최총 카운트 조건 flag
             bool isCount = true;
             
             // a배열의 배수 조건 만족 시 탈출
-            for(int elm : a)
-            {
-                if(i % elm != 0)
-                {
+            for(int elm : a){
+                if(i % elm != 0){
                     isCount = false;
                     break;
                 }
@@ -97,4 +93,5 @@ int getTotalX(vector<int> a, vector<int> b)
     return count;
 }
 ```
+
 <br>
