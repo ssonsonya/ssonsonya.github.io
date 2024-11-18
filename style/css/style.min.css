@@ -236,7 +236,8 @@ pre code {
 
 blockquote {
     padding: 0 10px 0 20px;
-    border-left: 4px solid #ddd
+    border-left: 4px solid #ddd;
+    background: #fcf5ed;
 }
 
 blockquote>:first-child {
@@ -1354,7 +1355,8 @@ textarea:-ms-input-placeholder {
 
 .post-content p {
     word-wrap: break-word;
-    word-break: break-word
+    word-break: break-word;
+    color : #313131;
 }
 
 .post-content h1,
